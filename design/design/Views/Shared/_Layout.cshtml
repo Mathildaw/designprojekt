@@ -9,7 +9,10 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <header>
+        <p style="text-align:center">här ska det vara en bild på det fina huset du vill bo i Emma :D</p>
+    </header>
+    <div class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,7 +36,10 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="footerinfo" style="margin:auto; text-align: center;">
+            <p>Kontaktinformation</p>
+            @Html.ActionLink("Admin", "Login", "Account")
+            </div>
         </footer>
     </div>
 
