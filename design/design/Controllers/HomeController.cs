@@ -13,6 +13,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult omoss()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
