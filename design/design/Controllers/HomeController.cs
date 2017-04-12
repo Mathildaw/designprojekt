@@ -18,6 +18,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult Kontakt()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
