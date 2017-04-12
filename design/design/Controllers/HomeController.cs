@@ -23,6 +23,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult Nyheter()
+        {
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
