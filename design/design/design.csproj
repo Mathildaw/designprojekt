@@ -183,6 +183,7 @@
     <Content Include="Content\Images\Krakan 9 - 1.jpg" />
     <Content Include="Content\Images\Liljan 9 - 1.jpg" />
     <Content Include="Content\Images\Malgen-Gigeln - 2.jpg" />
+    <Content Include="Content\Images\omossbild.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
