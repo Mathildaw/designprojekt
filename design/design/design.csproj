@@ -174,6 +174,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Csskod.css" />
+    <Content Include="Content\Images\arlen 25 - 2.jpg" />
+    <Content Include="Content\Images\Blaslampan 2 - 1.jpg" />
+    <Content Include="Content\Images\Blaslampan 2 - 3.jpg" />
+    <Content Include="Content\Images\Brandstationen 6 - 3.jpg" />
+    <Content Include="Content\Images\Fetknoppen 2 - 2.jpg" />
+    <Content Include="Content\Images\Jarnvagsgatan 26 A.jpg" />
+    <Content Include="Content\Images\Krakan 9 - 1.jpg" />
+    <Content Include="Content\Images\Liljan 9 - 1.jpg" />
+    <Content Include="Content\Images\Malgen-Gigeln - 2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -222,7 +231,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
     <Folder Include="Views\omoss\" />
   </ItemGroup>
   <ItemGroup>
