@@ -1087,6 +1087,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  background-image: url('Images/BackgrundSunnanlid.jpg')
 }
 input,
 button,
@@ -1582,10 +1583,10 @@ pre code {
   overflow-y: scroll;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  /*padding-right: 15px;*/
+  /*padding-left: 15px;*/
+  margin: auto;
+  /*margin-left: auto;*/
 }
 @media (min-width: 768px) {
   .container {
@@ -2600,6 +2601,12 @@ textarea.form-control {
 input[type="search"] {
   -webkit-appearance: none;
 }
+
+div.header1{
+        margin-right: 0px;
+    margin-left: 0px;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"].form-control,
   input[type="time"].form-control,
@@ -4166,7 +4173,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
