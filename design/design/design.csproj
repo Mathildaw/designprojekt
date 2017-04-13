@@ -265,6 +265,7 @@
     <Content Include="Views\Home\Kontakt.cshtml" />
     <Content Include="Views\Home\Nyheter.cshtml" />
     <Content Include="Views\Home\Felanmalan.cshtml" />
+    <Content Include="Views\Home\FragorOchSvar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
