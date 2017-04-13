@@ -13,7 +13,7 @@
                         min: 2,
                     },
                     notEmpty: {
-                        message: 'Skriv ditt riktiga namn bitch'
+                        message: 'Skriv ditt namn'
                     }
                 }
             },
