@@ -1483,6 +1483,15 @@ h3.red
   div.divleft{
       margin-left:6%;
   }
+
+  div.maincontainer1{
+      border: 3px solid rgba(221, 221, 221, 0.36);
+      border-radius: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+      padding-right:10px;
+      padding-top: 10px;
+  }
   div.leftdiv{
     margin-left: 10%;
     margin-right: 5%;
