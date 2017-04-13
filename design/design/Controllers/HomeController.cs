@@ -23,6 +23,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult Varafastigheter()
+        {
+            return View();
+        }
+
         public ActionResult FragorOchSvar()
         {
             return View();
