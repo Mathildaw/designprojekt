@@ -224,6 +224,10 @@ table {
   border-spacing: 0;
 }
 
+h3.sidrubrik{
+    color: #8a8686;
+    font-family: Calibri;
+}
 @media print {
   * {
     color: #000 !important;
@@ -316,6 +320,7 @@ body {
   line-height: 1.428571429;
   color: #333333;
   background-color: #f7f7f7;
+  background-image: url('Images/BackgrundSunnanlid.jpg');
 }
 
 input,
@@ -387,6 +392,7 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
+
 }
 
 .sr-only {
@@ -4057,7 +4063,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar {
-    border-radius: 4px;
+    /*border-radius: 4px;*/
   }
 }
 
@@ -4507,10 +4513,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-inverse {
   background-color: #eeeeee;
-  
+ 
   border-bottom: 3px solid #ddd; 
   border-left: 1px solid #ddd; 
-  border-right: 1px solid #ddd; 
+  border-right: 2px solid #ddd; 
 }
 
 .navbar-inverse .navbar-brand {

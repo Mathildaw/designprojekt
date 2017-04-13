@@ -27,7 +27,10 @@ namespace design.Controllers
         {
             return View();
         }
-
+        public ActionResult Felanmalan()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

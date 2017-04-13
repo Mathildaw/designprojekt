@@ -166,6 +166,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Felanmalan.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -178,6 +179,7 @@
     <Content Include="Content\Images\AnderssonAnnette.jpg" />
     <Content Include="Content\Images\Anna.jpg" />
     <Content Include="Content\Images\arlen 25 - 2.jpg" />
+    <Content Include="Content\Images\BackgrundSunnanlid.jpg" />
     <Content Include="Content\Images\BergTony.jpg" />
     <Content Include="Content\Images\Blaslampan 2 - 1.jpg" />
     <Content Include="Content\Images\Blaslampan 2 - 3.jpg" />
@@ -252,6 +254,7 @@
     <Content Include="Views\Home\omoss.cshtml" />
     <Content Include="Views\Home\Kontakt.cshtml" />
     <Content Include="Views\Home\Nyheter.cshtml" />
+    <Content Include="Views\Home\Felanmalan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
