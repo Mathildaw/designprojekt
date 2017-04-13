@@ -1081,6 +1081,17 @@ html {
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
+h2.sidrubrik{
+    text-align:center;
+    color:#6d6d6d;
+}
+
+div.nyhet{
+ border:1px solid #ddd;
+ border-bottom: 0px;
+  box-shadow: 0px 5px 5px #888888;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -1464,6 +1475,9 @@ dd {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  div.leftdiv{
+    margin-left: 10%;
+}
   .dl-horizontal dd {
     margin-left: 180px;
   }
@@ -4600,7 +4614,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #eee;
+  background-color: #f8f8f8;
   border-color: #ddd;
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 5px 5px #888888;
