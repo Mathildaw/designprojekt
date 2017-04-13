@@ -1087,7 +1087,9 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
-  background-image: url('Images/BackgrundSunnanlid.jpg')
+  background-image: url('Images/BackgrundSunnanlid.jpg');
+  background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 input,
 button,
