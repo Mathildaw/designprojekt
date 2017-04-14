@@ -267,6 +267,7 @@
     <Content Include="Views\Home\Felanmalan.cshtml" />
     <Content Include="Views\Home\FragorOchSvar.cshtml" />
     <Content Include="Views\Home\Varafastigheter.cshtml" />
+    <Content Include="Views\Home\Intresseanmalan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

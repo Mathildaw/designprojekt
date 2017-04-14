@@ -13,6 +13,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult Intresseanmalan()
+        {
+            return View();
+        }
+
         public ActionResult omoss()
         {
             return View();

@@ -100,4 +100,8 @@
         $(".dropdown-toggle").dropdown();
     });
 });
+$(document).on('click', 'ul.drop', function (e) {
+    e.stopPropagation();
+});
+
 

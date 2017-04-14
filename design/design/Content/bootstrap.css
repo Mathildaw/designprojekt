@@ -1470,6 +1470,8 @@ h3.red
 {
     color:#e95123;
 }
+
+
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
@@ -1485,7 +1487,7 @@ h3.red
   }
 
   div.maincontainer1{
-      border: 3px solid rgba(221, 221, 221, 0.36);
+      border: 3px solid rgba(119, 119, 119, 0.45);
       border-radius: 10px;
       padding-bottom: 20px;
       padding-left: 10px;
@@ -6808,5 +6810,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+div.checkbox1{
+    margin-left: 0px;
+    padding-left: 0px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
