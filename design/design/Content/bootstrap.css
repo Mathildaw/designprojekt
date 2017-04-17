@@ -263,7 +263,7 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/yp');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
@@ -1090,8 +1090,10 @@ h2.sidrubrik{
 div.nyhet{
  border:1px solid #ddd;
  border-bottom: 0px;
+ padding: 0 20px;
   box-shadow: 0px 5px 5px #888888;
 }
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -1486,13 +1488,18 @@ h3.red
       margin-left:6%;
   }
 
+  div.medsökande{
+      display: none;
+  }
+
   div.maincontainer1{
-      border: 3px solid rgba(119, 119, 119, 0.45);
+      border: 2px solid rgba(119, 119, 119, 0.45);
       border-radius: 10px;
       padding-bottom: 20px;
       padding-left: 10px;
       padding-right:10px;
       padding-top: 10px;
+      box-shadow: 0px 0px 10px #777 
   }
   div.leftdiv{
     margin-left: 10%;
@@ -6814,5 +6821,8 @@ button.close {
 div.checkbox1{
     margin-left: 0px;
     padding-left: 0px;
+}
+ div.btnmedsökande{
+      padding-left: 0px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

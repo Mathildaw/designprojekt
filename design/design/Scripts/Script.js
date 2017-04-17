@@ -103,5 +103,12 @@
 $(document).on('click', 'ul.drop', function (e) {
     e.stopPropagation();
 });
-
+function hideshow() {
+    var x = document.getElementById('medsökandediv');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
 

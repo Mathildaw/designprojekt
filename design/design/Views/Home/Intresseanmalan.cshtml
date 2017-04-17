@@ -86,24 +86,24 @@
                 <div>
                     <label>Yrke: *</label>
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                        <input name="state" placeholder="Yrke" class="form-control" type="text">
                     </div>
                 </div>
                 <br />
                 <div>
                     <label>Årsinkomst: *</label>
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                        <input name="state" placeholder="Årsinkomst" class="form-control" type="text">
                     </div>
                 </div>
                 <br />
                 <div>
                     <label>Arbetsgivare: *</label>
                     <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                        <input name="state" placeholder="Arbetsgivare" class="form-control" type="text">
                     </div>
                 </div>
                 
@@ -149,7 +149,7 @@
                     <div>
                         <label>Antal rum: </label>
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
                             <input name="ruminput" placeholder="Antal rum" class="form-control input-md" type="number">
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                     <div>
                         <label>Våning: </label>
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
                             <input name="våninginput" placeholder="Våning" class="form-control input-md" type="number">
                         </div>
                     </div>
@@ -165,8 +165,8 @@
                     <div>
                         <label>Maxhyra: </label>
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                            <input name="hyrainput" placeholder="maxhyra" class="form-control input-md" type="number">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
+                            <input name="hyrainput" placeholder="Maxhyra" class="form-control input-md" type="number">
                         </div>
                     </div>
                     <br />
@@ -189,21 +189,23 @@
                     </div>
                 </div>
                     <br />
-                    <div>
-                        <label>Egna ord:</label>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                            <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
-                        </div>
+                <div>
+                    <label>Egna ord:</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
+                    </div>
+                </div>
                         <br />
-                        <div class="col-md-12 btn-group-lg">
-                            <button class="btn btn-default " type="button" id="medsökande">
-                                Medsökande
-                                <span class="caret"></span>
-                            </button>
-                        </div>
+                @*<div class="btnmedsökande col-md-12 btn-group-lg">*@
+                <div class="btnmedsökande btn-group-lg">
+                    <button class="btn" type="button" id="medsökande" onclick="hideshow()">
+                        Medsökande
+                        <span class="caret"></span>
+                    </button>
+                </div>
                         <br />
-           <div class="medsökande">
+           <div class="medsökandediv" id="medsökandediv" style="display:none;">
                <div>
                    <label>Namn: *</label>
                    <div class="input-group">
@@ -279,24 +281,24 @@
                <div>
                    <label>Yrke: *</label>
                    <div class="input-group">
-                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                       <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                       <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                       <input name="state" placeholder="Yrke" class="form-control" type="text">
                    </div>
                </div>
                <br />
                <div>
                    <label>Årsinkomst: *</label>
                    <div class="input-group">
-                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                       <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                       <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                       <input name="state" placeholder="Årsinkomst" class="form-control" type="text">
                    </div>
                </div>
                <br />
                <div>
                    <label>Arbetsgivare: *</label>
                    <div class="input-group">
-                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                       <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                       <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                       <input name="state" placeholder="Arbetsgivare" class="form-control" type="text">
                    </div>
                </div>
            </div>
@@ -306,21 +308,21 @@
                         <div class="col-md-4">
                             <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                         </div>
-                    </div>
+                    
                 </div>
         </div>
-        <div class="col-md-4 rightdiv">
-            <p style="font-size:large;"><b>På hemsidan kan du göra felanmälan dygnet runt.</b></p>
+        <div class="col-md-4 rightdiv information">
+            <p style="font-size:large;"><b>På hemsidan kan du göra intresseanmälan dygnet runt.</b></p>
             <h4>
-                <br />Du kan även ringa vårt kontor på telefon: 019-16 43 70.
+                <br />När du gör en intresseanmälan står du i 
+                <br />bostadskön i tre månader, det är sedan upp 
+                <br />till dig att uppdatera din anmälan för
+                <br /> att stå kvar i bostadskön.
                 <br />
-                <br />Kontorets öppettider:
-                <br />Måndag – Fredag kl: 07:30-16:30.
-                <br />Telefontid: 09:00-16:00.
-                <br />Lunchstängt mellan kl: 12:00-13:00.
+                <br />Mer information om intresseanmälan och 
+                <br />bostadskön hittar du i <a href="~/Home/FragorOchSvar">frågor och svar</a>.
+                
                 <br />
-                <br />Efter kontorstid vid akuta ärenden,
-                <br />ring vår Jourtelefon: 010-4705758.
             </h4>
         </div>
     </div>
