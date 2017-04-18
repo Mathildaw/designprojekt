@@ -6951,6 +6951,20 @@ div.lastdiv{
     margin-top: 100px;
 }
 
+div.facebook{
+    color: black;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 35px;
+   background-color: #f8f8f8;
+    border: 2px solid #ccc;
+}
+
+div.fb-page{
+    border: 1px solid #e95123;
+}
+
 
 /*div.foretag{
     display: none;

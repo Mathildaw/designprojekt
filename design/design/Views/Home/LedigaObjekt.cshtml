@@ -1,0 +1,186 @@
+﻿@{
+    ViewBag.Title = "Lediga objekt";
+}
+<center><h2 class="sidrubrik">Lediga objekt</h2></center>
+<div class="maincontainer1">
+
+    <div class=" row">
+       
+        <div class=" col-md-3 rightsort">
+            <label>Sortera</label>
+            <br />
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                    Visa objekt för:
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Alla</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Falun</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kumla</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nora</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Almby</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Centralt</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Norr</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Väster</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Studentboende</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Seniorboende 55+</a></li>
+                </ul>
+            </div>
+           
+       
+        
+        </div>
+        
+        <div class=" col-md-8 filtreraruta-stor">
+            <label>Filtrera</label>
+            <div class="row filtreraruta">
+                <div class=" col-md-2 filtrera filtrera-left" >
+                    <div class="falt">
+                        <label>Minst antal rum</label>
+                        <div style="width: 60px;">
+                            <div class="numberinput">
+                                <input name="state" placeholder="0" class="form-control" type="number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 filtrera">
+                    <div class="falt">
+                        <label>Max antal rum</label>
+                        <div style="width: 60px;">
+                            <div class="numberinput">
+                                <input name="state" placeholder="0" class="form-control" type="number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 filtrera">
+                    <div class="falt">
+                        <label>Maxhyra</label>
+                        <div style="width: 80px;">
+                            <div class="numberinput">
+                                <input name="state" placeholder="Maxhyra" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-3 filtrera">
+                    <div class="falt">
+                        <label>Adress</label>
+                        <div>
+                            <div class="numberinput">
+                                <input name="state" placeholder="Adress" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-2 filtrera">
+                    <div class="falt">
+                        <label style="color:white;">.</label>
+                        <div>
+                            <div>
+                                <button type="submit" class="btn btn-default" style="margin-left:10px;">Filtrera <span class="glyphicon glyphicon-filter"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <legend>3 lediga objekt</legend>
+    <div class=" ledigt">
+    
+        <div class="row ledig">
+            <div class="col-sm-4">
+                <center><img class="img-responsive" src="~/Content/Images/Jarnvagsgatan 26 A.jpg" alt=""></center>
+            </div>
+            <div class="col-sm-4">
+           
+                <p>
+                    <b>Område:</b> Örebro Norr <br />
+                    <b>Adress:</b> Rynningegatan 27 <br />
+                    <b>Typ:</b> Lägenhet<br />
+                    <b>Antal rum:</b> 3
+                    <br /><b>Hyra:</b> 7000 kr/månad
+                    <br /><b>Yta:</b> 83 kvm
+                    <br /><b>Våning:</b> 3
+                    <br /><b>Övrigt:</b> Balkong
+                    <br /><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/oeFiqLVaNsv" target="_blank"> Hitta hit</a>
+                </p>
+
+           
+
+            </div>
+
+            <div class="col-sm-3 lastdiv">
+                <button type="submit" class="btn btn-default btn-information1">Intresseanmälan <span class="glyphicon glyphicon-chevron-right"></span></button><br />
+                <button type="submit" class="btn btn-default btn-information">Mer information <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
+        </div>
+        <br />
+        <hr size="1" color="#996633">
+        <div class="row ledig">
+            <div class="col-sm-4">
+                <center><img class="img-responsive" src="~/Content/Images/Brandstationen 6 - 3.jpg" alt=""></center>
+            </div>
+            <div class="col-sm-4">
+              
+                <p>
+                    <b>Område:</b> Örebro Centralt <br />
+                    <b>Adress:</b> Badhusgatan 3 <br />
+                    <b>Våning:</b> 1 <br />
+                    <b>Antal rum:</b> 3
+                    <br /><b>Hyra:</b> 10000 kr/månad
+                    <br /><b>Yta:</b> 90 kvm
+                    <br /><b>Våning:</b> 2 
+                    <br /><b>Övrigt:</b> Hiss
+                    <br /><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/oeFiqLVaNsv" target="_blank"> Hitta hit</a>
+                </p>
+        
+               
+            </div>
+
+            <div class="col-sm-3 lastdiv">
+            
+                <button type="submit" class="btn btn-default btn-information1">Intresseanmälan <span class="glyphicon glyphicon-chevron-right"></span></button><br />
+                <button type="submit" class="btn btn-default btn-information">Mer information <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </div>
+        </div>
+        <br />
+        <hr size="1" style="color:#996633">
+        <div class="row ledig">
+            <div class="col-sm-4">
+                <center><img class="img-responsive" src="~/Content/Images/Blaslampan 2 - 1.jpg" alt=""></center>
+            </div>
+            <div class="col-sm-4">
+            
+                <p>
+                    <b>Område:</b> Örebro Centralt <br />
+                    <b>Adress:</b> Slottsgatan 7 <br />
+                    <b>Typ:</b> Lägenhet<br />
+                    <b>Antal rum:</b> 1
+                    <br /><b>Hyra:</b> 3500 kr/månad
+                    <br /><b>Yta:</b> 30 kvm
+                    <br /><b>Våning:</b> 2
+                    <br /><b>Övrigt:</b> Hiss
+                    <br /><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/oeFiqLVaNsv" target="_blank"> Hitta hit</a>
+                </p>
+           
+               
+            </div>
+
+            <div class="col-sm-3 lastdiv">
+                <button type="submit" class="btn btn-default btn-information1">Intresseanmälan <span class="glyphicon glyphicon-chevron-right"></span></button><br />
+                <button type="submit" class="btn btn-default btn-information">Mer information <span class="glyphicon glyphicon-chevron-right"></span></button>
+
+            </div>
+        </div></div>
+
+
+
+</div>
