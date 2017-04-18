@@ -54,9 +54,46 @@
             @RenderBody()
             <hr />
             <footer>
-                <div class="footerinfo" style="margin:auto; text-align: center;">
-                    <p>Kontaktinformation</p>
-                    @Html.ActionLink("Admin", "Login", "Account")
+                <div class="footerinfo">
+                    <div class="row">
+                        <div class=" col-md-3 first">
+                            <a href="~/Home/Index"><img src="~/Content/Images/JEbygg%20logga.png"></a>
+   
+                    </div>
+                        <div class="col-md-3 second">
+                            <p style="color:#5f5f5f"><b>
+                                JOHN EKSTRÖMS BYGG AB
+                                <br /> Org. nr 556212-0468
+                                <br />Ormestagatan 1B
+                                <br />702 83 Örebro
+                                
+                                </b> 
+                            </p>
+                         
+                        </div>
+                        <div class="col-md-3 third"> 
+                            <p style ="color: #5f5f5f"><b>
+                                KONTORETS ÖPPETTIDER
+                                <br />Måndag - fredag: 07:30 - 16:30
+                                <br />Telefontid: 09:00 - 16:00
+                                <br />Lunchstängt: 12:00 - 13:00
+                            </b>
+                            </p>
+                        </div>
+                        <div class="col-md-3 fourth">
+                            <p style="color: #5f5f5f">
+                                <b>
+                                    TELEFON
+                                    <br />019-16 43 70
+                                    <br />Jourtelefon efter kontorstid:
+                                    <br />010 - 470 57 58
+                                
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="admin" style="text-align:center; font-size:small;">
+                        <a href="~/Account/Login" style="color:grey;">Admin</a></div>
                 </div>
             </footer>
         </div>
