@@ -105,10 +105,42 @@ $(document).on('click', 'ul.drop', function (e) {
 });
 function hideshow() {
     var x = document.getElementById('medsökandediv');
+    
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
         x.style.display = 'none';
     }
+
+}
+
+function hideshown() {
+    var a = document.getElementById('hund')
+    var b = document.getElementById('katt')
+    var x = document.getElementById('flikbtn2')
+    var y = document.getElementById('foretag1')
+    var z = document.getElementById('flikbtn1')
+    
+    y.style.display = 'block';
+    a.style.display = 'none';
+    b.style.display = 'none';
+
+        x.style.backgroundColor = '#ddd';
+        z.style.backgroundColor = 'white';
+}
+function hideshown2() {
+    var a = document.getElementById('hund')
+    var b = document.getElementById('katt')
+    var x = document.getElementById('flikbtn1')
+    var y = document.getElementById('foretag1')
+    var z = document.getElementById('flikbtn2')
+   
+
+    a.style.display = 'block';
+    b.style.display = 'block';
+    y.style.display = 'none';
+    x.style.backgroundColor = '#ddd';
+    z.style.backgroundColor = 'white';
+
 }
 

@@ -13,95 +13,109 @@
 
     <br />
     <div class="row">
-        <div class="col-md-5 leftdiv">
+        <div class=" col-md-1 flikleft flik"><button class="flikbutton btnleft" id="flikbtn1" type="button" onclick="hideshown2()" >Privatperson</button></div>
+        <div class=" col-md-1 flik"><button class="flikbutton" id="flikbtn2" type="button" onclick="hideshown();">Företag</button></div>
+       
+    </div>
+    <div class="row">
+        
+        <div class="col-md-5 leftdiv felanmalan">
             <div class="form-group">
-                <div>
+                <div class="falt">
                     <label>Namn: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                         <input name="state" placeholder="Namn" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
-                    <label>Företagsnamn:</label>
+               
+                <div class="falt foretag" id="foretag1" style="display:none;" >
+                    <label>Företagsnamn: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="state" placeholder="Företagsnamn" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
+                
+                <div class="falt">
                     <label>Gatuadress: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="state" placeholder="Gatuadress" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
+                
+                <div class="falt">
                     <label>Postort:</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="state" placeholder="Postort" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
+                
+                <div class="falt">
                     <label>Postnummer:</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="state" placeholder="Postnummer" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
+                
+                <div class="falt">
                     <label>Telefonnummer:</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-                <br />
-                <div>
+                
+                <div class="falt">
                     <label>E-postadress:</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                         <input name="state" placeholder="E-postdress" class="form-control" type="text">
                     </div>
                 </div>
-                <br /><div>
+                
+                <div class="falt">
 
                     <label>Meddelande:</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
                         <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
                     </div>
+                </div>
                     <br />
+                <div class="falt">
                     <div class="col-md-10">
                         @Html.CheckBox("CheckNyckel")
                         <label>Markera om vi får gå in med huvudnyckel.</label>
                     </div>
+                </div>
+                <div class="falt" id="hund">
                     <div class="col-md-10">
                         @Html.CheckBox("CheckHund")
                         <label>Markera om ni har hund.</label>
                     </div>
-                    <div class="col-md-10">
+                </div>
+                <div class="falt">
+                    <div class="col-md-10" id="katt">
                         @Html.CheckBox("CheckKatt")
                         <label>Markera om ni har katt.</label>
                     </div>
+                </div>
                     <br />
                     <br />
                     <div class="col-md-4">
                         <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                     </div>
-                </div>
             </div>
         </div>
         <div class="col-md-4 rightdiv">
-            <p style="font-size:large;"><b>På hemsidan kan du göra felanmälan dygnet runt.</b></p>
-            <h4>
-                <br />Du kan även ringa vårt kontor på telefon: 019-16 43 70.
+            <p style="text-align:center;"><b>På hemsidan kan du göra felanmälan dygnet runt.</b></p>
+            <p>
+                <br />Du kan även ringa vårt kontor på telefon: 
+                <br />019-16 43 70.
                 <br />
                 <br />Kontorets öppettider:
                 <br />Måndag – Fredag kl: 07:30-16:30.
@@ -110,7 +124,7 @@
                 <br />
                 <br />Efter kontorstid vid akuta ärenden,
                 <br />ring vår Jourtelefon: 010-4705758.
-            </h4>
+            </p>
         </div>
     </div>
 </div>

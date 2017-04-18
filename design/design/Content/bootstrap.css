@@ -1488,6 +1488,10 @@ h3.red
       margin-left:6%;
   }
 
+   div.falt{
+     margin-bottom: 6px;
+ }
+
   div.medsökande{
       display: none;
   }
@@ -1501,11 +1505,11 @@ h3.red
       padding-top: 10px;
       box-shadow: 0px 0px 10px #777 
   }
-  div.leftdiv{
+  /*div.leftdiv{
     margin-left: 10%;
     margin-right: 5%;
-    /*border: 1px solid grey;*/
-}
+    border: 1px solid grey;
+}*/
   div.rightdiv{
        /*margin-left: 10%;
     border: 1px solid grey;*/
@@ -6825,4 +6829,35 @@ div.checkbox1{
  div.btnmedsökande{
       padding-left: 0px;
 }
+ div.felanmalan
+{
+     border: 2px solid #b4b4b4;
+     border-radius: 2px;
+ }
+   div.leftdiv{
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-left: 20px;
+    /*border: 1px solid grey;*/
+}
+div.flikleft{
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+button.flikbutton{
+    background-color: white;
+    border: 2px solid #b4b4b4;
+    border-bottom: 0px;
+    
+    padding: 10px;
+}
+
+button.btnleft{
+    background-color: #ddd;
+}
+
+/*div.foretag{
+    display: none;
+}*/
 /*# sourceMappingURL=bootstrap.css.map */
