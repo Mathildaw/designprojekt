@@ -18,6 +18,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult studentboende()
+        {
+            return View();
+        }
+
         public ActionResult seriorboende()
         {
             return View();
