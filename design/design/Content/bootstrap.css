@@ -6902,7 +6902,31 @@ button.btnleft{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+div.numberinput{
+border-radius: 10px;
+}
 
+div.filtrera{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.filtreraruta{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+div.filtreraruta-stor{
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 0 25px 10px 25px ;
+}
+
+div.filtrera-left{
+    margin-left: 20px;
+}
 /*div.foretag{
     display: none;
 }*/
