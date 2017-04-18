@@ -12,7 +12,10 @@ namespace design.Controllers
         {
             return View();
         }
-
+        public ActionResult LedigaObjekt()
+        {
+            return View();
+        }
         public ActionResult Intresseanmalan()
         {
             return View();

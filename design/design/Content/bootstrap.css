@@ -6927,6 +6927,31 @@ div.filtreraruta-stor{
 div.filtrera-left{
     margin-left: 20px;
 }
+
+div.rightsort{
+    margin-top: 45px;
+}
+
+button.btn-information{
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+div.ledig{
+    background-color: #eee;
+    border:1px solid #ddd;
+ border-bottom: 0px;
+ padding: 10px 20px;
+  box-shadow: 0px 5px 5px #888888;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+div.lastdiv{
+    margin-top: 100px;
+}
+
+
 /*div.foretag{
     display: none;
 }*/
