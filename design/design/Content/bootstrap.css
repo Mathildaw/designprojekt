@@ -1093,9 +1093,9 @@ div.nyhet{
  padding: 0 20px;
   box-shadow: 0px 5px 5px #888888;
 }
-
+/*"Helvetica Neue", Helvetica, Arial, sans-serif*/
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:Tahoma;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1483,6 +1483,9 @@ h3.red
     text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  div.fragor{
+      max-width: 555px;
   }
   div.divleft{
       margin-left:6%;
@@ -6953,18 +6956,25 @@ div.lastdiv{
 
 div.facebook{
     color: black;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border-radius: 10px;
     margin-top: 20px;
     margin-left: 35px;
-   background-color: #f8f8f8;
-    border: 2px solid #ccc;
+   background-color: rgba(119, 119, 119, 0.39);
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 8px #333;
 }
 
 div.fb-page{
-    border: 1px solid #e95123;
+    width: 100%;
 }
 
+div.fragor{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /*div.foretag{
     display: none;
