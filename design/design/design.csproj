@@ -186,6 +186,7 @@
     <Content Include="Content\Images\Blaslampan 2 - 1.jpg" />
     <Content Include="Content\Images\Blaslampan 2 - 3.jpg" />
     <Content Include="Content\Images\Brandstationen 6 - 3.jpg" />
+    <Content Include="Content\Images\erikrosenbergsväg.PNG" />
     <Content Include="Content\Images\ErikssonPeder.jpg" />
     <Content Include="Content\Images\Fetknoppen 2 - 2.jpg" />
     <Content Include="Content\Images\Gustafsson-Jan-Ake.jpg" />
@@ -203,11 +204,13 @@
     <Content Include="Content\Images\Ottosson-Carina.jpg" />
     <Content Include="Content\Images\RunellHans.jpg" />
     <Content Include="Content\Images\RunellIrene.jpg" />
+    <Content Include="Content\Images\salsmästargatan.PNG" />
     <Content Include="Content\Images\StenArnsheml.png" />
     <Content Include="Content\Images\Stieg.jpg" />
     <Content Include="Content\Images\StrandbergMikael.jpg" />
     <Content Include="Content\Images\Thor Mari.jpg" />
     <Content Include="Content\Images\TungfeltLena02.jpg" />
+    <Content Include="Content\Images\tärnvägen.PNG" />
     <Content Include="Content\Images\WibergBenny.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
