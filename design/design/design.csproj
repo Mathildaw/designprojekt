@@ -273,6 +273,8 @@
     <Content Include="Views\Home\Intresseanmalan.cshtml" />
     <Content Include="Views\Home\seriorboende.cshtml" />
     <Content Include="Views\Home\studentboende.cshtml" />
+    <Content Include="Views\Home\Intresseanmalan2.cshtml" />
+    <Content Include="Views\Home\InfoObjekt.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

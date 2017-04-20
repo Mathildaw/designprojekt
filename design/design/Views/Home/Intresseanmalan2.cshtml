@@ -1,12 +1,11 @@
-﻿
-@{
-    ViewBag.Title = "Intresseanmalan";
+﻿@{
+    ViewBag.Title = "Intresseanmalan2";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2 class="sidrubrik">Intresseanmälan</h2>
 <div class="maincontainer1">
-
+    <br />
     <br />
     <div class="row">
         <div class="col-md-5 leftdiv">
@@ -26,7 +25,7 @@
                         <input name="state" required placeholder="Personnummer" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>Antal barn: </label>
                     <div class="input-group">
@@ -34,7 +33,7 @@
                         <input name="deltagareinput" placeholder="Antal barn" class="form-control input-md" type="number">
                     </div>
                 </div>
-               
+
                 <div class="falt">
                     <label>Gatuadress: *</label>
                     <div class="input-group">
@@ -58,7 +57,7 @@
                         <input name="state" placeholder="Postort" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>Telefonnummer: *</label>
                     <div class="input-group">
@@ -66,7 +65,7 @@
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-               
+
                 <div class="falt">
                     <label>Alternativt telefonnummer:</label>
                     <div class="input-group">
@@ -74,7 +73,7 @@
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>E-postadress:</label>
                     <div class="input-group">
@@ -82,7 +81,7 @@
                         <input name="state" placeholder="E-postdress" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>Yrke: *</label>
                     <div class="input-group">
@@ -90,7 +89,7 @@
                         <input name="state" placeholder="Yrke" class="form-control" type="text">
                     </div>
                 </div>
-         
+
                 <div class="falt">
                     <label>Årsinkomst: *</label>
                     <div class="input-group">
@@ -98,7 +97,7 @@
                         <input name="state" placeholder="Årsinkomst" class="form-control" type="text">
                     </div>
                 </div>
-              
+
                 <div class="falt">
                     <label>Arbetsgivare: *</label>
                     <div class="input-group">
@@ -107,96 +106,6 @@
                     </div>
                 </div>
 
-                <label>Jag söker: </label>
-                <div class="col-md-12 checkbox1">
-
-
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            typ av boende/objekt
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Studentboende" value="Studentboende"><label for="ID"> Studentboende</label>
-                            <li><input type="checkbox" id="ID" name="Seniorboende" value="Seniorboende"><label for="ID"> Seniorboende 55+</label>
-                            <li><input type="checkbox" id="ID" name="Övrigt" value="Övrigt"><label for="ID"> Övrigt</label>
-                        </ul>
-                    </div>
-                </div>
-                <br />
-                <br />
-                <br />
-                <label>Område: </label>
-                <div class="col-md-12 checkbox1">
-
-
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            område
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Kumla" value="Kumla"><label for="ID"> Kumla</label>
-                            <li><input type="checkbox" id="ID" name="Nora" value="Nora"><label for="ID"> Nora</label>
-                            <li><input type="checkbox" id="ID" name="Studentboende" value="Studentboende"><label for="ID"> Studentboende</label>
-                            <li><input type="checkbox" id="ID" name="Seniorboende 55+" value="Seniorboende 55+"><label for="ID"> Seniorboende 55+</label>
-                            <li><input type="checkbox" id="ID" name="Örebro" value="Örebro"><label for="ID"> Örebro</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Almby" value="Örebro Almby"><label for="ID"> Örebro Almby</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Centralt" value="Örebro Centralt"><label for="ID"> Örebro Centralt</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Väster" value="Örebro Väster"><label for="ID"> Örebro Väster</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Öster" value="Örebro Öster"><label for="ID"> Örebro Öster</label>
-                        </ul>
-                    </div>
-                </div>
-                <br />
-                <br />
-                <br />
-                <div class="falt">
-                    <label>Antal rum: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="ruminput" placeholder="Antal rum" class="form-control input-md" type="number">
-                    </div>
-                </div>
-              
-                <div class="falt">
-                    <label>Våning: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="våninginput" placeholder="Våning" class="form-control input-md" type="number">
-                    </div>
-                </div>
-              
-                <div class="falt">
-                    <label>Maxhyra: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="hyrainput" placeholder="Maxhyra" class="form-control input-md" type="number">
-                    </div>
-                </div>
-               
-                <label>Övriga önskemål: </label>
-                <div class="col-md-12 checkbox1">
-
-
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            jag önskar
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Altan" value="Altan"><label for="ID"> Altan</label>
-                            <li><input type="checkbox" id="ID" name="Balkong" value="Balkong"><label for="ID"> Balkong</label>
-                            <li><input type="checkbox" id="ID" name="Hiss" value="Hiss"><label for="ID"> Hiss</label>
-                            <li><input type="checkbox" id="ID" name="Kokvrå" value="Kokvrå"><label for="ID"> Kokvrå</label>
-                            <li><input type="checkbox" id="ID" name="Radhus" value="Radhus"><label for="ID"> Radhus</label>
-
-                        </ul>
-                    </div>
-                </div>
-                <br />
-                <br />
-                <br />
                 <div class="falt">
                     <label>Egna ord:</label>
                     <div class="input-group">
@@ -204,7 +113,7 @@
                         <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
                     </div>
                 </div>
-               <br />
+                <br />
                 @*<div class="btnmedsökande col-md-12 btn-group-lg">*@
                 <div class="btnmedsökande btn-group-lg">
                     <button class="btn" type="button" id="medsökande" onclick="hideshow()">
@@ -212,7 +121,7 @@
                         <span class="caret"></span>
                     </button>
                 </div>
-                
+
                 <div class="medsökandediv" id="medsökandediv" style="display:none;">
                     <div class="falt">
                         <label>Namn: *</label>
@@ -221,7 +130,7 @@
                             <input name="state" placeholder="Namn" class="form-control" type="text">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Personnummer: *</label>
                         <div class="input-group">
@@ -229,7 +138,7 @@
                             <input name="state" required placeholder="Personnummer" class="form-control" type="text">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Antal barn: </label>
                         <div class="input-group">
@@ -237,7 +146,7 @@
                             <input name="deltagareinput" placeholder="Antal barn" class="form-control input-md" type="number">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Gatuadress: *</label>
                         <div class="input-group">
@@ -252,8 +161,8 @@
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                             <input name="state" placeholder="Postnummer" class="form-control" type="text">
                         </div>
-                    </div>  
-                                    
+                    </div>
+
                     <div class="falt">
                         <label>Postort:</label>
                         <div class="input-group">
@@ -269,7 +178,7 @@
                             <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                         </div>
                     </div>
-                
+
                     <div class="falt">
                         <label>Alternativt telefonnummer:</label>
                         <div class="input-group">
@@ -277,7 +186,7 @@
                             <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                         </div>
                     </div>
-                  
+
                     <div class="falt">
                         <label>E-postadress:</label>
                         <div class="input-group">
@@ -285,7 +194,7 @@
                             <input name="state" placeholder="E-postdress" class="form-control" type="text">
                         </div>
                     </div>
-                  
+
                     <div class="falt">
                         <label>Yrke: *</label>
                         <div class="input-group">
@@ -301,7 +210,7 @@
                             <input name="state" placeholder="Årsinkomst" class="form-control" type="text">
                         </div>
                     </div>
-            
+
                     <div class="falt">
                         <label>Arbetsgivare: *</label>
                         <div class="input-group">
@@ -316,20 +225,18 @@
                 <div class="col-md-4">
                     <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                 </div>
-
+                <div class="col-md-4">
+                    <a href="~/Home/LedigaObjekt" type="submit" class="btn btn-danger">Avbryt</a>
+                </div>
             </div>
         </div>
         <div class="col-md-4 rightdiv information">
-            <p style="font-size:large;"><b>På hemsidan kan du göra intresseanmälan dygnet runt.</b></p>
+            <p style="font-size:x-large;"><b>Intresseanmälan gäller endast för:</b></p>
             <h4>
-                <br />När du gör en intresseanmälan står du i 
-                <br />bostadskön i tre månader, det är sedan upp 
-                <br />till dig att uppdatera din anmälan för
-                <br /> att stå kvar i bostadskön.
-                <br />
-                <br />Mer information om intresseanmälan och 
-                <br />bostadskön hittar du i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
-                
+                 <b>Adress:</b> Rynningegatan 27 <br />
+                <b>Antal rum:</b> 3
+                <br /><b>Hyra:</b> 7000 kr/månad
+
                 <br />
             </h4>
         </div>

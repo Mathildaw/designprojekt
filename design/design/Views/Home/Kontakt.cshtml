@@ -3,7 +3,7 @@
     ViewBag.Title = "Kontakt";
 }
 
-<center><h2 class="sidrubrik">Kontakt</h2></center>
+<center><h2 class="sidrubrik">Kontakta oss</h2></center>
 <div class="maincontainer1">
     <div class="maincontainer">
         <div class="row">
@@ -36,7 +36,7 @@
                 </div>*@
             </div>
             <div class="col-sm-4">
-                <h3 class="red">Kontorets Öppettider</h3>
+                <h3 class="red">Kontorets öppettider</h3>
                 <p>
                     Måndag - Fredag: 07.30-16.30
                     <br />Telefontid: 09.00-16.00
@@ -59,7 +59,7 @@
             <br />
 
 
-            <legend>Vi som jobbar på kontoret</legend>
+            <legend style="color:#e93523">Vi som jobbar på kontoret</legend>
             <div class="row">
                 <div class="col-sm-3">
                     <center><img class="img-responsive" src="~/Content/Images/Stieg.jpg" alt=""></center>
@@ -109,6 +109,7 @@
                         019 - 16 43 70<br />
                         info@je-bygg.se
                     </p>
+                    <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
                 </div>
                 <div class="col-sm-3">
                     <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt=""></center>
@@ -134,7 +135,7 @@
     </div>
     <br />
     <br />
-    <legend>Vi som fixar och underhåller</legend>
+    <legend style ="color:#e93523">Vi som fixar och underhåller</legend>
     <div class="row">
         <div class="col-sm-3">
             <center><img class="img-responsive" src="~/Content/Images/Johansson-Patrik.jpg" alt=""></center>
@@ -213,11 +214,11 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label">epostadress</label>
+                    <label class="col-md-4 control-label">E-postadress</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                            <input name="email" placeholder="epostadress" class="form-control" type="text">
+                            <input name="email" placeholder="E-postadress" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -226,11 +227,11 @@
                 <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Mobil</label>
+                    <label class="col-md-4 control-label">Telefonnummer</label>
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                            <input name="phone" placeholder="0707965194" class="form-control" type="text">
+                            <input name="phone" placeholder="Telefonnummer" class="form-control" type="text">
                         </div>
                     </div>
                 </div>
@@ -259,10 +260,21 @@
                     </div>
                 </div>
 
-                <!-- Select Basic -->
+                <!-- Text input-->
 
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Postort!!!</label>
+                    <label class="col-md-4 control-label">Postort</label>
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                            <input name="city" placeholder="Postort" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!-- Select Basic -->
+
+                @*<div class="form-group">
+                    <label class="col-md-4 control-label">Postort</label>
                     <div class="col-md-4 selectContainer">
                         <div class="input-group">
                             <span class="input-group-addon">
@@ -272,7 +284,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div>*@
 
                 <div class="form-group">
                     <label class="col-md-4 control-label">Meddelande</label>

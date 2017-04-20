@@ -16,6 +16,14 @@ namespace design.Controllers
         {
             return View();
         }
+        public ActionResult Intresseanmalan2()
+        {
+            return View();
+        }
+        public ActionResult InfoObjekt()
+        {
+            return View();
+        }
         public ActionResult Intresseanmalan()
         {
             return View();

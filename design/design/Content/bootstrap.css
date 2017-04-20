@@ -1468,11 +1468,6 @@ dd {
   margin-left: 0;
 }
 
-h3.red
-{
-    color:#e95123;
-}
-
 
 @media (min-width: 768px) {
   .dl-horizontal dt {
@@ -6933,6 +6928,7 @@ div.filtrera-left{
 
 div.rightsort{
     margin-top: 45px;
+    margin-left: 140px;
 }
 
 button.btn-information{
@@ -6950,6 +6946,13 @@ div.ledig{
     margin-left: 20px;
 }
 
+div.objekt{
+    background-color: #fafafa;
+    border:1px solid #ddd;
+ border-bottom: 0px;
+  box-shadow: 0px 5px 5px #888888;
+   padding: 10px 20px;
+}
 div.lastdiv{
     margin-top: 100px;
 }
@@ -6976,6 +6979,87 @@ div.fragor{
   padding-left: 15px;
 }
 
+div.omoss{
+    margin-bottom: 50px;
+}
+
+div.divfastigheter{
+    width:220px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 30px;
+    padding-top: 10px;
+    margin-right:50px;
+    padding-right: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px #333;
+    border-radius: 10px;
+    
+    background-color: #f8f8f8
+}
+
+div.divfastigheter2{
+    margin-top: 100px;
+    
+}
+
+div.divfastigheter3{
+margin-top: 10px;
+}
+
+a.menylink{
+    color: black;
+}
+a.menylink:hover{
+    color: #c8574c;
+}
+
+div.divleft2{
+    margin-left: 150px;
+}
+
+a.link{
+    color:#c8574c;
+}
+
+a.link:hover{
+    color: black;
+    text-decoration: none;
+}
+h3.red
+{
+    color:#e93523;
+}
+
+.google-maps {
+position: relative;
+padding-bottom: 75%;
+/*//This is the aspect ratio height: 0;*/
+overflow: hidden;
+}
+
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}
+
+div.nyhetsarkiv{
+        width:220px;
+    height: 300px;
+    
+    margin-left: 30px;
+    padding-top: 10px;
+
+    padding-right: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px #333;
+    border-radius: 10px;
+    
+    background-color: white;
+}
 /*div.foretag{
     display: none;
 }*/
