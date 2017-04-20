@@ -1511,7 +1511,7 @@ dd {
   div.rightdiv{
        /*margin-left: 10%;
     border: 1px solid grey;*/
-    margin-top: 5%;
+    
      border:1px solid #ddd;
  border-bottom: 0px;
   box-shadow: 0px 5px 5px #888888;
@@ -7059,6 +7059,62 @@ div.nyhetsarkiv{
     border-radius: 10px;
     
     background-color: white;
+}
+
+div.information{
+   margin-left:30px;
+    margin-right:30px;
+}
+
+div.info1{
+    background-color: #fafafa;
+    margin-left:30px;
+    margin-right:30px;
+    padding-top: 20px;
+    padding-bottom:20px;
+   
+    box-shadow: 0px 2px 4px #333;
+}
+
+a.intresse{
+    margin-left:90px;
+    /*margin-top:150px;*/
+}
+div.checkbox1{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+ div.btnmedsökande{
+      padding-left: 0px;
+}
+ div.felanmalan
+{
+     border: 1px solid #b4b4b4;
+     border-radius: 2px;
+     background-color: #f5f5f5;
+     padding-bottom:10px;
+ }
+   div.leftdiv{
+    margin-left: 10%;
+    margin-right: 5%;
+    padding-left: 20px;
+    /*border: 1px solid grey;*/
+}
+div.flikleft{
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+button.flikbutton{
+    background-color: white;
+    border: 1px solid #b4b4b4;
+    border-bottom: 0px;
+    
+    padding: 10px;
+}
+
+button.btnleft{
+    background-color: #ddd;
 }
 /*div.foretag{
     display: none;

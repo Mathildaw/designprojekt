@@ -125,7 +125,7 @@ function hideshown() {
     a.style.display = 'none';
     b.style.display = 'none';
 
-        x.style.backgroundColor = '#ddd';
+    x.style.backgroundColor = '#f5f5f5';
         z.style.backgroundColor = 'white';
 }
 function hideshown2() {
@@ -139,7 +139,7 @@ function hideshown2() {
     a.style.display = 'block';
     b.style.display = 'block';
     y.style.display = 'none';
-    x.style.backgroundColor = '#ddd';
+    x.style.backgroundColor = '#f5f5f5';
     z.style.backgroundColor = 'white';
 
 }
