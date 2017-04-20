@@ -7116,6 +7116,17 @@ button.flikbutton{
 button.btnleft{
     background-color: #ddd;
 }
+
+div.leftimage{
+float: left;
+right: 300px;
+top: 200px;
+
+position: absolute;
+}
+div.rightimage{
+
+}
 /*div.foretag{
     display: none;
 }*/
