@@ -7117,15 +7117,16 @@ button.btnleft{
     background-color: #ddd;
 }
 
-div.leftimage{
+a.leftimage{
 float: left;
-right: 380px;
-top: 100px;
+right: 15%;
+top: 15%;
 
 position: absolute;
 }
 div.rightimage{
-
+    margin-left: 7%;
+    margin-right: 7%;
 }
 /*div.foretag{
     display: none;
