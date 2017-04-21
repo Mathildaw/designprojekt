@@ -29,7 +29,15 @@
                         <input name="state" placeholder="Namn" class="form-control" type="text">
                     </div>
                 </div>
-               
+
+                <div class="falt" id="lghnr">
+                    <label>Lägenhetsnummer: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="state" placeholder="Lägenhetsnummer" class="form-control" type="text">
+                    </div>
+                </div>
+
                 <div class="falt foretag" id="foretag1" style="display:none;" >
                     <label>Företagsnamn: *</label>
                     <div class="input-group">
@@ -47,31 +55,28 @@
                 </div>
                 
                 <div class="falt">
-                    <label>Postort:</label>
+                    <label>Postort: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                         <input name="state" placeholder="Postort" class="form-control" type="text">
                     </div>
-                </div>
-                
+                </div>  
                 <div class="falt">
-                    <label>Postnummer:</label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                        <input name="state" placeholder="Postnummer" class="form-control" type="text">
-                    </div>
-                </div>
-                
-                <div class="falt">
-                    <label>Telefonnummer:</label>
+                    <label>Telefonnummer: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-                
                 <div class="falt">
-                    <label>E-postadress:</label>
+                    <label>Alternativt telefonnummer: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input name="state" placeholder="Alternativt telefonnummer" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>E-postadress: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                         <input name="state" placeholder="E-postdress" class="form-control" type="text">
@@ -80,7 +85,7 @@
                 
                 <div class="falt">
 
-                    <label>Meddelande:</label>
+                    <label>Meddelande: *</label>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
                         <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
@@ -89,24 +94,34 @@
                     <br />
                 <div class="falt">
                     <div class="col-md-10">
-                        @Html.CheckBox("CheckNyckel")
-                        <label>Markera om vi får gå in med huvudnyckel.</label>
+                        <label style="margin-bottom: 1px;">Får vi gå in med huvudnyckel? *</label><br />
+                                <form>
+                                    <input type="radio" name="val" value="ja"> Ja
+                                    <input type="radio" name="val" value="nej"> Nej<br>
+                                </form>
                     </div>
                 </div>
+                <br />
                 <div class="falt" id="hund">
                     <div class="col-md-10">
-                        @Html.CheckBox("CheckHund")
-                        <label>Markera om ni har hund.</label>
+                    <label style="margin-top:5px; margin-bottom: 1px;">Har ni hund? *</label>
+                        <form>
+                            <input type="radio" name="val" value="ja"> Ja
+                            <input type="radio" name="val" value="nej"> Nej<br>
+                        </form>
                     </div>
                 </div>
+                <br />
                 <div class="falt">
                     <div class="col-md-10" id="katt">
-                        @Html.CheckBox("CheckKatt")
-                        <label>Markera om ni har katt.</label>
-                    </div>
+                        <label style="margin-top:5px; margin-bottom: 1px;">Har ni katt? *</label>
+                        <form>
+                            <input type="radio" name="val" value="ja"> Ja
+                            <input type="radio" name="val" value="nej"> Nej<br /><br />
+                        </form>
+                     </div>
                 </div>
-                    <br />
-                    <br />
+             
                     <div class="col-md-4">
                         <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                     </div>
@@ -125,6 +140,10 @@
                 <br />
                 <br />Efter kontorstid vid akuta ärenden,
                 <br />ring vår Jourtelefon: 010-4705758.
+                <br />
+                <br />Om ni ej fått återkoppling inom 1-2 veckor efter att
+                <br />felanmälan har skickats var vänlig och ring oss 
+                <br />på telefonnummer 019-16 43 70.
             </p>
         </div>
     </div>

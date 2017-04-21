@@ -117,6 +117,7 @@ function hideshow() {
 function hideshown() {
     var a = document.getElementById('hund')
     var b = document.getElementById('katt')
+    var c = document.getElementById('lghnr')
     var x = document.getElementById('flikbtn2')
     var y = document.getElementById('foretag1')
     var z = document.getElementById('flikbtn1')
@@ -124,6 +125,7 @@ function hideshown() {
     y.style.display = 'block';
     a.style.display = 'none';
     b.style.display = 'none';
+    c.style.display = 'none';
 
     x.style.backgroundColor = '#f5f5f5';
         z.style.backgroundColor = 'white';
@@ -131,6 +133,7 @@ function hideshown() {
 function hideshown2() {
     var a = document.getElementById('hund')
     var b = document.getElementById('katt')
+    var c = document.getElementById('lghnr')
     var x = document.getElementById('flikbtn1')
     var y = document.getElementById('foretag1')
     var z = document.getElementById('flikbtn2')
@@ -138,6 +141,7 @@ function hideshown2() {
 
     a.style.display = 'block';
     b.style.display = 'block';
+    c.style.display = 'block';
     y.style.display = 'none';
     x.style.backgroundColor = '#f5f5f5';
     z.style.backgroundColor = 'white';
