@@ -6968,7 +6968,7 @@ div.facebook{
     border-radius: 10px;
     /*margin-top: 20px;*/
     margin-left: 35px;
-   background-color: white;
+   background-color: #337ab7;
     border: 1px solid #ccc;
     box-shadow: 0px 5px 8px #333;
 }
@@ -7085,6 +7085,10 @@ div.info1{
 a.intresse{
     margin-left:90px;
     /*margin-top:150px;*/
+}
+a.intresse2{
+    margin-left:90px;
+    border: 3px solid #e23f21;
 }
 div.checkbox1{
     margin-left: 0px;
