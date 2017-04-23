@@ -6966,7 +6966,7 @@ div.facebook{
     color: black;
     padding: 20px 20px;
     border-radius: 10px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-left: 35px;
    background-color: white;
     border: 1px solid #ccc;
@@ -6975,6 +6975,7 @@ div.facebook{
 
 div.fb-page{
     width: 100%;
+   
 }
 
 div.fragor{
