@@ -4673,9 +4673,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   font-size: medium;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:active,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #db1f1f;
   background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a:active{
+     /*background-color: black;*/
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,

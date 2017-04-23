@@ -167,3 +167,6 @@ window.onclick = function (event) {
         }
     }
 }
+$(document).ready(function () {
+    window.scrollTo(0, 400);
+});
