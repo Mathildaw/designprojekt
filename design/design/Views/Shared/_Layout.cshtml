@@ -43,15 +43,15 @@
                                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Startsida", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Nyheter", "Nyheter", "Home")</li>
-                        <li>@Html.ActionLink("Felanmälan", "Felanmalan", "Home")</li>
-                        <li>@Html.ActionLink("Intresseanmälan", "Intresseanmalan", "Home")</li>
-                        <li>@Html.ActionLink("Lediga objekt", "LedigaObjekt", "Home")</li>
-                        <li>@Html.ActionLink("Våra fastigheter", "Varafastigheter", "Home")</li>
-                        <li>@Html.ActionLink("Frågor och svar", "FragorOchSvar", "Home")</li>
-                        <li>@Html.ActionLink("Kontakta oss", "Kontakt", "Home")</li>
-                        <li>@Html.ActionLink("Om oss", "omoss", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Startsida", "Index", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Nyheter" ? "active" : "")">@Html.ActionLink("Nyheter", "Nyheter", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Felanmalan" ? "active" : "")">@Html.ActionLink("Felanmälan", "Felanmalan", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Intresseanmalan" ? "active" : "")">@Html.ActionLink("Intresseanmälan", "Intresseanmalan", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "LedigaObjekt" ? "active" : "")">@Html.ActionLink("Lediga objekt", "LedigaObjekt", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Varafastigheter" ? "active" : "")">@Html.ActionLink("Våra fastigheter", "Varafastigheter", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "FragorOchSvar" ? "active" : "")">@Html.ActionLink("Frågor och svar", "FragorOchSvar", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Kontakt" ? "active" : "")">@Html.ActionLink("Kontakta oss", "Kontakt", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "omoss" ? "active" : "")">@Html.ActionLink("Om oss", "omoss", "Home")</li>
                     </ul>
                    
                 </div>

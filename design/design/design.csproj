@@ -177,6 +177,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Csskod.css" />
+    <Content Include="Content\Images\012.tif" />
+    <Content Include="Content\Images\026.tif" />
     <Content Include="Content\Images\Akerstrandorjan.jpg" />
     <Content Include="Content\Images\AnderssonAnnette.jpg" />
     <Content Include="Content\Images\Anna.jpg" />
@@ -187,6 +189,7 @@
     <Content Include="Content\Images\BergTony.jpg" />
     <Content Include="Content\Images\Blaslampan 2 - 1.jpg" />
     <Content Include="Content\Images\Blaslampan 2 - 3.jpg" />
+    <Content Include="Content\Images\Brandstationen 6 - 1.jpg" />
     <Content Include="Content\Images\Brandstationen 6 - 3.jpg" />
     <Content Include="Content\Images\erikrosenbergsväg.PNG" />
     <Content Include="Content\Images\ErikssonPeder.jpg" />

@@ -4673,20 +4673,18 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   font-size: medium;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:active,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: #db1f1f;
+.navbar-inverse .navbar-nav > li > a:focus
+ {
+  color: #e95123;
   background-color: transparent;
 }
 
-.navbar-inverse .navbar-nav > li > a:active{
-     /*background-color: black;*/
-}
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #080808;
+  background-color: #e95123;
+  border-radius:3px;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -6510,7 +6508,7 @@ button.close {
     width: 30px;
     height: 30px;
     margin-top: -10px;
-    font-size: 30px;
+    font-size: 50px;
   }
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
@@ -6936,6 +6934,10 @@ div.rightsort{
     margin-left: 140px;
 }
 
+a.btn-information{
+    margin-top: 5px;
+}
+
 button.btn-information{
     margin-left: 0px;
     margin-top: 5px;
@@ -6990,13 +6992,13 @@ div.omoss{
 }
 
 div.divfastigheter{
-    width:220px;
+    width:230px;
     height: 300px;
     margin-top: 200px;
     margin-left: 30px;
     padding-top: 10px;
-    margin-right:50px;
-    padding-right: 0px;
+    /*margin-right:30px;*/
+    /*padding-right: 0px;*/
     border: 1px solid #ccc;
     box-shadow: 0px 2px 4px #333;
     border-radius: 10px;
@@ -7025,7 +7027,7 @@ div.divleft2{
 }
 
 a.link{
-    color:#c8574c;
+    color:#e95123;
 }
 
 a.link:hover{
@@ -7125,6 +7127,18 @@ button.flikbutton{
 
 button.btnleft{
     background-color: #ddd;
+}
+
+div.link1{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ddd;
+    border-top:1px solid #ddd;
+}
+div.link2{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ddd;
 }
 
 a.leftimage{
