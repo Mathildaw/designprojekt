@@ -1100,7 +1100,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
-  background-image: url('Images/sommar.png');
+  /*background-image: url('Images/sommar.png');*/
   background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -1313,6 +1313,33 @@ p {
 }
 /*Här är för mobilskärm*/
 div.infosvar{
+    display: none;
+}
+div.maincontainer{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+  div.footerinfo{
+          color:#5f5f5f;
+          font-size: small;
+  }
+  span.bold{
+      font-weight: bold;
+      font-size:11px;
+  }
+div.rad{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+div.container > .navbar-collapse{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+body{
+    padding-top: 0px;
+}
+
+a.leftimage{
     display: none;
 }
 @media (min-width: 768px) {
@@ -2008,6 +2035,27 @@ pre code {
   div.infosvar{
     display: block;
 }
+  div.maincontainer{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+  div.infosvar2{
+      display:none;
+  }
+    div.footerinfo{
+          color:#5f5f5f;
+          font-weight: bold;
+      }
+    body{
+         background-image: url('Images/sommar.png');
+         padding-top:50px;
+      }
+    a.leftimage{
+    display:block;
+}
+    div.logga{
+        display: none;
+    }
   /*div._2p3a{
     min-width: 180px;
     width: 200px;
@@ -2188,6 +2236,21 @@ pre code {
   div.infosvar{
     display: block;
 }
+    div.maincontainer{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+      div.infosvar2{
+      display:none;
+  }
+      div.footerinfo{
+          color:#5f5f5f;
+          font-weight: bold;
+      }
+      body{
+         background-image: url('Images/sommar.png');
+         padding-top:50px;
+      }
 }
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -2358,6 +2421,21 @@ pre code {
   div.infosvar{
     display: block;
 }
+    div.maincontainer{
+      margin-left: 40px;
+      margin-right: 40px;
+  }
+      div.infosvar2{
+      display:none;
+  }
+        div.footerinfo{
+          color:#5f5f5f;
+          font-weight: bold;
+      }
+        body{
+         background-image: url('Images/sommar.png');
+         padding-top:50px;
+      }
 }
 table {
   background-color: transparent;
@@ -4415,7 +4493,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   padding: 9px 10px;
   margin-top: 8px;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
@@ -4738,8 +4816,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #fff;
+  /*color: #fff;
   background-color: #e95123;
+  border-radius:3px;*/
+  color: #e95123;
+  background-color: #ddd;
   border-radius:3px;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -4749,14 +4830,14 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: #333;
+  border: 2px solid #777;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333;
+  background-color: #ddd;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: #e95123;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
