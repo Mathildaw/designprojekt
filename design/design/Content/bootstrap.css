@@ -1312,6 +1312,9 @@ p {
   line-height: 1.4;
 }
 
+div.infosvar{
+    display: none;
+}
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -2001,6 +2004,10 @@ pre code {
   div.lastdiv{
       margin-top: 100px;
   }
+
+  div.infosvar{
+    display: block;
+}
   /*div._2p3a{
     min-width: 180px;
     width: 200px;
@@ -2177,6 +2184,10 @@ pre code {
  div.lastdiv{
     margin-top: 100px;
 }
+ 
+  div.infosvar{
+    display: block;
+}
 }
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
@@ -2342,6 +2353,10 @@ pre code {
   }
    div.lastdiv{
     margin-top: 100px;
+}
+   
+  div.infosvar{
+    display: block;
 }
 }
 table {
