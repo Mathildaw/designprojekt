@@ -1311,7 +1311,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-
+/*Här är för mobilskärm*/
 div.infosvar{
     display: none;
 }
