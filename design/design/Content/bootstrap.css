@@ -1274,7 +1274,7 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h2,
 .h2 {
@@ -1282,7 +1282,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 14px;
+  font-size: 16px;
 }
 h4,
 .h4 {
@@ -1306,6 +1306,22 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+h3.facebook-rubrik{
+    text-align: center; 
+    color: white;
+    margin-top: 5px;
+}
+div.facebook{
+    text-align:center;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 10px;
+    /*margin-top: 20px;*/
+    margin-left: 35px;
+   background-color: #337ab7;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 8px #333;
+}
 div.ontop{
     margin-top: 20px;
 }
@@ -2043,9 +2059,50 @@ pre code {
   }
 
   /*Nedanför här är för tablet/ipad skärm*/
+    h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
   p{
     font-size:12px;
 }
+  h3.facebook-rubrik{
+    text-align: center; 
+    color: white;
+    margin-bottom: 15px;
+}
+  div.facebook{
+    text-align:center;
+    color: black;
+    padding: 20px 20px;
+    border-radius: 10px;
+    /*margin-top: 20px;*/
+    margin-left: 35px;
+   background-color: #337ab7;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 8px #333;
+}
+
   p.rubrik-nyhetsarkiv{
       margin-top:0px;
       background-color:white;
@@ -2278,30 +2335,7 @@ pre code {
   }
   
   /*Här är för desktop*/
-  h1,
-.h1 {
-  font-size: 36px;
-}
-h2,
-.h2 {
-  font-size: 30px;
-}
-h3,
-.h3 {
-  font-size: 24px;
-}
-h4,
-.h4 {
-  font-size: 18px;
-}
-h5,
-.h5 {
-  font-size: 14px;
-}
-h6,
-.h6 {
-  font-size: 12px;
-}
+
   div.ontop{
     margin-top: 50px;
 }
@@ -7214,17 +7248,6 @@ div.objekt{
 }
 
 
-div.facebook{
-    text-align:center;
-    color: black;
-    padding: 20px 20px;
-    border-radius: 10px;
-    /*margin-top: 20px;*/
-    margin-left: 35px;
-   background-color: #337ab7;
-    border: 1px solid #ccc;
-    box-shadow: 0px 5px 8px #333;
-}
 
 div.fb-page{
     width: 100%;
