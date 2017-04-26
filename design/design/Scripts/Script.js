@@ -168,5 +168,13 @@ window.onclick = function (event) {
     }
 }
 $(document).ready(function () {
-    window.scrollTo(0, 400);
+    if ($(window).width() < 769) {
+        
+    }
+    else {
+        window.scrollTo(0, 400);
+    }
+
+    
+   
 });
