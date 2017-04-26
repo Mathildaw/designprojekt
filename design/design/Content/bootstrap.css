@@ -1306,6 +1306,48 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: -10px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  font-weight: bold;
+  
+   background-color:rgba(119, 119, 119, 0.70);
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+  .carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 30px;
+  }
+
+p.felanmalan-info{
+    text-align:center;
+}
+  div.flikleft{
+    margin-left: 6%;
+    margin-right: 10px;
+}
+
+button.flikbutton{
+    background-color: white;
+    border: 2px solid #b4b4b4;
+    border-bottom: 0px;
+    
+    padding: 10px;
+}
+ div.flik-right{
+     padding-left:5px;
+ }
+
 h3.facebook-rubrik{
     text-align: center; 
     color: white;
@@ -2086,6 +2128,24 @@ h6,
   p{
     font-size:12px;
 }
+  p.felanmalan-info{
+    text-align:left;
+}
+  div.flikleft{
+    margin-left: 8%;
+    margin-right: 10px;
+}
+
+button.flikbutton{
+    background-color: white;
+    border: 2px solid #b4b4b4;
+    border-bottom: 0px;
+    
+    padding: 10px;
+}
+ div.flik-right{
+     padding-left:0px;
+ }
   h3.facebook-rubrik{
     text-align: center; 
     color: white;
@@ -2335,7 +2395,21 @@ h6,
   }
   
   /*Här är för desktop*/
+    div.flikleft{
+    margin-left: 100px;
+    margin-right: 10px;
+}
 
+button.flikbutton{
+    background-color: white;
+    border: 2px solid #b4b4b4;
+    border-bottom: 0px;
+    
+    padding: 10px;
+}
+div.flik-right{
+     padding-left:20px;
+ }
   div.ontop{
     margin-top: 50px;
 }
@@ -6744,7 +6818,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -6771,18 +6845,7 @@ button.close {
   margin: 0;
   background-color: #fff;
 }
-.carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
+
 .carousel-caption .btn {
   text-shadow: none;
 }
@@ -6804,13 +6867,9 @@ button.close {
   .carousel-control .icon-next {
     margin-right: -10px;
   }
-  .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
-  }
+
   .carousel-indicators {
-    bottom: 20px;
+    bottom: -10px;
   }
 }
 .clearfix:before,
@@ -7127,18 +7186,7 @@ div.checkbox1{
     padding-left: 20px;
     /*border: 1px solid grey;*/
 }
-div.flikleft{
-    margin-left: 100px;
-    margin-right: 10px;
-}
 
-button.flikbutton{
-    background-color: white;
-    border: 2px solid #b4b4b4;
-    border-bottom: 0px;
-    
-    padding: 10px;
-}
 
 button.btnleft{
     background-color: #ddd;
@@ -7372,18 +7420,7 @@ div.checkbox1{
     padding-left: 20px;
     /*border: 1px solid grey;*/
 }
-div.flikleft{
-    margin-left: 100px;
-    margin-right: 10px;
-}
 
-button.flikbutton{
-    background-color: white;
-    border: 1px solid #b4b4b4;
-    border-bottom: 0px;
-    
-    padding: 10px;
-}
 
 button.btnleft{
     background-color: #ddd;
