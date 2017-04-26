@@ -6,9 +6,8 @@
 
 <h2 class="sidrubrik">Intresseanmälan</h2>
 <div class="maincontainer1">
-    <br />
-    <br />
-    <div class="row">
+
+    <div class="row ontop">
         <div class="col-md-5 leftdiv">
             <div class="form-group">
                 <div class="falt">
@@ -26,7 +25,7 @@
                         <input name="state" required placeholder="Personnummer" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>Antal barn: *</label>
                     <div class="input-group">
@@ -34,7 +33,7 @@
                         <input name="deltagareinput" placeholder="Antal barn" class="form-control input-md" type="number">
                     </div>
                 </div>
-               
+
                 <div class="falt">
                     <label>Gatuadress: *</label>
                     <div class="input-group">
@@ -58,7 +57,7 @@
                         <input name="state" placeholder="Postort" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>Telefonnummer: *</label>
                     <div class="input-group">
@@ -66,7 +65,7 @@
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-               
+
                 <div class="falt">
                     <label>Alternativt telefonnummer: *</label>
                     <div class="input-group">
@@ -74,7 +73,7 @@
                         <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                     </div>
                 </div>
-                
+
                 <div class="falt">
                     <label>E-postadress: *</label>
                     <div class="input-group">
@@ -90,7 +89,7 @@
                         <input name="state" placeholder="Yrke/Arbetsgivare" class="form-control" type="text">
                     </div>
                 </div>
-         
+
                 <div class="falt">
                     <label>Årsinkomst: *</label>
                     <div class="input-group">
@@ -138,7 +137,7 @@
                             <li><input type="checkbox" id="ID" name="Örebro Väster" value="Örebro Väster"><label for="ID"> Örebro Väster</label>
                             <li><input type="checkbox" id="ID" name="Örebro Öster" value="Örebro Öster"><label for="ID"> Örebro Öster</label>
                             <li><input type="checkbox" id="ID" name="Örebro Söder" value="Örebro Söder"><label for="ID"> Örebro Söder</label>
-</ul>
+                        </ul>
                     </div>
                 </div>
                 <br />
@@ -151,7 +150,7 @@
                         <input name="ruminput" placeholder="Antal rum" class="form-control input-md" type="number">
                     </div>
                 </div>
-              
+
                 <div class="falt">
                     <label>Våning: </label>
                     <div class="input-group">
@@ -159,7 +158,7 @@
                         <input name="våninginput" placeholder="Våning" class="form-control input-md" type="number">
                     </div>
                 </div>
-              
+
                 <div class="falt">
                     <label>Maxhyra: </label>
                     <div class="input-group">
@@ -167,7 +166,7 @@
                         <input name="hyrainput" placeholder="Maxhyra" class="form-control input-md" type="number">
                     </div>
                 </div>
-               
+
                 <label>Övriga önskemål: </label>
                 <div class="col-md-12 checkbox1">
 
@@ -197,7 +196,7 @@
                         <textarea class="form-control" name="comment" placeholder="Max 500 tecken"></textarea>
                     </div>
                 </div>
-               <br />
+                <br />
                 @*<div class="btnmedsökande col-md-12 btn-group-lg">*@
                 <div class="btnmedsökande btn-group-lg">
                     <button class="btn" type="button" id="medsökande" onclick="hideshow()">
@@ -205,7 +204,7 @@
                         <span class="caret"></span>
                     </button>
                 </div>
-                
+
                 <div class="medsökandediv" id="medsökandediv" style="display:none;">
                     <div class="falt">
                         <label>Namn: *</label>
@@ -214,7 +213,7 @@
                             <input name="state" placeholder="Namn" class="form-control" type="text">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Personnummer: *</label>
                         <div class="input-group">
@@ -222,7 +221,7 @@
                             <input name="state" required placeholder="Personnummer" class="form-control" type="text">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Antal barn: *</label>
                         <div class="input-group">
@@ -230,7 +229,7 @@
                             <input name="deltagareinput" placeholder="Antal barn" class="form-control input-md" type="number">
                         </div>
                     </div>
-                   
+
                     <div class="falt">
                         <label>Gatuadress: *</label>
                         <div class="input-group">
@@ -245,8 +244,8 @@
                             <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
                             <input name="state" placeholder="Postnummer" class="form-control" type="text">
                         </div>
-                    </div>  
-                                    
+                    </div>
+
                     <div class="falt">
                         <label>Postort: *</label>
                         <div class="input-group">
@@ -262,7 +261,7 @@
                             <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                         </div>
                     </div>
-                
+
                     <div class="falt">
                         <label>Alternativt telefonnummer: *</label>
                         <div class="input-group">
@@ -270,7 +269,7 @@
                             <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
                         </div>
                     </div>
-                  
+
                     <div class="falt">
                         <label>E-postadress: *</label>
                         <div class="input-group">
@@ -278,7 +277,7 @@
                             <input name="state" placeholder="E-postdress" class="form-control" type="text">
                         </div>
                     </div>
-                  
+
                     <div class="falt">
                         <label>Yrke/Arbetsgivare: * <i class="glyphicon glyphicon-question-sign"></i></label>
                         <div class="input-group">
@@ -294,7 +293,7 @@
                             <input name="state" placeholder="Årsinkomst" class="form-control" type="text">
                         </div>
                     </div>
-          
+
                 </div>
 
                 <br />
@@ -309,14 +308,14 @@
             <h4>På hemsidan kan ni göra intresseanmälan dygnet runt.</h4>
             <p>
                 <br />
-                När ni gör en intresseanmälan står ni i 
-                bostadskön i tre månader, det är sedan upp 
+                När ni gör en intresseanmälan står ni i
+                bostadskön i tre månader, det är sedan upp
                 till er att uppdatera er anmälan för
                 att stå kvar i bostadskön.
                 <br />
-                <br />Mer information om intresseanmälan och 
+                <br />Mer information om intresseanmälan och
                 bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
-                
+
                 <br />
             </p>
         </div>
