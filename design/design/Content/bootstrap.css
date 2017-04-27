@@ -1306,6 +1306,31 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+div.divfastigheter{
+    width:230px;
+    height: 300px;
+    margin-top: 112px;
+    margin-left: 30px;
+    padding: 0px;
+    /*margin-right:30px;*/
+    /*padding-right: 0px;*/
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 10px #333;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;*/
+    
+    background-color: white;
+}
+
+div.divfastigheter2{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+div.divfastigheter3{
+margin-top: 10px;
+}
+
 div.filtreraruta-stor{
     display:none;
 }
@@ -2157,6 +2182,15 @@ h6,
   p{
     font-size:12px;
 }
+  div.divfastigheter2{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+  div.divfastigheter{
+      margin-left: 0px;
+  }
+
+
   div.filtreraruta2{
       display:none;
   }
@@ -2454,6 +2488,14 @@ button.flikbutton{
   }
   
   /*Här är för desktop*/
+  div.divfastigheter{
+       margin-left: 30px;
+  }
+  div.divfastigheter2{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
   div.filtrera-left{
     margin-left: 20px;
 }
@@ -2524,10 +2566,7 @@ div.nyhetsarkiv{
   div.infosvar{
     display: block;
 }
-    div.maincontainer{
-      margin-left: 40px;
-      margin-right: 40px;
-  }
+
       div.infosvar2{
       display:none;
   }
@@ -2715,10 +2754,7 @@ div.nyhetsarkiv{
   div.infosvar{
     display: block;
 }
-    div.maincontainer{
-      margin-left: 40px;
-      margin-right: 40px;
-  }
+ 
       div.infosvar2{
       display:none;
   }
@@ -7390,29 +7426,6 @@ div.omoss{
     margin-bottom: 50px;
 }
 
-div.divfastigheter{
-    width:230px;
-    height: 300px;
-    margin-top: 200px;
-    margin-left: 30px;
-    padding-top: 10px;
-    /*margin-right:30px;*/
-    /*padding-right: 0px;*/
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 4px #333;
-    border-radius: 10px;
-    
-    background-color: white;
-}
-
-div.divfastigheter2{
-    margin-top: 20px;
-    margin-left: 50px;
-}
-
-div.divfastigheter3{
-margin-top: 10px;
-}
 
 a.menylink{
     color: black;
@@ -7502,13 +7515,26 @@ button.btnleft{
     background-color: #ddd;
 }
 
+p.meromfastigheter{
+text-align:center;
+background-color: #dddddd;
+padding-bottom:15px;
+padding-top:15px;
+font-weight: bold;
+ /*box-shadow: 0px 0px 20px #777 inset;*/
+}
+
 div.link1{
+    margin-left:10px;
+    margin-right:10px;
     padding-top:10px;
     padding-bottom: 10px;
     border-bottom:1px solid #ddd;
     border-top:1px solid #ddd;
 }
 div.link2{
+    margin-left:10px;
+    margin-right:10px;
     padding-top:10px;
     padding-bottom: 10px;
     border-bottom:1px solid #ddd;
