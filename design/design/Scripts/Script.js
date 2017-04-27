@@ -114,6 +114,36 @@ function hideshow() {
 
 }
 
+function hideshowfilter() {
+    var x = document.getElementById('filtreraruta-stor');
+    var y = document.getElementById('filtreraruta-liten')
+
+
+    if ($(window).width() > 767) {
+
+    
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+    }
+
+    else {
+
+        if (y.style.display === 'none') {
+            y.style.display = 'block';
+        } else if (y.style.display === 'block') {
+            y.style.display = 'none';
+        } else {
+            y.style.display = 'block';
+        }
+    }
+
+}
+
 function hideshown() {
     var a = document.getElementById('hund')
     var b = document.getElementById('katt')

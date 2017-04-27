@@ -1306,10 +1306,38 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+div.filtreraruta-stor{
+    display:none;
+}
+button.filtrerabtn{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+div.filtreraruta2{
+
+    display:none;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left:0px;
+    margin-right:10px;
+}
+
+div.numberinput{
+border-radius: 10px;
+}
+
+div.filtrera{
+    margin-left:5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
 
 div.rightsort{
-    margin-top: 45px;
-    margin-left: 10px;
+    /*margin-top: 45px;*/
+    margin-left: 0px;
 }
 .carousel-caption {
   position: absolute;
@@ -2129,9 +2157,31 @@ h6,
   p{
     font-size:12px;
 }
+  div.filtreraruta2{
+      display:none;
+  }
+      div.filtreraruta{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left:0px;
+    margin-right:0px;
+}
+div.filtreraruta-stor{
+    display:none;
+    background-color: #e6e6e6;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    border-top-left-radius:0px;
+    padding: 10px 25px 10px 25px ;
+}
+
+div.filtrera-left{
+    margin-left: 20px;
+}
   div.rightsort{
-    margin-top: 45px;
-    margin-left: 140px;
+    /*margin-top: 45px;*/
+    /*margin-left: 140px;*/
 }
   p.felanmalan-info{
     text-align:left;
@@ -2400,6 +2450,12 @@ button.flikbutton{
   }
   
   /*Här är för desktop*/
+
+
+  div.rightsort{
+    /*margin-top: 45px;*/
+    margin-left: 50px;
+}
     div.flikleft{
     margin-left: 100px;
     margin-right: 10px;
@@ -7249,7 +7305,7 @@ button.btnleft{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-div.numberinput{
+/*div.numberinput{
 border-radius: 10px;
 }
 
@@ -7268,12 +7324,12 @@ div.filtreraruta-stor{
     background-color: #f8f8f8;
     border: 2px solid #ccc;
     border-radius: 10px;
-    padding: 0 25px 10px 25px ;
+    padding: 10px 25px 10px 25px ;
 }
 
 div.filtrera-left{
     margin-left: 20px;
-}
+}*/
 
 
 
