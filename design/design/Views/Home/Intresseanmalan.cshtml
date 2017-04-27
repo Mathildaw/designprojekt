@@ -8,7 +8,7 @@
 <div class="maincontainer1">
 
     <div class="row ontop">
-        <div class="col-md-5 leftdiv">
+        <div class="col-md-5 col-sm-5 col-lg-5 leftdiv1">
             <div class="form-group">
                 <div class="falt">
                     <label>Namn: *</label>
@@ -98,10 +98,10 @@
                     </div>
                 </div>
 
-                <label>Jag söker: *</label>
-                <div class="col-md-12 checkbox1">
-
-
+                
+                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
+                    <label>Jag söker: *</label>
+                    <br />
                     <div class="btn-group">
                         <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
                             boende/objekt
@@ -114,13 +114,11 @@
                         </ul>
                     </div>
                 </div>
-                <br />
-                <br />
-                <br />
-                <label>Område: </label>
-                <div class="col-md-12 checkbox1">
-
-
+                
+               
+                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
+                    <label>Område: </label>
+                    <br />
                     <div class="btn-group">
                         <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
                             område
@@ -140,9 +138,7 @@
                         </ul>
                     </div>
                 </div>
-                <br />
-                <br />
-                <br />
+          
                 <div class="falt">
                     <label>Antal rum: </label>
                     <div class="input-group">
@@ -167,10 +163,10 @@
                     </div>
                 </div>
 
-                <label>Övriga önskemål: </label>
-                <div class="col-md-12 checkbox1">
-
-
+                
+                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
+                    <label>Övriga önskemål: </label>
+                    <br />
                     <div class="btn-group">
                         <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
                             jag önskar
@@ -186,9 +182,8 @@
                         </ul>
                     </div>
                 </div>
-                <br />
-                <br />
-                <br />
+               
+            
                 <div class="falt">
                     <label>Egna ord:</label>
                     <div class="input-group">
@@ -298,26 +293,52 @@
 
                 <br />
                 <br />
-                <div class="col-md-4">
+                <div @*class="col-md-4"*@>
                     <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                 </div>
 
             </div>
         </div>
-        <div class="col-md-4 rightdiv information">
-            <h4>På hemsidan kan ni göra intresseanmälan dygnet runt.</h4>
-            <p>
-                <br />
-                När ni gör en intresseanmälan står ni i
-                bostadskön i tre månader, det är sedan upp
-                till er att uppdatera er anmälan för
-                att stå kvar i bostadskön.
-                <br />
-                <br />Mer information om intresseanmälan och
-                bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
+        <div >
+            <div class="col-md-5 col-sm-5 col-lg-5 rightdiv information information1" >
+                <h3>Personuppgifter</h3>
+                <p>
+                    
+                    De personuppgifter som du lämnar i ansökan/intresseanmälan kommer att behandlas 
+                    i den utsträckning som behövs för att kunna bedömma av om du kan godtas som hyresgäst.
+                    Därför behövs uppgifter från personer som kan uttala sig om dig. Genom att lämna uppgifter
+                    om referenspersoner medger du att uppgifter får inhämtas från dessa personer. Uppgifter kan
+                    också komma att inhämtas från kreditupplysningsinstitut och myndigheter. 
+                    <br />
+                    <br />
+                    Uppgifterna kommer endast att behandlas inom bostadsföretaget. Du har rätt att gratis en gång om året 
+                    få besked om vilka personuppgifter om dig som behandlas och hur de behandlas. Du kan också begära
+                    rättelse av de personuppgifter som behandlas.
+                    <br />
+                    <br />
+                    Personuppgifterna om dig kommer bara att behandlas under den tid som din ansökan/intresseanmälan är aktuell.
+                    Detta innebär att samtliga personuppgifter kommer att gallras när du har meddelat att du inte längre
+                    önskar kvarstå som bostadssökande. Detta gäller också om din ansökan/intresseanmälan om bostad avslås.
+                    Om skälet till att ansökan/intresseanmälan avslagits är att du inte kunnat godtas på grund av misskötsamhet
+                    i ett tidigare boende, bevaras dock uppgifterna under tre månader efter avslagsbeslut.
+                </p>
+            </div>
 
-                <br />
-            </p>
+            <div class="col-md-5 col-sm-5 col-lg-5 rightdiv information" style="margin-top:50px;">
+                <h3>På hemsidan kan ni göra intresseanmälan dygnet runt.</h3>
+                <p>
+                    
+                    När ni gör en intresseanmälan står ni i
+                    bostadskön i tre månader, det är sedan upp
+                    till er att uppdatera er anmälan för
+                    att stå kvar i bostadskön.
+                   <br />
+                    <br />Mer information om intresseanmälan och
+                    bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
+
+                    <br />
+                </p>
+            </div>
         </div>
     </div>
 </div>
