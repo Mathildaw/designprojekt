@@ -1306,6 +1306,10 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+
+  div.tablet-info{
+        display:none;
+    }
 div.info1{
     background-color: #fafafa;
     margin-left:5px;
@@ -2215,7 +2219,12 @@ h6,
     div.leftdiv-intresse2{
       margin-left: 4%;
   }
-
+    div.tablet-info{
+        display:block;
+    }
+div.mobil-info{
+    display:none;
+}
   div.divleft2{
     margin-left: 0px;
 }
