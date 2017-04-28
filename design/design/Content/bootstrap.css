@@ -1306,6 +1306,20 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+div.info1{
+    background-color: #fafafa;
+    margin-left:5px;
+    margin-right:5px;
+    padding-top: 20px;
+    padding-bottom:20px;
+   
+    box-shadow: 0px 2px 4px #333;
+}
+
+div.intressebtn{
+    text-align:center;
+    margin-bottom:20px;
+}
 
 p.meromfastigheter{
     font-size: 14px;
@@ -2201,6 +2215,27 @@ h6,
   div.divleft2{
     margin-left: 0px;
 }
+
+  div.intressebtn {
+   
+    margin-bottom: 20px;
+}
+
+  div.informationobjekt{
+     margin-left: 30px; 
+     margin-right: 30px; 
+}
+
+  div.info1{
+    background-color: #fafafa;
+    margin-left:30px;
+    margin-right:30px;
+    padding-top: 20px;
+    padding-bottom:20px;
+   
+    box-shadow: 0px 2px 4px #333;
+}
+
   legend.rubrik-fastigheter{
       padding-top:10px;
   }
@@ -7517,22 +7552,14 @@ div.information1{
     color:black;
 }
 
-div.info1{
-    background-color: #fafafa;
-    margin-left:30px;
-    margin-right:30px;
-    padding-top: 20px;
-    padding-bottom:20px;
-   
-    box-shadow: 0px 2px 4px #333;
-}
+
 
 a.intresse{
     margin-left:90px;
     /*margin-top:150px;*/
 }
 a.intresse2{
-    margin-left:90px;
+    margin-left:0px;
     border: 3px solid #e23f21;
 }
 div.checkbox1{
