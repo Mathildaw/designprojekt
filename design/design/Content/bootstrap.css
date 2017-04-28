@@ -2212,10 +2212,16 @@ h6,
   p{
     font-size:12px;
 }
+    div.leftdiv-intresse2{
+      margin-left: 4%;
+  }
+
   div.divleft2{
     margin-left: 0px;
 }
-
+   div.right-last{
+       margin-top:30px;
+   }
   div.intressebtn {
    
     margin-bottom: 20px;
@@ -2560,6 +2566,9 @@ button.flikbutton{
   }
   
   /*Här är för desktop*/
+  div.leftdiv-intresse2{
+      margin-left: 7%;
+  }
 
     div.divleft2{
     margin-left: 100px;
