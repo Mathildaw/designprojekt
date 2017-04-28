@@ -2199,13 +2199,15 @@ h6,
     font-size:12px;
 }
   div.divleft2{
-    margin-left: 100px;
+    margin-left: 0px;
 }
-
+  legend.rubrik-fastigheter{
+      padding-top:10px;
+  }
   div.divfastigheter{
     width:230px;
     height: 300px;
-    margin-top: 112px;
+    margin-top: 119px;
     margin-left: 30px;
     padding: 0px;
     /*margin-right:30px;*/
@@ -2222,9 +2224,8 @@ h6,
     margin-top: 20px;
     margin-left: 0px;
 }
-  div.divfastigheter{
-      margin-left: 0px;
-  }
+
+
 
 
   div.filtreraruta2{
@@ -2524,6 +2525,10 @@ button.flikbutton{
   }
   
   /*Här är för desktop*/
+
+    div.divleft2{
+    margin-left: 100px;
+}
   div.divfastigheter{
        margin-left: 30px;
   }
