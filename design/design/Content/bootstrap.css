@@ -2416,7 +2416,7 @@ button.flikbutton{
   }
     div.footerinfo{
           color:#5f5f5f;
-          font-weight: bold;
+          
       }
     body{
         background-color: rgba(122, 168, 208, 0.53); /*background-image: url('Images/sommar.png');*/
@@ -2699,7 +2699,7 @@ div.nyhetsarkiv{
   }
       div.footerinfo{
           color:#5f5f5f;
-          font-weight: bold;
+        
       }
       body{
          background-image: url('Images/sommar.png');
@@ -2887,7 +2887,7 @@ div.nyhetsarkiv{
   }
         div.footerinfo{
           color:#5f5f5f;
-          font-weight: bold;
+      
       }
         body{
          background-image: url('Images/sommar.png');
