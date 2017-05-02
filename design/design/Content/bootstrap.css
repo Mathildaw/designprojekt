@@ -2400,15 +2400,13 @@ button.flikbutton{
           font-weight: bold;
       }
     body{
-         background-image: url('Images/sommar.png');
+        background-color: rgba(122, 168, 208, 0.53); /*background-image: url('Images/sommar.png');*/
          padding-top:50px;
       }
-    a.leftimage{
+    /*a.leftimage{
     display:block;
-}
-    div.logga{
-        display: none;
-    }
+}*/
+  
   /*div._2p3a{
     min-width: 180px;
     width: 200px;
@@ -2575,6 +2573,17 @@ button.flikbutton{
   }
   
   /*Här är för desktop*/
+    div.logga{
+        display: none;
+    }
+    a.leftimage{
+        display:block;
+float: left;
+right: 30%;
+top: 11%;
+
+position: absolute;
+}
   div.leftdiv-intresse2{
       margin-left: 7%;
   }
@@ -3616,7 +3625,7 @@ select[multiple].input-lg {
     font-size: 18px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
     font-size: 12px;
@@ -4254,7 +4263,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -4677,7 +4686,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -4695,7 +4704,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -4742,7 +4751,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-justified > li {
     display: table-cell;
     width: 1%;
@@ -4763,7 +4772,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs-justified > .active > a:focus {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .nav-tabs-justified > li > a {
     border-bottom: 1px solid #ddd;
     border-radius: 4px 4px 0 0;
@@ -4796,7 +4805,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     /*border-radius: 4px;*/
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-header {
     float: left;
   }
@@ -4813,7 +4822,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -4853,7 +4862,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -4866,7 +4875,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -4878,7 +4887,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -4907,7 +4916,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -4937,7 +4946,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-toggle {
     display: none;
   }
@@ -4950,7 +4959,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -4973,7 +4982,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -4997,7 +5006,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -5047,7 +5056,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-form .form-group {
     margin-bottom: 5px;
   }
@@ -5055,7 +5064,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-form {
     width: auto;
     padding-top: 0;
@@ -5095,14 +5104,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-text {
     float: left;
     margin-right: 15px;
     margin-left: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-left {
     float: left !important;
   }
@@ -5169,7 +5178,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555;
   background-color: #e7e7e7;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #777;
   }
@@ -5274,7 +5283,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: #080808;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: #080808;
   }
@@ -7617,13 +7626,6 @@ div.link2{
     border-bottom:1px solid #ddd;
 }
 
-a.leftimage{
-float: left;
-right: 15%;
-top: 15%;
-
-position: absolute;
-}
 div.rightimage{
     /*margin-left: 7%;
     margin-right: 7%;*/
