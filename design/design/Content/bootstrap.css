@@ -1087,9 +1087,9 @@ h2.sidrubrik{
     color:#6d6d6d;
 }
 
-/*"Helvetica Neue", Helvetica, Arial, sans-serif*/
+/*"Helvetica Neue", Helvetica, Arial, sans-serif Tahoma*/
 body {
-  font-family:Tahoma;
+  font-family:"DejaVu Sans","Arial Unicode MS","Lucida Sans Unicode",sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1306,6 +1306,7 @@ p {
   line-height: 1.4;
 }
 /*Här är för mobilskärm*/
+
 
       div.leftdiv1{
     margin-left: 1px;
@@ -4172,7 +4173,7 @@ tbody.collapse.in {
   outline: 0;
 }
 .dropdown-menu {
-  position: absolute;
+ position: absolute;
   top: 100%;
   left: 0;
   z-index: 1000;
@@ -4241,6 +4242,7 @@ tbody.collapse.in {
 }
 .open > .dropdown-menu {
   display: block;
+  
 }
 .open > a {
   outline: 0;
