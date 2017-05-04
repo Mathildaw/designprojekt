@@ -1856,6 +1856,7 @@ pre code {
   /*padding-right: 15px;*/
   /*padding-left: 15px;*/
   margin: auto;
+  
   /*margin-left: auto;*/
 }
 @media (min-width: 768px) {
@@ -2236,9 +2237,13 @@ h6,
     margin-left: 5%;
    /* margin-right: 5%;
     padding-left: 20px;*/
-    
 
+} 
+           
+div.container-main{
+ box-shadow: 0px 2px 25px #8f8f8f;
 }
+
     div.huvudnyckel{
     padding-left:15px;
     padding-right:15px;
@@ -2430,8 +2435,8 @@ button.flikbutton{
           
       }
     body{
-        background-color: rgba(122, 168, 208, 0.53); /*background-image: url('Images/sommar.png');*/
-         padding-top:50px;
+        background-color: #eee;
+         /*padding-top:50px;*/
       }
     /*a.leftimage{
     display:block;
@@ -2614,8 +2619,8 @@ button.flikbutton{
     a.leftimage{
         display:block;
 float: left;
-right: 30%;
-top: 11%;
+right: 29%;
+top: 3%;
 
 position: absolute;
 }
@@ -2713,8 +2718,10 @@ div.nyhetsarkiv{
         
       }
       body{
-         background-image: url('Images/sommar.png');
-         padding-top:50px;
+          background-image: none;
+          background-color:#eee;
+         /*background-image: url('Images/sommar.png');*/
+         /*padding-top:50px;*/
       }
 }
 @media (min-width: 1200px) {
@@ -2901,8 +2908,10 @@ div.nyhetsarkiv{
       
       }
         body{
-         background-image: url('Images/sommar.png');
-         padding-top:50px;
+            background-image:none;
+
+         /*background-image: url('Images/sommar.png');*/
+         /*padding-top:50px;*/
       }
 }
 table {
