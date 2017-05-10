@@ -16,6 +16,11 @@ namespace design.Controllers
         {
             return View();
         }
+
+        public ActionResult FragorOchSvarAdmin()
+        {
+            return View();
+        }
         
         public ActionResult omossAdmin()
         {

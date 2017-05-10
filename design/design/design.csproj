@@ -294,6 +294,7 @@
     <Content Include="Views\Home\VarafastigheterAdmin.cshtml" />
     <Content Include="Views\Home\KontaktAdmin.cshtml" />
     <Content Include="Views\Home\omossAdmin.cshtml" />
+    <Content Include="Views\Home\FragorOchSvarAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
