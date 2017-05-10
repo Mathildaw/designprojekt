@@ -59,221 +59,234 @@
             <br />
 
             <legend style="color:#e93523">Lägg till anställd</legend>
-            <div class="btnredigera btn-group-xs" style="text-align:right;">
-            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                Redigera
-                <span class="caret"></span>
-            </button>
-        </div>
-    </div>
-</div>
-<div class=" row">
-    <div class="redigera" id="redigera" style="display:none;">
-        <div class=" col-md-6">
-            <div class="falt">
-                <label>
-                    Förnamn:
-                </label>
-                <div class="input-group">
-                    <input name="state" placeholder="Örebro Norr" class="form-control" type="text">
+
+
+            <div class="col-lg-2">
+                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                        Redigera
+                        <span class="caret"></span>
+                    </button>
                 </div>
             </div>
-
-            <div class="falt">
-                <label>Roll:</label>
-                <div class="input-group">
-                    <input name="state" required placeholder="Rynningegatan 27-37" class="form-control" type="text">
-                </div>
-            </div>
-
-            <div class="falt">
-                <label>E-post:</label>
-                <div class="input-group">
-                    <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
-                </div>
-            </div>
-        </div>
-        <div class=" col-md-6">
-            <div class="falt">
-                <label>Telefon:</label>
-                <div class="input-group">
-                    <input name="state" placeholder="Gatuadress" class="form-control" type="text">
-                </div>
-             
-            </div>
-
-            <div class="falt">
-                <label>Bild:</label>
-                <div class="input-group">
-                    <input name="state" placeholder="Bildens URL" class="form-control" type="text">
-                </div>
-                <div>
-                    <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
-                </div>
-            </div>
-            <div @*class="col-md-4"*@>
-                <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
-            </div>
-        </div>
-        </div>
-
-        <br />
-        <br />
-        <br />
-
-
-        <legend style="color:#e93523">Vi som jobbar på kontoret</legend>
-        <div class="row">
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/Stieg.jpg" alt="Stieg Ekström"></center>
-                <h4>Stieg Ekström</h4>
-                <p>
-                    VD<br>
-                    <a href="mailto:stieg@je-bygg.se" target="_blank">stieg@je-bygg.se</a>
-                </p>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/Anna.jpg" alt="Anna Ekström"></center>
-                <h4>Anna Ekström</h4>
-                <p>
-                    Hyresinbetalningar<br />
-                    Personalansvarig<br />
-                    019 - 16 43 72<br />
-                    <a href="mailto:anna@je-bygg.se" target="_blank">anna@je-bygg.se</a>
-                </p>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/Thor Mari.jpg" alt="Mari Ekström Thor"></center>
-                <h4>Mari Ekström Thor</h4>
-                <p>
-                    Ekonomichef/Kamrer<br />
-                    019 - 16 43 71<br />
-                    <a href="mailto:marie@je-bygg.se" target="_blank">marie@je-bygg.se</a>
-                </p>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/TungfeltLena02.jpg" alt="Lena Ekström Tungfelt"></center>
-                <h4>Lena Ekström Tungfelt</h4>
-                <p>
-                    Fastighetsförvaltare<br />
-                    019 - 16 43 76 <br />
-                    <a href="mailto:lena@je-bygg.se" target="_blank">lena@je-bygg.se</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/AnderssonAnnette.jpg" alt="Annette Andersson"></center>
-                <h4>Annette Andersson</h4>
-                <p>
-                    Receptionist <br />
-                    Bostadsförmedlare (Örebro)<br />
-                    019 - 16 43 70<br />
-                    <a href="mailto:info@je-bygg.se" target="_blank">info@je-bygg.se</a>
-                </p>
-                <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt="Irene Runell"></center>
-                <h4>Irene Runell</h4>
-                <p>
-                    Ekonomiassistent<br />
-                    Leverantörsfakturor<br />
-                    019 - 16 43 74
-                </p>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/Ottosson-Carina.jpg" alt="Carina Ottosson"></center>
-                <h4>Carina Ottosson</h4>
-                <p>
-                    Besiktningsansvarig<br>
-                    Bostadsförmedlare<br />
-                    (Kumla/Nora)<br />
-                    070 - 410 40 11
-                </p>
-            </div>
-            <div class="col-sm-3 col-xs-7">
-                <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Adis"></center>
-                <h4>Adis</h4>
-                <p>
-                    Ekonomiassistent
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <br />
-    <br />
-    <legend style ="color:#e93523">Vi som fixar och underhåller</legend>
-    <div class="row">
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/Johansson-Patrik.jpg" alt="Patrik Johansson"></center>
-            <h4>Patrik Johansson</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/StrandbergMikael.jpg" alt="Mikael Strandberg"></center>
-            <h4>Mikael Strandberg</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/BergTony.jpg" alt="Tony Berg"></center>
-            <h4>Tony Berg</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/WibergBenny.jpg" alt="Benny Wiberg"></center>
-            <h4>Benny Wiberg</h4>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/ErikssonPeder.jpg" alt="Peder Eriksson"></center>
-            <h4>Peder Eriksson</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/Gustafsson-Jan-Ake.jpg" alt="Jan Åke Gustavsson" /></center>
-            <h4>Jan-Åke Gustavsson</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/LarsenPeter.jpg" alt="Peter Larsen"></center>
-            <h4>Peter Larsen</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/RunellHans.jpg" alt="Hans Rünell"></center>
-            <h4>Hans Rünell</h4>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/Akerstrandorjan.jpg" alt="Örjan Åkerstrand"></center>
-            <h4>Örjan Åkerstrand</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Richard Gustafsosn"></center>
-            <h4>Richard Gustafsson</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/StenArnsheml.png" alt="Sten Arnshelm"></center>
-            <h4>Sten Arnsheml</h4>
-        </div>
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Mikael Sabri"></center>
-            <h4>Mikael Sabri</h4>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-sm-3 col-xs-7">
-            <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Britt-Marie Jansson"></center>
-            <h4>Britt-Marie Jansson</h4>
-        </div>
+            <br />
+            <br />
         
+        <div class=" row">
 
+            <div class="redigera" id="redigera" style="display:none;">
+                <div class=" col-md-6">
+                    <div class="falt">
+                        <label>
+                            Område:
+                        </label>
+                        <div class="input-group">
+                            <input name="state" placeholder="Örebro Norr" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                    <div class="falt">
+                        <label>Adress:</label>
+                        <div class="input-group">
+                            <input name="state" required placeholder="Rynningegatan 27-37" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                    <div class="falt">
+                        <label>Antal lägenheter i fastigheten:</label>
+                        <div class="input-group">
+                            <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-6">
+                    <label>Bild:</label>
+                    <div class="row falt">
+
+                        <div class="col-md-6">
+
+                            <input name="state" placeholder="Gatuadress" class="form-control" type="text">
+                        </div>
+                        <div class=" col-md-3">
+                            <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="falt">
+                        <label>Länk till karta:</label>
+                        <div class="input-group">
+                            <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div @*class="col-md-4"*@>
+                        <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+            
+
+            <br />
+            <br />
+            <br />
+
+
+            <legend style="color:#e93523">Vi som jobbar på kontoret</legend>
+            <div class="row">
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/Stieg.jpg" alt="Stieg Ekström"></center>
+                    <h4>Stieg Ekström</h4>
+                    <p>
+                        VD<br>
+                        <a href="mailto:stieg@je-bygg.se" target="_blank">stieg@je-bygg.se</a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/Anna.jpg" alt="Anna Ekström"></center>
+                    <h4>Anna Ekström</h4>
+                    <p>
+                        Hyresinbetalningar<br />
+                        Personalansvarig<br />
+                        019 - 16 43 72<br />
+                        <a href="mailto:anna@je-bygg.se" target="_blank">anna@je-bygg.se</a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/Thor Mari.jpg" alt="Mari Ekström Thor"></center>
+                    <h4>Mari Ekström Thor</h4>
+                    <p>
+                        Ekonomichef/Kamrer<br />
+                        019 - 16 43 71<br />
+                        <a href="mailto:marie@je-bygg.se" target="_blank">marie@je-bygg.se</a>
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/TungfeltLena02.jpg" alt="Lena Ekström Tungfelt"></center>
+                    <h4>Lena Ekström Tungfelt</h4>
+                    <p>
+                        Fastighetsförvaltare<br />
+                        019 - 16 43 76 <br />
+                        <a href="mailto:lena@je-bygg.se" target="_blank">lena@je-bygg.se</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/AnderssonAnnette.jpg" alt="Annette Andersson"></center>
+                    <h4>Annette Andersson</h4>
+                    <p>
+                        Receptionist <br />
+                        Bostadsförmedlare (Örebro)<br />
+                        019 - 16 43 70<br />
+                        <a href="mailto:info@je-bygg.se" target="_blank">info@je-bygg.se</a>
+                    </p>
+                    <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt="Irene Runell"></center>
+                    <h4>Irene Runell</h4>
+                    <p>
+                        Ekonomiassistent<br />
+                        Leverantörsfakturor<br />
+                        019 - 16 43 74
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/Ottosson-Carina.jpg" alt="Carina Ottosson"></center>
+                    <h4>Carina Ottosson</h4>
+                    <p>
+                        Besiktningsansvarig<br>
+                        Bostadsförmedlare<br />
+                        (Kumla/Nora)<br />
+                        070 - 410 40 11
+                    </p>
+                </div>
+                <div class="col-sm-3 col-xs-7">
+                    <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Adis"></center>
+                    <h4>Adis</h4>
+                    <p>
+                        Ekonomiassistent
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <legend style="color:#e93523">Vi som fixar och underhåller</legend>
+        <div class="row">
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/Johansson-Patrik.jpg" alt="Patrik Johansson"></center>
+                <h4>Patrik Johansson</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/StrandbergMikael.jpg" alt="Mikael Strandberg"></center>
+                <h4>Mikael Strandberg</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/BergTony.jpg" alt="Tony Berg"></center>
+                <h4>Tony Berg</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/WibergBenny.jpg" alt="Benny Wiberg"></center>
+                <h4>Benny Wiberg</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/ErikssonPeder.jpg" alt="Peder Eriksson"></center>
+                <h4>Peder Eriksson</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/Gustafsson-Jan-Ake.jpg" alt="Jan Åke Gustavsson" /></center>
+                <h4>Jan-Åke Gustavsson</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/LarsenPeter.jpg" alt="Peter Larsen"></center>
+                <h4>Peter Larsen</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/RunellHans.jpg" alt="Hans Rünell"></center>
+                <h4>Hans Rünell</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/Akerstrandorjan.jpg" alt="Örjan Åkerstrand"></center>
+                <h4>Örjan Åkerstrand</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Richard Gustafsosn"></center>
+                <h4>Richard Gustafsson</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/StenArnsheml.png" alt="Sten Arnshelm"></center>
+                <h4>Sten Arnsheml</h4>
+            </div>
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Mikael Sabri"></center>
+                <h4>Mikael Sabri</h4>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-7">
+                <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Britt-Marie Jansson"></center>
+                <h4>Britt-Marie Jansson</h4>
+            </div>
+
+
+        </div>
     </div>
-
 </div>
-    </div>
+    
     
 
 
