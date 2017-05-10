@@ -1,0 +1,158 @@
+﻿@model design.Models.Felanmalan
+
+@{
+    ViewBag.Title = "Felanmalan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+    <h2 class="sidrubrik">Felanmälan</h2>
+
+<div class="maincontainer1">
+
+    <div class="row ontop">
+        <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 flikleft flik"><button class="flikbutton btnleft" id="flikbtn1" type="button" onclick="hideshown2()">Privatperson</button></div>
+        <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 flik flik-right" ><button class="flikbutton" id="flikbtn2" type="button" onclick="hideshown();">Företag</button></div>
+
+    </div>
+    <div class="row">
+        
+        <div class="col-md-5 col-sm-5 col-lg-5 leftdiv felanmalan">
+            <div class="form-group">
+                <div class="falt">
+                    <label>Namn: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input name="state" placeholder="Namn" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="falt" id="lghnr">
+                    <label>Lägenhetsnummer: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="state" placeholder="Lägenhetsnummer" class="form-control" type="text">
+                    </div>
+                </div>
+
+                <div class="falt foretag" id="foretag1" style="display:none;" >
+                    <label>Företagsnamn: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="state" placeholder="Företagsnamn" class="form-control" type="text">
+                    </div>
+                </div>
+                
+                <div class="falt">
+                    <label>Gatuadress: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="state" placeholder="Gatuadress" class="form-control" type="text">
+                    </div>
+                </div>
+                
+                <div class="falt">
+                    <label>Postort: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="state" placeholder="Postort" class="form-control" type="text">
+                    </div>
+                </div>  
+                <div class="falt">
+                    <label>Telefonnummer: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input name="state" placeholder="Telefonnummer" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>Alternativt telefonnummer: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input name="state" placeholder="Alternativt telefonnummer" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>E-postadress: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="state" placeholder="E-postdress" class="form-control" type="text">
+                    </div>
+                </div>
+                
+                <div class="falt">
+
+                    <label>Meddelande: *</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" name="comment" placeholder="Meddelande"></textarea>
+                    </div>
+                </div>
+                    <br />
+                <div class="falt">
+                    <div class="col-md-10 col-xs-12 huvudnyckel">
+                        <label style="margin-bottom: 1px;">Får vi gå in med huvudnyckel? *</label><br />
+                                <form>
+                                    <input type="radio" name="val" value="ja"> Ja
+                                    <input type="radio" name="val" value="nej"> Nej<br>
+                                </form>
+                    </div>
+                </div>
+                <br />
+                <div class="falt" id="hund">
+                    <div class="col-md-10 col-xs-10 huvudnyckel">
+                        <label style="margin-top:5px; margin-bottom: 1px;">Har ni hund? *</label>
+                        <form>
+                            <input type="radio" name="val" value="ja"> Ja
+                            <input type="radio" name="val" value="nej"> Nej<br>
+                        </form>
+                    </div>
+                </div>
+                <br />
+                <div class="falt">
+                    <div class="col-md-10 col-xs-10 huvudnyckel" id="katt">
+                        <label style="margin-top:5px; margin-bottom: 1px;">Har ni katt? *</label>
+                        <form>
+                            <input type="radio" name="val" value="ja"> Ja
+                            <input type="radio" name="val" value="nej"> Nej<br /><br />
+                        </form>
+                    </div>
+                </div>
+             
+                    <div class="col-md-4 skicka">
+                        <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4 rightdiv"  >
+            <p class ="felanmalan-info"><br /><b>På hemsidan kan ni göra felanmälan dygnet runt.</b></pclass>
+            <p class="felanmalan-info">
+                <br /><b>
+                Om ni ej fått återkoppling inom 1-2 veckor efter att
+                felanmälan har skickats, var vänlig och ring oss på
+                telefonnummer: 019-16 43 70.
+                      </b>
+                <br />
+                <br />Ni kan även ringa vårt kontor för att göra en felanmälan 
+                på telefonnummer: 019-16 43 70.
+                <br />
+                <br />Kontorets öppettider:
+                <br />Måndag – Fredag kl: 07:30-16:30.
+                <br />Telefontid: 09:00-16:00.
+                <br />Lunchstängt mellan kl: 12:00-13:00.
+                <br />
+                <br />Efter kontorstid vid akuta ärenden,
+                <br />ring vår Jourtelefon: 010-4705758.
+                <br />
+                <div class="btnredigera btn-group-xs">
+                    <button class="btn" type="button" id="redigerabtn">
+                        Redigera
+                    </button>
+                </div>
+               
+            </p>
+        </div>
+    </div>
+</div>
