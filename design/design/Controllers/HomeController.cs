@@ -17,6 +17,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult IntresseanmalanAdmin()
+        {
+            return View();
+        }
+
         public ActionResult FragorOchSvarAdmin()
         {
             return View();
