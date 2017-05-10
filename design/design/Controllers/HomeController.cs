@@ -16,6 +16,11 @@ namespace design.Controllers
         {
             return View();
         }
+        
+        public ActionResult omossAdmin()
+        {
+            return View();
+        }
 
         public ActionResult KontaktAdmin()
         {

@@ -292,6 +292,7 @@
     <Content Include="Views\Home\InfoObjekt.cshtml" />
     <Content Include="Views\Home\VarafastigheterAdmin.cshtml" />
     <Content Include="Views\Home\KontaktAdmin.cshtml" />
+    <Content Include="Views\Home\omossAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
