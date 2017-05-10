@@ -62,7 +62,7 @@
 
 
             <div class="col-lg-2">
-                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                <div class="btnredigera btn-group-xs">
                     <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
                         Redigera
                         <span class="caret"></span>
@@ -78,46 +78,62 @@
                 <div class=" col-md-6">
                     <div class="falt">
                         <label>
-                            Område:
+                            För- och Efternamn:
                         </label>
                         <div class="input-group">
-                            <input name="state" placeholder="Örebro Norr" class="form-control" type="text">
+                            <input name="state" placeholder="För- och Efternamn" class="form-control" type="text">
                         </div>
                     </div>
 
                     <div class="falt">
-                        <label>Adress:</label>
+                        <label>Roll:</label>
                         <div class="input-group">
-                            <input name="state" required placeholder="Rynningegatan 27-37" class="form-control" type="text">
+                            <input name="state" required placeholder="Roll" class="form-control" type="text">
                         </div>
                     </div>
 
                     <div class="falt">
-                        <label>Antal lägenheter i fastigheten:</label>
+                        <label>Telefon:</label>
                         <div class="input-group">
-                            <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
+                            <input name="deltagareinput" placeholder="telefon" class="form-control input-md" type="text">
                         </div>
                     </div>
-                </div>
-                <div class=" col-md-6">
+
+                    <div class="falt">
+                        <label>E-post:</label>
+                        <div class="input-group">
+                            <input name="state" placeholder="E-post" class="form-control" type="text">
+                        </div>
+                    </div>
+
                     <label>Bild:</label>
                     <div class="row falt">
 
                         <div class="col-md-6">
 
-                            <input name="state" placeholder="Gatuadress" class="form-control" type="text">
+                            <input name="state" placeholder="Bildens URL" class="form-control" type="text">
                         </div>
                         <div class=" col-md-3">
                             <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
                         </div>
                     </div>
 
+                </div>
+                <div class=" col-md-6">
                     <div class="falt">
-                        <label>Länk till karta:</label>
+                        <label>Rad:</label>
                         <div class="input-group">
-                            <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
+                            <input name="state" placeholder="Rad" class="form-control" type="text">
                         </div>
                     </div>
+                    <div class="falt">
+                        <label>Kolumn:</label>
+                        <div class="input-group">
+                            <input name="state" placeholder="Kolumn" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                   
                     <div @*class="col-md-4"*@>
                         <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                     </div>
