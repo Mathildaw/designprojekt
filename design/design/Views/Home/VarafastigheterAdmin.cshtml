@@ -81,19 +81,22 @@
                          
                         </div>
                         <div class="col-lg-2">
-                        <div class="btnredigera btn-group-xs" style="text-align:right;">
-                            <button class="btn" type="button" id="redigerabtn">
-                                Ta bort
-                            </button></div>
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                    Redigera
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+
                             
                         </div>
                         <div class="col-lg-2">
-                    <div class="btnredigera btn-group-xs" style="text-align:right;">
-                        <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                            Redigera
-                            <span class="caret"></span>
-                        </button>
-                    </div>
+
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn" type="button" id="redigerabtn">
+                                    Ta bort
+                                </button>
+                            </div>
                             </div>
                         </div>
 <div class=" row">
@@ -126,22 +129,32 @@
                             <div class=" col-md-6"><label>Bild:</label>
                                 <div class="row falt">
                                     
-                                    <div class="col-md-6">
+                                    <div class="col-md-7">
                                        
-                                        <input name="state" placeholder="Gatuadress" class="form-control" type="text">
+                                        <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" type="text">
                                     </div>
                                     <div class=" col-md-3">
                                         <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
                                     </div>
                                 </div>
 
-                                <div class="falt">
-                                    <label>Länk till karta:</label>
-                                    <div class="input-group">
-                                        <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
+                                <div class="row falt">
+
+                                    <div class=" col-md-7">
+                                        <div class="falt">
+                                            <label>Länk till karta:</label>
+                                            <div class="input-group">
+                                                <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-5">
+                                        <label>Hämta länk:</label>
+                                      <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
                                     </div>
                                 </div>
-                                <div @*class="col-md-4"*@>
+                              
+                                <div @*class="col-md-4" https://goo.gl/maps/VzopDD1M5mR2 *@>
                                     <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
