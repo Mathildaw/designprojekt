@@ -17,6 +17,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult KontaktAdmin()
+        {
+            return View();
+        }
+
         public ActionResult VarafastigheterAdmin()
         {
             return View();
