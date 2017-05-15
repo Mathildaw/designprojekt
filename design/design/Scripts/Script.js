@@ -124,6 +124,26 @@ function showredigera() {
     }
 }
 
+function showredigera2() {
+    var y = document.getElementById('redigera2');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
+
+
+function showredigera3() {
+    var y = document.getElementById('redigera3');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
 function hideshowfilter() {
     var x = document.getElementById('filtreraruta-stor');
     var y = document.getElementById('filtreraruta-liten')

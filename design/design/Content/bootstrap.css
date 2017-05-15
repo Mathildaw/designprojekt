@@ -1714,13 +1714,14 @@ dd {
   }
 
   div.maincontainer1{
-      border: 2px solid rgba(119, 119, 119, 0.45);
-      border-radius: 10px;
+      /*border: 2px solid rgba(119, 119, 119, 0.45);
+border-radius: 10px;
+       box-shadow: 0px 0px 10px #777*/ 
       padding-bottom: 20px;
       padding-left: 10px;
       padding-right:10px;
       padding-top: 10px;
-      box-shadow: 0px 0px 10px #777 
+     
   }
 
   div.rightdiv{
@@ -2636,7 +2637,7 @@ position: absolute;
   }
   div.divfastigheter2{
     margin-top: 20px;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
 }
 
   div.filtrera-left{
@@ -7549,7 +7550,8 @@ div.ledig{
 }
 
 div.objekt{
-    background-color: #fafafa;
+    /*background-color: #fafafa;*/
+    background-color: #eee;
     border:1px solid #ddd;
  border-bottom: 0px;
   box-shadow: 0px 5px 5px #888888;

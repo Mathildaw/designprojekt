@@ -7,12 +7,109 @@
 
 <div class="maincontainer1">
     <div class="maincontainer row ontop">
+        <legend style="color:#e93523;">Lägg till ny fastighet</legend>
+        <div class=" row">
+            
+            <div class=" col-md-4 col-lg-4" >
+               
+                    <div class="falt">
+                        <label>
+                            Område:
+                        </label>
+                        <div class="input-group">
+                            <input name="state" placeholder="" class="form-control" type="text">
+                        </div>
+                    </div>
 
+                    <div class="falt">
+                        <label>Adress:</label>
+                        <div class="input-group">
+                            <input name="state" required placeholder="" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                    <div class="falt">
+                        <label>Antal lägenheter i fastigheten:</label>
+                        <div class="input-group">
+                            <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
+                        </div>
+                    </div>
+                <div class="col-md-10 col-xs-12" style="padding-left:0px;">
+                    <label>Typ av boende:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Student"> Student
+                        <input type="radio" name="val" value="Senior"> Senior
+                        <input type="radio" name="val" value="Övrigt"> Övrigt<br>
+                    </form>
+                </div>
+               
+            </div>
+            <div class=" col-md-5">
+               
+                    
+                    <div class="row falt">
+
+                        <div class="col-md-7 col-lg-6" style="padding-right:0px;">
+
+                            <div class="">
+                                <label>Bild:</label>
+                                <div class=" input-group">
+                                    <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-3 col-lg-3"  style="padding-left:0px;">
+
+                            <label style="color:transparent">.</label>
+                            <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="row falt">
+
+                        <div class=" col-md-7 col-lg-6" style="padding-right:0px;">
+                            <div class="">
+                                <label>Länk till karta:</label>
+                                <div class="input-group">
+                                    <input name="state" placeholder="" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-5 col-lg-5" style="padding-left:0px;">
+                            <br />
+                            <br />
+
+                            <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
+                        </div>
+
+
+                    </div>
+             
+                 
+                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                    <label>Publicera:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Ja"> Ja
+                        <input type="radio" name="val" value="Nej"> Nej<br />
+
+                    </form>
+                </div>
+                <div class=" col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
+               
+                        <button type="submit" class="btn btn-success">Lägg till fastighet <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                  
+                 </div>
+               
+            </div>
+        </div>
+        <hr style="border-top: 1px solid #e5e5e5;"/>
+        <br />
+        <br />
         <div class="row ">
 
-
-            <div class=" col-md-8 col-sm-7 divfastigheter2" >
-                <div class="col-sm-6 col-md-4 divleft2" >
+            <div class=" col-md-9 col-sm-7 divfastigheter2" >
+             
+                <div class="col-md-3 col-lg-3" >
                     <label>Visa fastigheter för</label>
                     <br />
                     <div class="dropdown">
@@ -30,7 +127,16 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 col-md-6">
+                <div class="col-md-5 col-lg-5" style="padding-left:0px;">
+                    <label>Visa:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Student" checked> Publicerade
+                        <input type="radio" name="val" value="Senior"> Ej publicerade
+                        <input type="radio" name="val" value="Övrigt"> Alla<br>
+                    </form>
+                </div>
+
+                <div class="col-md-4 col-lg-4"  >
                         <label>Sök på adress</label>
                         <div class="input-group stylish-input-group">
                            
@@ -82,8 +188,8 @@
                         </div>
                         <div class="col-lg-2">
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                    Redigera
+                                <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera()">
+                                    Redigera fastighet
                                     <span class="caret"></span>
                                 </button>
                             </div>
@@ -93,16 +199,17 @@
                         <div class="col-lg-2">
 
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn">
-                                    Ta bort
+                                <button class="btn btn-danger" type="button" id="redigerabtn">
+                                    Ta bort fastighet
                                 </button>
                             </div>
                             </div>
                         </div>
-<div class=" row">
-                       
-                        <div class="redigera" id="redigera" style="display:none;">
-                            <div class=" col-md-5">
+                    <div class=" row" style="background-color:#fbfbfb;" >
+                     
+                        <div class="redigera" id="redigera" style="display:none; ">
+                            <br />
+                            <div class=" col-md-4 col-lg-4 ">
                                 <div class="falt">
                                     <label>
                                         Område:
@@ -126,22 +233,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" col-md-7">
+                            <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
                                 <label>Bild:</label>
                                 <div class="row falt">
-                                    
+
                                     <div class="col-md-7">
-                                       
+
                                         <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
                                     </div>
-                                    <div class=" col-md-3">
+                                    <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
                                         <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
                                     </div>
                                 </div>
 
                                 <div class="row falt">
 
-                                    <div class=" col-md-7">
+                                    <div class=" col-md-7 col-lg-7" style="padding-right:0px;">
                                         <div class="falt">
                                             <label>Länk till karta:</label>
                                             <div class="input-group">
@@ -149,17 +256,37 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class=" col-md-5">
-                                       <br />
+                                    <div class=" col-md-5  col-lg-5" style="padding-left:0px;">
                                         <br />
-                                    
-                                      <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
+                                        <br />
+
+                                        <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
                                     </div>
                                 </div>
-                              
-                                <div @*class="col-md-4" https://goo.gl/maps/VzopDD1M5mR2 *@>
-                                    <br>
-                                    <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Typ av boende:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior"> Senior
+                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Publicera:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Ja" checked> Ja
+                                        <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                    </form>
+                                </div>
+
+                                <div>
+                                    <br />
+                                 
+                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
                         </div>
@@ -198,6 +325,119 @@
                         </div>*@
 
                     </div>
+                    <div class="row">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera2()">
+                                    Redigera fastighet
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-2">
+
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn btn-danger" type="button" id="redigerabtn">
+                                    Ta bort fastighet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row" style="background-color:#fbfbfb;">
+
+                        <div class="redigera" id="redigera2" style="display:none; ">
+                            <br />
+                            <div class=" col-md-4 col-lg-4 ">
+                                <div class="falt">
+                                    <label>
+                                        Område:
+                                    </label>
+                                    <div class="input-group">
+                                        <input name="state" placeholder="Örebro Norr" class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="falt">
+                                    <label>Adress:</label>
+                                    <div class="input-group">
+                                        <input name="state" required placeholder="Rynningegatan 27-37" class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="falt">
+                                    <label>Antal lägenheter i fastigheten:</label>
+                                    <div class="input-group">
+                                        <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
+                                <label>Bild:</label>
+                                <div class="row falt">
+
+                                    <div class="col-md-7">
+
+                                        <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
+                                    </div>
+                                    <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
+                                        <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+                                    </div>
+                                </div>
+
+                                <div class="row falt">
+
+                                    <div class=" col-md-7 col-lg-7" style="padding-right:0px;">
+                                        <div class="falt">
+                                            <label>Länk till karta:</label>
+                                            <div class="input-group">
+                                                <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-5  col-lg-5" style="padding-left:0px;">
+                                        <br />
+                                        <br />
+
+                                        <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Typ av boende:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior" checked> Senior
+                                        <input type="radio" name="val" value="Övrigt"> Övrigt<br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Publicera:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Ja" checked> Ja
+                                        <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                    </form>
+                                </div>
+
+                                <div>
+                                    <br />
+
+                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
                 <hr size="1" color="#996633">
@@ -223,14 +463,125 @@
                     <div class="col-md-2 col-sm-9">
                         <br />
                         <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/6q7cYjMi3Qy" target="_blank"> Hitta hit</a>
-                        @*<div class="google-maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>*@
+              
+
+                    </div>
+                    <div class="row">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera3()">
+                                    Redigera fastighet
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-2">
+
+                            <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                <button class="btn btn-danger" type="button" id="redigerabtn">
+                                    Ta bort fastighet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row" style="background-color:#fbfbfb;">
+
+                        <div class="redigera" id="redigera3" style="display:none; ">
+                            <br />
+                            <div class=" col-md-4 col-lg-4 ">
+                                <div class="falt">
+                                    <label>
+                                        Område:
+                                    </label>
+                                    <div class="input-group">
+                                        <input name="state" placeholder="Örebro Centralt" class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="falt">
+                                    <label>Adress:</label>
+                                    <div class="input-group">
+                                        <input name="state" required placeholder="Slottsgatan 7" class="form-control" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="falt">
+                                    <label>Antal lägenheter i fastigheten:</label>
+                                    <div class="input-group">
+                                        <input name="deltagareinput" placeholder="40" class="form-control input-md" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
+                                <label>Bild:</label>
+                                <div class="row falt">
+
+                                    <div class="col-md-7">
+
+                                        <input name="state" placeholder="~/Content/Images/Blaslampan 2 - 1.jpg" class="form-control" style="border-radius:0px;" type="text">
+                                    </div>
+                                    <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
+                                        <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+                                    </div>
+                                </div>
+
+                                <div class="row falt">
+
+                                    <div class=" col-md-7 col-lg-7" style="padding-right:0px;">
+                                        <div class="falt">
+                                            <label>Länk till karta:</label>
+                                            <div class="input-group">
+                                                <input name="state" placeholder="https://goo.gl/maps/6q7cYjMi3Qy" class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-5  col-lg-5" style="padding-left:0px;">
+                                        <br />
+                                        <br />
+
+                                        <a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Öppna google maps</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Typ av boende:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior"> Senior
+                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <label>Publicera:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Ja" checked> Ja
+                                        <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                    </form>
+                                </div>
+
+                                <div>
+                                    <br />
+
+                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-3 divfastigheter"  >
+            <div class="col-md-3 col-sm-3 divfastigheter"  >
 
                 <p class="meromfastigheter">Läs mer om våra fastigheter</p>
 
