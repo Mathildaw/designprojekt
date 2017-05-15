@@ -5265,8 +5265,11 @@ fieldset[disabled] .navbar-default .btn-link:hover,
 fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
+
+/*Navbar backgrudsfärg*/
 .navbar-inverse {
   background-color: #f8f8f8;
+  
   border-color: #ddd;
   border-bottom: 1px solid #ddd;
   box-shadow: 0px 5px 5px #888888;
@@ -5293,15 +5296,17 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 
+/*Navbar active*/
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  /*color: #fff;
-  background-color: #e95123;
-  border-radius:3px;*/
   color: #e95123;
   background-color: #ddd;
-  border-radius:3px;
+  /*border-radius:3px;*/
+  /*color: #ffffff;
+  background-color: #e95123;*/
+  border-color:#e95123;
+  /*border-radius:3px;*/
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,

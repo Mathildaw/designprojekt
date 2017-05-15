@@ -297,6 +297,7 @@
     <Content Include="Views\Home\FragorOchSvarAdmin.cshtml" />
     <Content Include="Views\Home\IntresseanmalanAdmin.cshtml" />
     <Content Include="Views\Home\FelanmalanAdmin.cshtml" />
+    <Content Include="Views\Home\LedigaObjektAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

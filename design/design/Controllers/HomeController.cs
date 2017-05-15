@@ -17,6 +17,11 @@ namespace design.Controllers
             return View();
         }
 
+        public ActionResult LedigaObjektAdmin()
+        {
+            return View();
+        }
+
         public ActionResult FelanmalanAdmin()
         {
             return View();
