@@ -97,7 +97,7 @@
                 <div class="falt">
                     <label>Bredband:</label>
                     <div class="input-group">
-                        <input name="deltagareinput" placeholder="Lägenhet" class="form-control input-md" type="text">
+                        <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
                     </div>
                 </div>
                
@@ -174,20 +174,29 @@
                         <label style="color:transparent">.</label>
                         <button type="submit" class="btn btn-default">Hämta bild <span class="glyphicon glyphicon-file"></span></button>
                     </div>
-                    <div class=" col-md-5 col-lg-6">
+                </div>
+
+                    <div class="">
 
                         <button type="submit" class="btn btn-primary btn-sm" style="margin-top:5px;">Lägg till bild <span class="glyphicon glyphicon-arrow-down"></span></button>
-                        <label>Uppladdade bilder</label>
-                        <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;" >
-                            @foreach (string b in bilder)
-            {
-                    <option id="objekt" class="list-group-item" value="@b">@b</option>
-            }
-                        </select>
-                        
-                        <button type="submit" class="btn btn-danger btn-sm">Ta bort bild <span class="glyphicon glyphicon-trash"></span></button>
                     </div>
-                </div>
+                         <div class=" row">
+                            <div class=" col-md-7 col-lg-7">
+                                <label>Uppladdade bilder</label>
+                                <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
+                                    @foreach (string b in bilder)
+            {
+                                <option id="objekt" class="list-group-item" value="@b">@b</option>
+            }
+                                </select>
+                            </div>
+                            <div class=" col-md-2 col-lg-2"><label>bild 1</label>
+                                <img src="~/Content/Images/arlen%2025%20-%202.jpg" style="width: 150px;"/>
+                             </div> 
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-sm">Ta bort bild <span class="glyphicon glyphicon-trash"></span></button>
+                  
+                
                 <div class="row falt">
 
                     <div class=" col-md-7 col-lg-6" style="padding-right:0px;">
@@ -218,7 +227,7 @@
 
                 <div class=" col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
 
-                    <button type="submit" class="btn btn-success">Spara objekt <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                    <button type="submit" class="btn btn-success btn-lg">Spara objekt <span class="glyphicon glyphicon-floppy-saved"></span></button>
 
                 </div>
             </div>
