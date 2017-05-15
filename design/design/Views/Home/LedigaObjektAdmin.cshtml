@@ -18,28 +18,50 @@
 <center><h2 class="sidrubrik">Lediga objekt</h2></center>
 
 <div class="maincontainer1">
-    <div class="maincontainer row ontop">
+    <div class="maincontainer ontop">
         <legend style="color:#e93523;">Administrera objekt</legend>
-        <div class="" style=" width:280px;">
-            <label>Sök på adress eller hyr-id</label>
-            <div class="input-group stylish-input-group">
+        <div class=" row">
+          
 
-                <input type="text" class="form-control" placeholder="Sök">
-                <span class="input-group-addon">
-                    <button type="submit">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </span>
+            <div class="col-md-5 col-lg-5" style=" width:280px;">
+                <label>Sök på adress eller hyr-id</label>
+                <div class="input-group">
+
+                    <input type="text" class="form-control" placeholder="Sök">
+
+
+                </div>
+
+
+
+                <label>Visa:</label><br />
+                <form>
+                    <input type="radio" name="val" value="Ledig" checked> Endast lediga objekt <br />
+                    <input type="radio" name="val" value="EjLedig" > Alla objekt<br />
+
+                </form>
+                <br />
+                <button type="submit" class="btn btn-lg btn-default">Sök objekt <span class="glyphicon glyphicon-search"></span></button>
+
+                
             </div>
-        </div>
-        <br />
-        <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:800px">
-            @foreach (string s in m)
+           
+                <div class=" col-md-5 col-lg-5">
+                    <label>Objekt</label>
+                    <div>
+                        
+                        <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:800px; height:200px;">
+                            @foreach (string s in m)
             {
-                <option id="objekt" class="list-group-item" value="@s">@s</option>
+                        <option id="objekt" class="list-group-item" value="@s">@s</option>
             }
-        </select>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
+       <br />
+      
         <div class=" row" style="background-color:#dcdcdc;">
             
             <div class=" col-md-3 col-lg-3" >
@@ -124,7 +146,7 @@
                         Yta:
                     </label>
                     <div class="input-group">
-                        <input name="state" placeholder="" class="form-control" type="date" style="width:205px;">
+                        <input name="state" placeholder="" class="form-control" type="text">
                     </div>
                 </div>
                 <div class="falt">
@@ -230,6 +252,11 @@
                     <button type="submit" class="btn btn-success btn-lg">Spara objekt <span class="glyphicon glyphicon-floppy-saved"></span></button>
 
                 </div>
+                <div class=" col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
+
+                    <button type="submit" class="btn btn-danger btn-lg">Ta bort objekt <span class="glyphicon glyphicon-trash"></span></button>
+
+                </div>
             </div>
              
                
@@ -239,6 +266,6 @@
         <br />
         <br />
     
-    </div>
+   
     </div>
         
