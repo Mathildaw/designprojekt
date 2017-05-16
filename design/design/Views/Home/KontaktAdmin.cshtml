@@ -16,9 +16,30 @@
                     <br /><span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/oeFiqLVaNsv" target="_blank"> Hitta hit</a>
                 </p>
                 <div class="btnredigera btn-group-xs">
-                    <button class="btn" type="button" id="redigerabtn">
+                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
                         Redigera
+                        <span class="caret"></span>
                     </button>
+                    <div class="redigera" id="redigera" style="display:none;">
+                        <div class="col-md-12">
+                            <div class="falt">
+                                <label>
+                                    Rubrik:
+                                </label>
+                                <div class="input-group">
+                                    <input name="state" placeholder="John Ekströms Bygg" class="form-control" type="text">
+                                </div>
+                            </div>
+                            <div class="falt">
+                                <label>
+                                    Text:
+                                </label>
+                                <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre">
+                              
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-4 col-md-4 col-lg-4">
@@ -30,11 +51,8 @@
 
                 </p>
                 <br />
-                <div class="btnredigera btn-group-xs">
-                    <button class="btn" type="button" id="redigerabtn">
-                        Redigera
-                    </button>
-                </div>
+                
+                 
             </div>
             <div class="col-sm-3 col-md-3 col-lg-3">
                 <h3 class="red">Telefon</h3>
