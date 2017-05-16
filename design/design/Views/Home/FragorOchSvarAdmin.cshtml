@@ -65,9 +65,35 @@
                             <br />
                         </p>
                         <div class="btnredigera btn-group-xs">
-                            <button class="btn" type="button" id="redigerabtn">
+                            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
                                 Redigera
+                                <span class="caret"></span>
                             </button>
+                        </div>
+                        <div class="redigera" id="redigera" style="display:none;">
+                            <div class=" row" style="background-color:#dcdcdc;">
+                                <div class=" col-md-6">
+                                    <div class="falt">
+                                        <label>
+                                            Fråga:
+                                        </label>
+                                        <div class="input-group">
+                                            <input name="state" placeholder="Fråga" class="form-control" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="falt">
+                                        <label>
+                                            Svar:
+                                        </label>
+                                        <img src="~/Content/Images/publish-wordpress-page.jpg" />
+                                    </div>
+                                    <div class="falt">
+                                        <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -193,324 +219,324 @@
 
                                             För felanmälan
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Flyttstädning</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse6" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Vid avflytt måste hela lägenheten städas noggrant, även vinds-/källarförråd och balkong/
-                                            altan. Ev. Garage. Om städningen är bristfällig tvingas vi anlita en städfirma som du får betala.
-                                            Folder om Städning.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Grannar stör</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse7" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            I första hand rekommenderar vi att du tar kontakt med din granne, många gånger är det
-                                            bästa sättet att lösa problemet. Om störningarna ändå inte upphör är du välkommen att
-                                            kontakta oss 019- 164370.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Grilla på balkongen</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse8" class="panel-collapse collapse">
-                                    <div class="panel-body"><p>På din balkong gäller El-grill. Har du tillgång till egen uteplats får du använda kolgrill.</p></div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Hemförsäkring</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse9" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Som hyresgäst hos oss ska du själv teckna egen hemförsäkring för din
-                                            lägenhet.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Husdjur</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse10" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Ja, du får ha husdjur. Hund, katt och fågel. Du får dock ej ha reptiler när du
-                                            bor som hyresgäst hos oss.
-                                            Har du hund ska den vara kopplad på gården. Du får inte släppa lös din
-                                            hund, eller rasta den på vår gård.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Hyra via autogiro</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse11" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Det går bra att betala hyran via autogiro, då dras hyran automatiskt vid varje
-                                            månadsskifte. Blankett.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Hänsyn</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse12" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Hyreslagen ser strängt på Störningar.
-                                            För att alla ska trivas tillsammans är det viktigt att man inte störs av omkringboende.
-                                            Läs mer i folder
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Inlämning av nycklar</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse13" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Sker i samband med lägenhetsbesiktningen. Kan du inte närvara vid det tillfället
-                                            skall nycklarna lämnas in till vårt kontor / Ormestagatan 1 B i Örebro hitta.se
-                                            senast den första vardagen i månaden kl 12.00. Inlämning av nycklar till
-                                            garage/ p-plats skall även det ske den första vardagen i månaden kl 12.00
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Mata fåglar</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse14" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Det är förbjudet att mata fåglar från balkong, uteplats eller allmän uteplats som tillhör din
-                                            hyresvärds område. Det kan dra till sig råttor som kan komma in i fastigheterna och skapa
-                                            sanitära olägenheter. Det kan även vara störande för dina grannar.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">Näta in balkong</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse15" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Du får ha grönt nät. Det ska sitta slätt, rakt och väl
-                                            monterat med buntband. Tips är kompostgaller.
-                                            Vi tillåter EJ löst hängande fisknät eller hönsnät.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Flyttstädning</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse6" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Vid avflytt måste hela lägenheten städas noggrant, även vinds-/källarförråd och balkong/
+                                                        altan. Ev. Garage. Om städningen är bristfällig tvingas vi anlita en städfirma som du får betala.
+                                                        Folder om Städning.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Grannar stör</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse7" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        I första hand rekommenderar vi att du tar kontakt med din granne, många gånger är det
+                                                        bästa sättet att lösa problemet. Om störningarna ändå inte upphör är du välkommen att
+                                                        kontakta oss 019- 164370.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Grilla på balkongen</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse8" class="panel-collapse collapse">
+                                                <div class="panel-body"><p>På din balkong gäller El-grill. Har du tillgång till egen uteplats får du använda kolgrill.</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Hemförsäkring</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse9" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Som hyresgäst hos oss ska du själv teckna egen hemförsäkring för din
+                                                        lägenhet.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Husdjur</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse10" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Ja, du får ha husdjur. Hund, katt och fågel. Du får dock ej ha reptiler när du
+                                                        bor som hyresgäst hos oss.
+                                                        Har du hund ska den vara kopplad på gården. Du får inte släppa lös din
+                                                        hund, eller rasta den på vår gård.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Hyra via autogiro</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse11" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Det går bra att betala hyran via autogiro, då dras hyran automatiskt vid varje
+                                                        månadsskifte. Blankett.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Hänsyn</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse12" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Hyreslagen ser strängt på Störningar.
+                                                        För att alla ska trivas tillsammans är det viktigt att man inte störs av omkringboende.
+                                                        Läs mer i folder
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Inlämning av nycklar</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse13" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Sker i samband med lägenhetsbesiktningen. Kan du inte närvara vid det tillfället
+                                                        skall nycklarna lämnas in till vårt kontor / Ormestagatan 1 B i Örebro hitta.se
+                                                        senast den första vardagen i månaden kl 12.00. Inlämning av nycklar till
+                                                        garage/ p-plats skall även det ske den första vardagen i månaden kl 12.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">Mata fåglar</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse14" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Det är förbjudet att mata fåglar från balkong, uteplats eller allmän uteplats som tillhör din
+                                                        hyresvärds område. Det kan dra till sig råttor som kan komma in i fastigheterna och skapa
+                                                        sanitära olägenheter. Det kan även vara störande för dina grannar.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">Näta in balkong</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse15" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Du får ha grönt nät. Det ska sitta slätt, rakt och väl
+                                                        monterat med buntband. Tips är kompostgaller.
+                                                        Vi tillåter EJ löst hängande fisknät eller hönsnät.
 
-                                            För markisväv, kontakta oss först.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">Renoveringar i min lägenhet</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse16" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Du får INTE sätta upp lister på t.ex. dörrar och köksluckor, inte heller måla dessa utan vårt
-                                            tillstånd. Du får byta knoppar/handtag på köksluckorna så länge du inte behöver borra nya
-                                            hål i luckorna. Spara alltid de gamla knopparna/handtagen så att du kan sätta tillbaka dem
-                                            vid avflyttning.
-                                            Du har rätt att på egen bekostnad tapetsera eller måla om väggarna i din lägenhet.
-                                            Utförandet måste dock bli fackmässigt gjort. Det betyder bl.a. att du måste vara noga
-                                            med underarbete och att foder och lister skyddas mot stänk och klister. Vi ber dig att välja
-                                            neutrala kulörer och mönster som nästa hyresgäst kan godta. Vid avflyttning kan du bli
-                                            ersättningsskyldig om vi anser det nödvändigt att åtgärda lägenheten när nästa hyresgäst
-                                            ska flytta in.
-                                            Du får inte göra åverkan på golvet, tex ta bort gamla linoleummattor eller lägga nytt golv.
-                                            Kontakta oss ifall du vill installera diskmaskin, tvättmaskin eller liknande. Fasta el- eller VVS-
-                                            installationer måste alltid utföras av en fackman. El- och vattenskador är vanliga och mycket
-                                            dyrbara och orsakas oftast av felaktiga installationer. Tänk också på att maskinerna endast
-                                            får användas dagtid (07.00 – 22.00) för att inte störa dina grannar.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">Skadedjur i lägenheten</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse17" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Om du upptäcker skadedjur i lägenheten eller fastigheten ska du omedelbart kontakta
-                                            Anticimex på 019-25 10 60.
-                                            På Anticimex hemsida kan du läsa mer information – http://www.anticimex.com
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">Sopsortering</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse18" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Du ansvarar som hyresgäst att slänga soporna i rätt uppmärkta kärl. Du som
-                                            hyresgäst tar med dig de sopor som du ej kan slänga i ditt soprum till närmaste
-                                            återvinningscentral. http://www.orebro.se/305.html
+                                                        För markisväv, kontakta oss först.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">Renoveringar i min lägenhet</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse16" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Du får INTE sätta upp lister på t.ex. dörrar och köksluckor, inte heller måla dessa utan vårt
+                                                        tillstånd. Du får byta knoppar/handtag på köksluckorna så länge du inte behöver borra nya
+                                                        hål i luckorna. Spara alltid de gamla knopparna/handtagen så att du kan sätta tillbaka dem
+                                                        vid avflyttning.
+                                                        Du har rätt att på egen bekostnad tapetsera eller måla om väggarna i din lägenhet.
+                                                        Utförandet måste dock bli fackmässigt gjort. Det betyder bl.a. att du måste vara noga
+                                                        med underarbete och att foder och lister skyddas mot stänk och klister. Vi ber dig att välja
+                                                        neutrala kulörer och mönster som nästa hyresgäst kan godta. Vid avflyttning kan du bli
+                                                        ersättningsskyldig om vi anser det nödvändigt att åtgärda lägenheten när nästa hyresgäst
+                                                        ska flytta in.
+                                                        Du får inte göra åverkan på golvet, tex ta bort gamla linoleummattor eller lägga nytt golv.
+                                                        Kontakta oss ifall du vill installera diskmaskin, tvättmaskin eller liknande. Fasta el- eller VVS-
+                                                        installationer måste alltid utföras av en fackman. El- och vattenskador är vanliga och mycket
+                                                        dyrbara och orsakas oftast av felaktiga installationer. Tänk också på att maskinerna endast
+                                                        får användas dagtid (07.00 – 22.00) för att inte störa dina grannar.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse17">Skadedjur i lägenheten</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse17" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Om du upptäcker skadedjur i lägenheten eller fastigheten ska du omedelbart kontakta
+                                                        Anticimex på 019-25 10 60.
+                                                        På Anticimex hemsida kan du läsa mer information – http://www.anticimex.com
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse18">Sopsortering</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse18" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Du ansvarar som hyresgäst att slänga soporna i rätt uppmärkta kärl. Du som
+                                                        hyresgäst tar med dig de sopor som du ej kan slänga i ditt soprum till närmaste
+                                                        återvinningscentral. http://www.orebro.se/305.html
 
-                                            Missköts sopsorteringen kan höjd hyreshöjning bli aktuell, då sophämtningen för oss blir till
-                                            högre taxa.
-                                        </p>
+                                                        Missköts sopsorteringen kan höjd hyreshöjning bli aktuell, då sophämtningen för oss blir till
+                                                        högre taxa.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">Tvättstugan</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse19" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Följ noga de reglerna i tvättstugan!
+                                                        Boka tiden ordentligt, var rädd om maskinerna när ni tvättar.
+                                                        läs anvisningarna för tvätt maskinerna noga.
+                                                        Städa efter dig!!!
+                                                        Lämna tvättstugan så nästa hyresgäst kan komma in i tid samt att det är städat och undanplockat efter dig!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">Uppsägning av lägenhet</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse20" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Uppsägning ska ske skriftligt via brev, eller på vårt kontor.
+                                                        Uppsägningen bekräftas skriftligen.
+                                                        Blankett
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">Uppsägningstid</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse21" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Uppsägningstiden är vanligtvis 3 månader. Uppsägningen räknas från
+                                                        nästa månadsskifte och sedan 3 månader framåt. Ifall du tex lämnar in din
+                                                        uppsägning den 23 januari räknas det som att den är uppsagd 1 maj. Efter
+                                                        uppsägning är du som hyresgäst skyldig att upplåta lägenheten för visning för
+                                                        kommande hyresgäster.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">Utlämning av nycklar</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse22" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">Övertagning av lägenhet</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse23" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        Din kompis kan naturligtvis lämna in en intresseanmälan men då vi har många sökande kan
+                                                        vi inte garantera att det är just din kompis som får lägenheten. Bostadsanmälan
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse27">Överlåtande av lägenhet</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse27" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p>Till familjemedlem osv</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse19">Tvättstugan</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse19" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Följ noga de reglerna i tvättstugan!
-                                            Boka tiden ordentligt, var rädd om maskinerna när ni tvättar.
-                                            läs anvisningarna för tvätt maskinerna noga.
-                                            Städa efter dig!!!
-                                            Lämna tvättstugan så nästa hyresgäst kan komma in i tid samt att det är städat och undanplockat efter dig!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse20">Uppsägning av lägenhet</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse20" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Uppsägning ska ske skriftligt via brev, eller på vårt kontor.
-                                            Uppsägningen bekräftas skriftligen.
-                                            Blankett
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse21">Uppsägningstid</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse21" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Uppsägningstiden är vanligtvis 3 månader. Uppsägningen räknas från
-                                            nästa månadsskifte och sedan 3 månader framåt. Ifall du tex lämnar in din
-                                            uppsägning den 23 januari räknas det som att den är uppsagd 1 maj. Efter
-                                            uppsägning är du som hyresgäst skyldig att upplåta lägenheten för visning för
-                                            kommande hyresgäster.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse22">Utlämning av nycklar</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse22" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse23">Övertagning av lägenhet</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse23" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>
-                                            Din kompis kan naturligtvis lämna in en intresseanmälan men då vi har många sökande kan
-                                            vi inte garantera att det är just din kompis som får lägenheten. Bostadsanmälan
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse27">Överlåtande av lägenhet</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse27" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <p>Till familjemedlem osv</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-4 col-sm-4 col-lg-4 rightdiv information infosvar">
                             <h4>Här hittar ni de vanligaste frågorna.</h4>
                             <p>
