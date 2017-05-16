@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "studentboende";
+}
+
+<center><h2 class="sidrubrik">Våra fastigheter/Studentboende</h2></center>
+
+<div class="maincontainer1">
+ 
+    <div class="row ontop">
+        <div class="col-sm-4 col-md-4">
+            <a class="link" href="~/Home/Varafastigheter"><< Tillbaka till våra fastigheter</a>
+        </div>
+    </div>
+
+
+    <div class=" row" style="margin-left:3%; margin-right:3%; margin-bottom: 3%;">
+
+        <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
+          
+            <div class=" col-md-10 col-sm-12 col-xs-12 col-lg-8">
+                <h3>Bilder från studentboenden</h3>
+                <div id="myCarousel1" class="carousel slide" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="item1 active"></li>
+                        <li class="item2"></li>
+                        <li class="item3"></li>
+
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="~/Content/Images/erikrosenbergsväg.PNG" alt="Erik Rosenbergsväg 1">
+                            <div class="carousel-caption">Erik RosenbergsVäg 1 </div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/salsmästargatan.png" alt="Salsmästaregatan 24-52">
+                            <div class="carousel-caption">Salsmästaregatan 24-52 </div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/tärnvägen.png" alt="Tärnvägen 12-20 ">
+                            <div class="carousel-caption">Tärnvägen 12-20</div>
+                        </div>
+                    </div>
+                    <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-xs-12 col-lg-4">
+            <h3>Bra länkar för dig som student</h3>
+            <h4 class="radavstånd">
+                <a href="https://www.willys.se/Vara-butiker/Butiker/Willys-Orebro-Almby/" target="_blank">Willys</a><br />
+                <a href="http://bibliotek.orebro.se/" target="_blank">Stadsbiblioteket</a><br />
+                <a href="http://www.lanstrafiken.se/Orebro/" target="_blank">Länstrafiken</a><br />
+                <a href="http://www.xn--ob-eka.se/information/kundservice/vara-varuhus/oob-orebro" target="_blank">ÖoB</a> <br />
+                <a href="https://www.sj.se/" target="_blank">SJ</a>
+            </h4>
+        </div>
+
+    </div>
+    
+    <legend style="color:#e93523">Våra studentboenden</legend>
+    <div class="row" style="margin-left:3%; margin-right:3%;">
+   
+            <div class="row objekt">
+                <div class="col-md-4 col-sm-4 col-xs-10 col-lg-3">
+                    <center><img class="img-responsive" src="~/Content/Images/erikrosenbergsväg.PNG" alt="erikrosenbergsväg"></center>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-10">
+                    <p>
+                        <b>Område:</b> Örebro Almby <br />
+                        <b>Adress:</b> Erik RosenbergsVäg 1 <br />
+                        <b>Antal lägenheter i fastigheten:</b> 20<br />
+                        <br />
+                        1 Ledig lägenhet i fastigheten<br />
+                        <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                    </p>
+                    <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/MEbdAJ2D9Wq" target="_blank"> Hitta hit</a>
+                </div>
+            </div>
+
+            <br />
+            <hr size="2" color="black">
+            <div class="row objekt">
+                <div class="col-md-4 col-sm-4 col-xs-10 col-lg-3">
+                    <center><img class="img-responsive" src="~/Content/Images/salsmästargatan.PNG" alt="salsmästaregatan"></center>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-10">
+                    <p>
+                        <b>Område:</b> Örebro Öster <br />
+                        <b>Adress:</b> Salsmästaregatan 24-52 <br />
+                        <b>Antal lägenheter i fastigheten:</b> 20<br />
+                        <br />
+                        1 Ledig lägenhet i fastigheten<br />
+                        <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                    </p>
+                    <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/hnWNAPiqa7y" target="_blank"> Hitta hit</a>
+                </div>
+            </div>
+
+            <br />
+            <hr size="2" color="black">
+            <div class="row objekt">
+                <div class="col-md-4 col-sm-4 col-xs-10 col-lg-3">
+                    <center><img class="img-responsive" src="~/Content/Images/tärnvägen.PNG" alt="tärnvägen"></center>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-10">
+                    <p>
+                        <b>Område:</b> Örebro Almby <br />
+                        <b>Adress:</b> Tärnvägen 12-20 <br />
+                        <b>Antal lägenheter i fastigheten:</b> 20<br />
+                        <br />
+                        0 Lediga lägenheter i fastigheten
+                        <br />
+                        <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                    </p>
+                    <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/GS7HuXL1pwj" target="_blank"> Hitta hit</a>
+                    <br />
+                    <br />
+                </div>
+            </div>
+      
+    </div>
+    <hr />
+
+            @*<div class="col-md-1 col-sm-1 col-xs-1">
+
+            </div>*@
+   
+            </div>
+        <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-xs-6 col-sm-3">
+
+            </div>
+        </div>
+
+
+<script>
+    $(document).ready(function () {
+        // Activate Carousel
+        $("#myCarousel1").carousel({ interval: false });
+
+        // Enable Carousel Indicators
+        $(".item1").click(function () {
+            $("#myCarousel1").carousel(0);
+        });
+        $(".item2").click(function () {
+            $("#myCarousel1").carousel(1);
+        });
+        $(".item3").click(function () {
+            $("#myCarousel1").carousel(2);
+        });
+        $(".item4").click(function () {
+            $("#myCarousel1").carousel(3);
+        });
+        $(".item5").click(function () {
+            $("#myCarousel1").carousel(4);
+        });
+
+        // Enable Carousel Controls
+        $(".left").click(function () {
+            $("#myCarousel1").carousel("prev");
+        });
+        $(".right").click(function () {
+            $("#myCarousel1").carousel("next");
+        });
+    });
+</script>
