@@ -58,298 +58,291 @@
             <br />
             <br />
 
-            <legend style="color:#e93523">Lägg till anställd</legend>
 
 
-            <div class="col-lg-2">
-                <div class="btnredigera btn-group-xs">
-                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                        Redigera
-                        <span class="caret"></span>
-                    </button>
-                </div>
-            </div>
-            <br />
-            <br />
-        
-        <div class=" row">
+            <legend style="color:#e93523;">Lägg till ny anställd</legend>
+            <div class=" row" style="background-color:#dcdcdc;">
 
-            <div class="redigera" id="redigera" style="display:none;">
-                <div class=" col-md-6">
+                <div class=" col-md-4 col-lg-4">
+
                     <div class="falt">
                         <label>
-                            För- och Efternamn:
+                            För- och efternamn:
                         </label>
                         <div class="input-group">
-                            <input name="state" placeholder="För- och Efternamn" class="form-control" type="text">
+                            <input name="state" placeholder="" class="form-control" type="text">
                         </div>
                     </div>
 
                     <div class="falt">
                         <label>Roll:</label>
                         <div class="input-group">
-                            <input name="state" required placeholder="Roll" class="form-control" type="text">
+                            <input name="state" required placeholder="" class="form-control" type="text">
                         </div>
                     </div>
 
                     <div class="falt">
                         <label>Telefon:</label>
                         <div class="input-group">
-                            <input name="deltagareinput" placeholder="telefon" class="form-control input-md" type="text">
+                            <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
                         </div>
                     </div>
-
                     <div class="falt">
                         <label>E-post:</label>
                         <div class="input-group">
-                            <input name="state" placeholder="E-post" class="form-control" type="text">
+                            <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
                         </div>
                     </div>
-
-                    <label>Bild:</label>
                     <div class="row falt">
 
-                        <div class="col-md-6">
+                        <div class="col-md-7 col-lg-6" style="padding-right:0px;">
 
-                            <input name="state" placeholder="Bildens URL" class="form-control" type="text">
+                            <div class="">
+                                <label>Bild:</label>
+                                <div class=" input-group">
+                                    <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                                </div>
+                            </div>
                         </div>
-                        <div class=" col-md-3">
+                        <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
+
+                            <label style="color:transparent">.</label>
                             <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
                         </div>
                     </div>
-
+                    
                 </div>
-                <div class=" col-md-6">
-                    <p>Här borde vi lägga en förklarande text för radiobutton, rad och kolumn.</p>
+                <div class=" col-md-5">
+                    <p>
+                        <br />
+                        Här kan du välja vilken avdelning den nyanställda ska synas på. Du kan även välja vilken rad samt kolumn du vill att den ska synas på hemsidan. 
+                    </p>
+                   
+                    <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                        <label>Avdelning:</label><br />
+                        <form>
+                            <input type="radio" name="val" value="Ja"> Kontoret
+                            <input type="radio" name="val" value="Nej"> Underhåll<br />
 
-                    <div class="falt">
-                        <div class="col-md-10">
-                            <label style="margin-bottom: 1px;">Avdelning</label><br />
-                            <form>
-                                <input type="radio" name="val" value="ja"> Kontoret
-                                <input type="radio" name="val" value="nej"> Underhåll<br>
-                            </form>
-                        </div>
+                        </form>
                     </div>
-                    <br />
-                    <br />
-                    <br />
 
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <div class="falt">
                         <label>Rad:</label>
                         <div class="input-group">
-                            <input name="state" placeholder="Rad" class="form-control" type="text">
+                            <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
                         </div>
                     </div>
                     <div class="falt">
                         <label>Kolumn:</label>
                         <div class="input-group">
-                            <input name="state" placeholder="Kolumn" class="form-control" type="text">
+                            <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
                         </div>
                     </div>
-                    
-                    <br />
-                    <br />
-                    <br />
-                   
-                    <div @*class="col-md-4"*@>
-                        <button type="submit" class="btn btn-warning">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+
+                    <div class=" col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
+
+                        <button type="submit" class="btn btn-success">Lägg till anställd <span class="glyphicon glyphicon-floppy-saved"></span></button>
+
                     </div>
+
                 </div>
             </div>
 
-        </div>
 
 
 
-            
 
-            <br />
-            <br />
-            <br />
+                <br />
+                <br />
+                <br />
 
 
-            <legend style="color:#e93523">Vi som jobbar på kontoret</legend>
-            <div class="row">
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/Stieg.jpg" alt="Stieg Ekström"></center>
-                    <h4>Stieg Ekström</h4>
-                    <p>
-                        VD<br>
-                        <a href="mailto:stieg@je-bygg.se" target="_blank">stieg@je-bygg.se</a>
-                        <br />
-                        <br />
-                        <br />
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-2">
+                <legend style="color:#e93523">Vi som jobbar på kontoret</legend>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/Stieg.jpg" alt="Stieg Ekström"></center>
+                        <h4>Stieg Ekström</h4>
+                        <p>
+                            VD<br>
+                            <a href="mailto:stieg@je-bygg.se" target="_blank">stieg@je-bygg.se</a>
+                            <br />
+                            <br />
+                            <br />
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-2">
 
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                    Redigera
-                                    <span class="caret"></span>
-                                </button>
                             </div>
+                            <div class="col-lg-4">
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                        Redigera
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
 
 
+                            </div>
+                            <div class="col-lg-4">
+
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn">
+                                        Ta bort
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
+                    </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/Anna.jpg" alt="Anna Ekström"></center>
+                        <h4>Anna Ekström</h4>
+                        <p>
+                            Hyresinbetalningar<br />
+                            Personalansvarig<br />
+                            019 - 16 43 72<br />
+                            <a href="mailto:anna@je-bygg.se" target="_blank">anna@je-bygg.se</a>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-2">
 
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn">
-                                    Ta bort
-                                </button>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                        Redigera
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-4">
+
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn">
+                                        Ta bort
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/Thor Mari.jpg" alt="Mari Ekström Thor"></center>
+                        <h4>Mari Ekström Thor</h4>
+                        <p>
+                            Ekonomichef/Kamrer<br />
+                            019 - 16 43 71<br />
+                            <a href="mailto:marie@je-bygg.se" target="_blank">marie@je-bygg.se</a>
+                            <br />
+                            <br />
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                        Redigera
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-4">
+
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn">
+                                        Ta bort
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/TungfeltLena02.jpg" alt="Lena Ekström Tungfelt"></center>
+                        <h4>Lena Ekström Tungfelt</h4>
+                        <p>
+                            Fastighetsförvaltare<br />
+                            019 - 16 43 76 <br />
+                            <a href="mailto:lena@je-bygg.se" target="_blank">lena@je-bygg.se</a>
+                            <br />
+                            <br />
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-2">
+
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                        Redigera
+                                        <span class="caret"></span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <div class="col-lg-4">
+
+                                <div class="btnredigera btn-group-xs" style="text-align:right;">
+                                    <button class="btn" type="button" id="redigerabtn">
+                                        Ta bort
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/Anna.jpg" alt="Anna Ekström"></center>
-                    <h4>Anna Ekström</h4>
-                    <p>
-                        Hyresinbetalningar<br />
-                        Personalansvarig<br />
-                        019 - 16 43 72<br />
-                        <a href="mailto:anna@je-bygg.se" target="_blank">anna@je-bygg.se</a>
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-2">
+                <br />
+                <br />
 
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                    Redigera
-                                    <span class="caret"></span>
-                                </button>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-4">
-
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn">
-                                    Ta bort
-                                </button>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/AnderssonAnnette.jpg" alt="Annette Andersson"></center>
+                        <h4>Annette Andersson</h4>
+                        <p>
+                            Receptionist <br />
+                            Bostadsförmedlare (Örebro)<br />
+                            019 - 16 43 70<br />
+                            <a href="mailto:info@je-bygg.se" target="_blank">info@je-bygg.se</a>
+                        </p>
+                        <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
                     </div>
-                </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/Thor Mari.jpg" alt="Mari Ekström Thor"></center>
-                    <h4>Mari Ekström Thor</h4>
-                    <p>
-                        Ekonomichef/Kamrer<br />
-                        019 - 16 43 71<br />
-                        <a href="mailto:marie@je-bygg.se" target="_blank">marie@je-bygg.se</a>
-                        <br />
-                        <br />
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-2">
-
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                    Redigera
-                                    <span class="caret"></span>
-                                </button>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-4">
-
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn">
-                                    Ta bort
-                                </button>
-                            </div>
-                        </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt="Irene Runell"></center>
+                        <h4>Irene Runell</h4>
+                        <p>
+                            Ekonomiassistent<br />
+                            Leverantörsfakturor<br />
+                            019 - 16 43 74
+                        </p>
                     </div>
-                </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/TungfeltLena02.jpg" alt="Lena Ekström Tungfelt"></center>
-                    <h4>Lena Ekström Tungfelt</h4>
-                    <p>
-                        Fastighetsförvaltare<br />
-                        019 - 16 43 76 <br />
-                        <a href="mailto:lena@je-bygg.se" target="_blank">lena@je-bygg.se</a>
-                        <br />
-                        <br />
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-2">
-
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                    Redigera
-                                    <span class="caret"></span>
-                                </button>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-4">
-
-                            <div class="btnredigera btn-group-xs" style="text-align:right;">
-                                <button class="btn" type="button" id="redigerabtn">
-                                    Ta bort
-                                </button>
-                            </div>
-                        </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/Ottosson-Carina.jpg" alt="Carina Ottosson"></center>
+                        <h4>Carina Ottosson</h4>
+                        <p>
+                            Besiktningsansvarig<br>
+                            Bostadsförmedlare<br />
+                            (Kumla/Nora)<br />
+                            070 - 410 40 11
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-7">
+                        <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Adis"></center>
+                        <h4>Adis</h4>
+                        <p>
+                            Ekonomiassistent
+                        </p>
                     </div>
                 </div>
             </div>
-            <br />
-            <br />
-
-            <div class="row">
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/AnderssonAnnette.jpg" alt="Annette Andersson"></center>
-                    <h4>Annette Andersson</h4>
-                    <p>
-                        Receptionist <br />
-                        Bostadsförmedlare (Örebro)<br />
-                        019 - 16 43 70<br />
-                        <a href="mailto:info@je-bygg.se" target="_blank">info@je-bygg.se</a>
-                    </p>
-                    <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
-                </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt="Irene Runell"></center>
-                    <h4>Irene Runell</h4>
-                    <p>
-                        Ekonomiassistent<br />
-                        Leverantörsfakturor<br />
-                        019 - 16 43 74
-                    </p>
-                </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/Ottosson-Carina.jpg" alt="Carina Ottosson"></center>
-                    <h4>Carina Ottosson</h4>
-                    <p>
-                        Besiktningsansvarig<br>
-                        Bostadsförmedlare<br />
-                        (Kumla/Nora)<br />
-                        070 - 410 40 11
-                    </p>
-                </div>
-                <div class="col-sm-3 col-xs-7">
-                    <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Adis"></center>
-                    <h4>Adis</h4>
-                    <p>
-                        Ekonomiassistent
-                    </p>
-                </div>
-            </div>
-        </div>
 
         <br />
         <br />
