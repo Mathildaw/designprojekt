@@ -144,6 +144,27 @@ function showredigera3() {
         y.style.display = 'none';
     }
 }
+
+function showredigera4() {
+    var y = document.getElementById('redigera4');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
+
+function showredigera5() {
+    var y = document.getElementById('redigera5');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
+
 function shownyhet() {
     var y = document.getElementById('nyhet1');
     var x = document.getElementById('nyhet2');
