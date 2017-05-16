@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/Csskod.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container container-main">
+         
+      <div class="headern">
+    <div class="row header1" style="background-color: white; text-align:center;">
+       
+            <div class="rightimage">
+                <center>
+                    <img src="~/Content/Images/Header3.png" style="width:100%;">
+                    <a class="leftimage" href="~/Home/Index"><img class="img-responsive" src="~/Content/Images/transparent.png"></a>
+                </center>
+</div>
+        
+        @*<div class="col-md-2 leftimage"></div>*@
+
+    </div>
+
+                </div>
+        
+      
+         
+        <div class="navbar navbar-inverse">
+            
+            <div class="container">
+                <div class="navbar-header"><div class="logga col-xs-4"><a href="~/Home/Index"><img class="img-responsive" src="~/Content/Images/transparent.png"></a></div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Startsida", "Index", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Nyheter" ? "active" : "")">@Html.ActionLink("Nyheter", "Nyheter", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Felanmalan" ? "active" : "")">@Html.ActionLink("Felanmälan", "Felanmalan", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Intresseanmalan" ? "active" : "")">@Html.ActionLink("Intresseanmälan", "Intresseanmalan", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "LedigaObjekt" ? "active" : "")">@Html.ActionLink("Lediga objekt", "LedigaObjekt", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Varafastigheter" ? "active" : "")">@Html.ActionLink("Våra fastigheter", "Varafastigheter", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "FragorOchSvar" ? "active" : "")">@Html.ActionLink("Frågor och svar", "FragorOchSvar", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Kontakt" ? "active" : "")">@Html.ActionLink("Kontakta oss", "Kontakt", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "omoss" ? "active" : "")">@Html.ActionLink("Om oss", "omoss", "Home")</li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div>
+            hejhej
+        </div>
+        <div class="container body-content">
+            
+            @RenderBody()
+            <hr />
+            <footer>
+                <div class="footerinfo">
+                    <div class="row">
+                        <div class="col-xs-5 col-md-3 col-sm-2 first">
+                            <a href="~/Home/Index"><img class="img-responsive" src="~/Content/Images/JEbygg%20logga.png"></a>
+
+                        </div>
+                        <div class="col-xs-7 col-md-3 col-sm-3 second">
+                            <p>
+                               
+                                    <span class="bold">JOHN EKSTRÖMS BYGG</span>
+                                    <br /> Org. nr 556212-0468
+                                    <br />Ormestagatan 1B
+                                    <br />702 83 Örebro
+                                    <br />
+                                    <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/oeFiqLVaNsv" target="_blank">Hitta hit</a>
+                            </p>
+
+                        </div>
+                        <div class="col-xs-5 col-md-3 col-sm-3 fourth">
+                            <p>
+                                <span class="bold">TELEFON</span>
+                                <br />019-16 43 70
+                                <br />Jourtelefon efter kontorstid:
+                                <br />010 - 470 57 58
+                            </p>
+                        </div>
+                        <div class="col-xs-7 col-md-3 col-sm-4 third">
+                            <p>
+                                <span class="bold">KONTORETS ÖPPETTIDER</span>
+                                    <br />Måndag - fredag: 07:30 - 16:30
+                                    <br />Telefontid: 09:00 - 16:00
+                                    <br />Lunchstängt: 12:00 - 13:00
+                            </p>
+                        </div>
+                       
+                    </div>
+                    <div class="admin" style="text-align:center; font-size:small;">
+                        <a href="~/Account/Login" style="color:grey;">Admin</a></div>
+                </div>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        <script src="~/Scripts/Script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
+</html>
