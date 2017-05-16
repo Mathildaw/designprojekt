@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "Nyheter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div style="text-align:center;"><h2 class="sidrubrik">Nyheter</h2></div>
+    <div class="maincontainer1">
+        <legend style="color:#e93523">Lägg till en nyhet</legend>
+
+    
+            <div class="redigera" id="redigera" style="margin-left:40px;">
+             
+                <div class="falt">
+                    <label>
+                        Datum:
+                    </label>
+                    <div class="input-group">
+                        <input name="state" placeholder="" class="form-control" type="date" style=" width:206px;">
+                    </div>
+                </div>
+                        <div class="falt">
+                            <label>
+                                Rubrik:
+                            </label>
+                            <div class="input-group">
+                                <input name="state" placeholder="Rubrik" class="form-control" type="text">
+                            </div>
+                        </div>
+              
+                <label>Innehåll:</label>
+                        <div class="falt">
+                           
+                            <img src="~/Content/Images/publish-wordpress-page.jpg" style="width: 600px; border: 1px solid grey;"/>
+                        </div>
+           
+                    <label>Publicera:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Ja"> Ja
+                        <input type="radio" name="val" value="Nej" checked> Nej<br />
+
+                    </form>
+               
+                        <div class="falt" style="margin-top:10px;">
+                            <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+                        </div>
+            </div>
+        <hr style="border-top: 1px solid #e5e5e5;" />
+        <br />
+        <br />
+     <div class=" row" >
+         <div class=" col-md-3 col-lg-3" ></div>
+         <div class="col-md-5 col-lg-5" style="padding-left:0px;">
+             <label>Visa:</label><br />
+             <form>
+                 <input type="radio" name="val" value="Student" checked> Publicerade
+                 <input type="radio" name="val" value="Senior"> Ej publicerade
+                 <input type="radio" name="val" value="Övrigt"> Alla<br>
+             </form>
+         </div>
+     </div>
+        <div class=" row ontop">
+          
+            <div class="col-xs-12 col-sm-9 col-md-9">
+
+                <div class="nyhet">
+                    <div class="row" style="margin-top:10px;">
+                        <div class="col-lg-6">
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="btnredigera btn-group" style="text-align:left;">
+                                <button class="btn btn-default" type="button" id="redigerabtn" onclick="shownyhet()">
+                                    Redigera nyhet
+                                    <span class="caret"></span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-3">
+
+                            <div class="btnredigera btn-group" style="text-align:right;">
+                                <button class="btn btn-danger" type="button" id="redigerabtn">
+                                    Ta bort nyhet
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nyhet1" id="nyhet2" style="display:none;">
+                        <h3>Glad påsk! REDIGERA</h3>
+                        <p style="text-align:left;">
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+
+                            <br />
+                            <br />Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        </p>
+                        <p style="text-align:right;">Datum: 2017-04-12</p>
+                        <br />
+                        <div class="falt" style="margin-top:10px;">
+                            <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+                        </div>
+
+                    </div>
+                    <div class="nyhet1" id="nyhet1" style="display:block;">
+                        <h3>Glad påsk!</h3>
+                        <p style="text-align:left;">
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+
+                            <br />
+                            <br />Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        </p>
+                        <p style="text-align:right;">Datum: 2017-04-12</p>
+                    </div>
+                </div>
+                <br />
+                <div class="nyhet">
+                    <h3>Spara vatten!</h3>
+                    <p style="text-align:left;">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br />Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+                    <p style="text-align:right;">Datum: 2017-04-10</p>
+                </div>
+                
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 nyhetsarkiv">
+                <div>
+                    <p class="rubrik-nyhetsarkiv "><b>Nyhetsarkiv</b></p>
+                    <a class="link" href="#" style="text-align:left">April 2017</a><br />
+                    <a class="link" href="#" style="text-align:left">Mars 2017</a><br />
+                </div>
+            </div>
+        </div>
+</div>

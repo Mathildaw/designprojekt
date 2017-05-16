@@ -8,7 +8,7 @@
 <div class="maincontainer1">
     <div class="maincontainer row ontop">
         <legend style="color:#e93523;">Lägg till ny fastighet</legend>
-        <div class=" row" style="background-color:#dcdcdc;">
+        <div class=" row" style="background-color:#dcdcdc; padding-bottom:10px;" >
             
             <div class=" col-md-4 col-lg-4" >
                
@@ -87,6 +87,16 @@
              
                  
                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                    <label>Visa på startsidan:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Ja"> Ja
+                        <input type="radio" name="val" value="Nej"> Nej<br />
+
+                    </form>
+                </div>
+               
+                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                    <br />
                     <label>Publicera:</label><br />
                     <form>
                         <input type="radio" name="val" value="Ja"> Ja
@@ -232,6 +242,14 @@
                                         <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
                                     </div>
                                 </div>
+                                <div class="col-md-12 col-lg-12" style="padding-left:0px;">
+                                    <label>Typ av boende:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior"> Senior
+                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
+                                    </form>
+                                </div>
                             </div>
                             <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
                                 <label>Bild:</label>
@@ -264,29 +282,35 @@
                                     </div>
                                 </div>
 
+                              
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Typ av boende:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Student"> Student
-                                        <input type="radio" name="val" value="Senior"> Senior
-                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
-                                    </form>
-                                </div>
+                                    <div class=" falt">
+                                        <label>Visa på startsidan:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja"> Ja
+                                            <input type="radio" name="val" value="Nej" checked> Nej<br />
+                                        </form>
+                                    </div>
+                                    </div>
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <div class=" falt">
+                                        <label>Publicera:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja" checked> Ja
+                                            <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                        </form>
+                                        </div>
+                                    </div>
+                                
                             </div>
                             <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
-                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Publicera:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Ja" checked> Ja
-                                        <input type="radio" name="val" value="Nej"> Nej<br />
-
-                                    </form>
-                                </div>
+                              
 
                                 <div>
                                     <br />
                                  
-                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                                    <button type="submit" class="btn btn-success" style="margin-top:170px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
                         </div>

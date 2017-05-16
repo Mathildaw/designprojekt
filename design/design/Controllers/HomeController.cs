@@ -94,7 +94,11 @@ namespace design.Controllers
         {
             return View();
         }
-
+    
+        public ActionResult NyheterAdmin()
+        {
+            return View();
+        }
         public ActionResult Nyheter()
         {
             return View();

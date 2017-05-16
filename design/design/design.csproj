@@ -299,6 +299,7 @@
     <Content Include="Views\Home\FelanmalanAdmin.cshtml" />
     <Content Include="Views\Home\LedigaObjektAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Home\NyheterAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

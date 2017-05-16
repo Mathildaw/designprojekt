@@ -144,6 +144,20 @@ function showredigera3() {
         y.style.display = 'none';
     }
 }
+function shownyhet() {
+    var y = document.getElementById('nyhet1');
+    var x = document.getElementById('nyhet2');
+
+
+    if (y.style.display === 'block') {
+        y.style.display = 'none';
+        x.style.display = 'block';
+    } else {
+        y.style.display = 'block';
+        x.style.display = 'none';
+    }
+}
+
 function hideshowfilter() {
     var x = document.getElementById('filtreraruta-stor');
     var y = document.getElementById('filtreraruta-liten')
