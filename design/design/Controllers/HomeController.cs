@@ -69,7 +69,10 @@ namespace design.Controllers
         {
             return View();
         }
-
+        public ActionResult seriorboendeAdmin()
+        {
+            return View();
+        }
         public ActionResult seriorboende()
         {
             return View();

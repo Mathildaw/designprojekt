@@ -301,6 +301,7 @@
     <Content Include="Views\Home\LedigaObjektAdmin.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Home\NyheterAdmin.cshtml" />
+    <Content Include="Views\Home\seriorboendeAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
