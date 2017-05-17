@@ -165,6 +165,16 @@ function showredigera5() {
     }
 }
 
+function showredigerafråga() {
+    var y = document.getElementById('redigerafråga');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
+
 function showredigeralitenbild() {
     var y = document.getElementById('redigeralitenbild');
 
