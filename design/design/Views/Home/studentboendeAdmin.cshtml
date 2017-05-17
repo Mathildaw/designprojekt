@@ -1,17 +1,18 @@
 ﻿
 @{
-    ViewBag.Title = "studentboende";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    List<String> bilder = new List<string>();
+    bilder.Add("bild 1");
+    bilder.Add("bild 2");
+    bilder.Add("bild 3");
 }
 
-<center><h2 class="sidrubrik">Våra fastigheter/Studentboende</h2></center>
+<center><h2 class="sidrubrik">Studentboende</h2></center>
 
 <div class="maincontainer1">
 
-    <div class="row ontop">
-        <div class="col-sm-4 col-md-4">
-            <a class="link" href="~/Home/Varafastigheter"><< Tillbaka till våra fastigheter</a>
-        </div>
-    </div>
+
 
 
     <div class=" row" style="margin-left:3%; margin-right:3%; margin-bottom: 3%;">
@@ -19,7 +20,7 @@
         <div class="col-md-6 col-sm-6 col-xs-12 col-lg-6">
 
             <div class=" col-md-10 col-sm-12 col-xs-12 col-lg-8">
-                <h3>Bilder från studentboenden</h3>
+                <h3>Bilder från studenter</h3>
                 <div id="myCarousel1" class="carousel slide" data-interval="false">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -50,7 +51,62 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
-            </div>
+                <div class="btnredigera btn-group-xs">
+                    <button class="btn" type="button" id="redigerabtn" onclick="showbilderStudent()" >
+                        Redigera
+                        <span><i class="glyphicon glyphicon-pencil"></i></span>
+                    </button>
+                    </div>
+                <div id="bilderStudent" style="background-color: #dcdcdc; padding-bottom: 10px; display: none;" >
+
+
+                    <div class="row">
+
+                        <div class="col-md-7 col-lg-6" style="padding-right: 0px;">
+
+                            <div class="">
+                                <label>Bild:</label>
+                                <div class=" input-group">
+                                    <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
+
+                            <label style="color:transparent">.</label>
+                            <button type="submit" class="btn btn-default">Hämta bild <span class="glyphicon glyphicon-file"></span></button>
+                        </div>
+                    </div>
+
+                    <label>Adress:</label>
+                    <div class=" input-group">
+                        <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                    </div>
+
+                    <div class="">
+
+                        <button type="submit" class="btn btn-primary btn-sm" style="margin-top:5px;">Lägg till bild <span class="glyphicon glyphicon-arrow-down"></span></button>
+                    </div>
+                    <div class=" row">
+                        <div class=" col-md-6 col-lg-6">
+                            <label>Uppladdade bilder</label>
+                            <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:150px; height: 100px; margin-bottom:5px;">
+                                @foreach (string b in bilder)
+                                {
+                                    <option id="objekt" class="list-group-item" value="@b">@b</option>
+                                }
+                            </select>
+                        </div>
+                        <div class=" col-md-3 col-lg-3">
+                            <label>bild 1</label>
+                            <img src="~/Content/Images/arlen%2025%20-%202.jpg" style="width: 120px;" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-sm">Ta bort bild <span class="glyphicon glyphicon-trash"></span></button>
+
+                </div>
+
+                </div>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12 col-lg-4">
             <h3>Bra länkar för dig som student</h3>
@@ -64,7 +120,7 @@
             <div class="btnredigera btn-group-xs">
                 <button class="btn" type="button" id="redigerabtn" onclick="showredigeralitenbild()">
                     Redigera
-                    <span class="caret"></span>
+                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                 </button>
                 <div class="redigera" id="redigeralitenbild" style="display:none;">
                     <div class="col-md-12">
@@ -113,7 +169,7 @@
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
                                 <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera()">
                                     Redigera fastighet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
@@ -200,7 +256,7 @@
 
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
                                     <div class=" falt">
-                                        <label>Visa i bildspel:</label><br />
+                                        <label>Visa på startsidan:</label><br />
                                         <form>
                                             <input type="radio" name="val" value="Ja"> Ja
                                             <input type="radio" name="val" value="Nej" checked> Nej<br />
@@ -263,7 +319,7 @@
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
                                 <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera4()">
                                     Redigera fastighet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
@@ -350,7 +406,7 @@
 
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
                                     <div class=" falt">
-                                        <label>Visa i bildspel:</label><br />
+                                        <label>Visa på startsidan:</label><br />
                                         <form>
                                             <input type="radio" name="val" value="Ja"> Ja
                                             <input type="radio" name="val" value="Nej" checked> Nej<br />
@@ -416,7 +472,7 @@
                                 <div class="btnredigera btn-group-xs" style="text-align:right;">
                                     <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera5()">
                                         Redigera fastighet
-                                        <span class="caret"></span>
+                                        <span><i class="glyphicon glyphicon-pencil"></i></span>
                                     </button>
                                 </div>
 
@@ -503,7 +559,7 @@
 
                                     <div class="col-md-10 col-lg-7" style="padding-left:0px;">
                                         <div class=" falt">
-                                            <label>Visa i bildspel:</label><br />
+                                            <label>Visa på startsidan:</label><br />
                                             <form>
                                                 <input type="radio" name="val" value="Ja"> Ja
                                                 <input type="radio" name="val" value="Nej" checked> Nej<br />

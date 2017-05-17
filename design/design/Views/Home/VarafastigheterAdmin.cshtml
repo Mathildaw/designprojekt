@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Varafastigheter";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <center><h2 class="sidrubrik">Våra fastigheter</h2></center>
@@ -115,9 +116,10 @@
         <hr style="border-top: 1px solid #e5e5e5;"/>
         <br />
         <br />
+        <legend class="rubrik-fastigheter">Redigera fastigheter</legend>
         <div class="row ">
 
-            <div class=" col-md-9 col-sm-7 divfastigheter2" >
+            <div class="col-md-9 divfastigheter2" >
              
                 <div class="col-md-3 col-lg-3" >
                     <label>Visa fastigheter för</label>
@@ -161,15 +163,17 @@
 
 
                 </div>
-
+                </div>
+            <div class=" row col-md-9 divfastigheter2" style="margin-left:20px;">
                 <legend class="rubrik-fastigheter">3 Fastigheter</legend>
+
                 <div class="row divfastigheter3 objekt">
 
                     <div class="col-md-5 col-sm-12">
                         <center><img class="img-responsive" src="~/Content/Images/Blaslampan%202%20-%203.jpg" alt=""></center>
                     </div>
                     <div class="col-md-5 col-sm-10">
-                        
+
                         <p>
                             <b>Område:</b> Örebro Norr <br />
                             <b>Adress:</b> Rynningegatan 27-37 <br />
@@ -178,33 +182,33 @@
                             1 Ledig lägenhet i fastigheten<br />
                             <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
                         </p>
-                        
+
 
                     </div>
 
-                    <div class="col-md-2 col-sm-9" >
+                    <div class="col-md-2 col-sm-9">
                         <br />
                         <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Hitta hit</a>
                         @*<div class="google-maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>*@
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>*@
                     </div>
                     <div class="row">
 
                     </div>
                     <div class="row">
                         <div class="col-lg-8">
-                         
+
                         </div>
                         <div class="col-lg-2">
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
                                 <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera()">
                                     Redigera fastighet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
-                            
+
                         </div>
                         <div class="col-lg-2">
 
@@ -213,10 +217,10 @@
                                     Ta bort fastighet
                                 </button>
                             </div>
-                            </div>
                         </div>
-                    <div class=" row" style="background-color:#fbfbfb;" >
-                     
+                    </div>
+                    <div class=" row" style="background-color:#fbfbfb;">
+
                         <div class="redigera" id="redigera" style="display:none; ">
                             <br />
                             <div class=" col-md-4 col-lg-4 ">
@@ -282,7 +286,7 @@
                                     </div>
                                 </div>
 
-                              
+
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
                                     <div class=" falt">
                                         <label>Visa på startsidan:</label><br />
@@ -291,7 +295,7 @@
                                             <input type="radio" name="val" value="Nej" checked> Nej<br />
                                         </form>
                                     </div>
-                                    </div>
+                                </div>
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
                                     <div class=" falt">
                                         <label>Publicera:</label><br />
@@ -300,16 +304,16 @@
                                             <input type="radio" name="val" value="Nej"> Nej<br />
 
                                         </form>
-                                        </div>
                                     </div>
-                                
+                                </div>
+
                             </div>
                             <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
-                              
+
 
                                 <div>
                                     <br />
-                                 
+
                                     <button type="submit" class="btn btn-success" style="margin-top:170px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
@@ -325,7 +329,7 @@
                         <center><img class="img-responsive" src="~/Content/Images/Brandstationen 6 - 3.jpg" alt=""></center>
                     </div>
                     <div class="col-md-5 col-sm-10">
-                        
+
                         <p>
                             <b>Område:</b> Örebro Centralt <br />
                             <b>Adress:</b> Kyrkogatan 20 <br />
@@ -338,15 +342,15 @@
                             <br />
                             <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
                         </p>
-                       
+
                     </div>
 
                     <div class="col-md-2 col-sm-9">
                         <br />
                         <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/boNdvNsyb1R2" target="_blank"> Hitta hit</a>
                         @*<div class="google-maps">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>*@
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>*@
 
                     </div>
                     <div class="row">
@@ -360,7 +364,7 @@
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
                                 <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera2()">
                                     Redigera fastighet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
@@ -470,7 +474,7 @@
                         <center><img class="img-responsive" src="~/Content/Images/Blaslampan 2 - 1.jpg" alt=""></center>
                     </div>
                     <div class="col-md-5 col-sm-10">
-                       
+
                         <p>
                             <b>Område:</b> Örebro Centralt <br />
                             <b>Adress:</b> Slottsgatan 7 <br />
@@ -479,15 +483,15 @@
                             0 Lediga lägenheter i fastigheten<br />
                             <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
                         </p>
-                        
+
                     </div>
 
-               
+
 
                     <div class="col-md-2 col-sm-9">
                         <br />
                         <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/6q7cYjMi3Qy" target="_blank"> Hitta hit</a>
-              
+
 
                     </div>
                     <div class="row">
@@ -501,7 +505,7 @@
                             <div class="btnredigera btn-group-xs" style="text-align:right;">
                                 <button class="btn btn-default" type="button" id="redigerabtn" onclick="showredigera3()">
                                     Redigera fastighet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
@@ -605,18 +609,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3 divfastigheter"  >
-
-                <p class="meromfastigheter">Läs mer om våra fastigheter</p>
-
-                <div class="link1">
-                    <a class="link" href="~/Home/studentboende" style="text-align:left">Studentboende</a><br />
-                </div>
-                <div class="link2">
-                    <a class="link" href="~/Home/seriorboende" style="text-align:left">Seniorboende 55+</a><br />
-                </div>
-
-            </div>
+      
         </div>
     </div>
     </div>

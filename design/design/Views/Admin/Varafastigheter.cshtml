@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "Varafastigheter";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<center><h2 class="sidrubrik">Våra fastigheter</h2></center>
+
+<div class="maincontainer1">
+    <div class="maincontainer row ontop">
+
+        <div class="row ">
+
+
+            <div class=" col-md-9 col-sm-7 divfastigheter2" >
+                <div class="col-sm-6 col-md-4 divleft2" >
+                    <label>Visa fastigheter för</label>
+                    <br />
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                            Alla områden
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kumla</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nora</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Studentboende</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro Seniorboende 55+</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-5">
+                        <label>Sök på adress</label>
+                        <div class="input-group stylish-input-group">
+                           
+                            <input type="text" class="form-control" placeholder="Sök">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                  
+
+
+                </div>
+
+                <legend class="rubrik-fastigheter">3 Fastigheter</legend>
+                <div class="row divfastigheter3 objekt">
+
+                    <div class="col-md-5 col-sm-12">
+                        <center><img class="img-responsive" src="~/Content/Images/Blaslampan%202%20-%203.jpg" alt=""></center>
+                    </div>
+                    <div class="col-md-5 col-sm-10">
+                        
+                        <p>
+                            <b>Område:</b> Örebro Norr <br />
+                            <b>Adress:</b> Rynningegatan 27-37 <br />
+                            <b>Antal lägenheter i fastigheten:</b> 20<br />
+                            <br />
+                            1 Ledig lägenhet i fastigheten<br />
+                            <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                        </p>
+                        
+
+                    </div>
+
+                    <div class="col-md-2 col-sm-9" >
+                        <br />
+                        <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/gvNVpwmYs5n" target="_blank"> Hitta hit</a>
+                        @*<div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>*@
+                    </div>
+                   
+
+
+
+                </div>
+
+                <hr size="1" color="#996633">
+                <div class="row objekt">
+                    <div class="col-md-5 col-sm-12">
+                        <center><img class="img-responsive" src="~/Content/Images/Brandstationen 6 - 3.jpg" alt=""></center>
+                    </div>
+                    <div class="col-md-5 col-sm-10">
+                        
+                        <p>
+                            <b>Område:</b> Örebro Centralt <br />
+                            <b>Adress:</b> Kyrkogatan 20 <br />
+                            <b>Antal lägenheter i fastigheten:</b> 15<br />
+                            <b>Seniorboende 55+</b><br />
+                            <a class="link" href="~/Home/seriorboende">Läs mer om seniorboende 55+ >></a>
+                            <br />
+                            <br />
+                            0 Lediga lägenheter i fastigheten
+                            <br />
+                            <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                        </p>
+                       
+                    </div>
+
+                    <div class="col-md-2 col-sm-9">
+                        <br />
+                        <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/boNdvNsyb1R2" target="_blank"> Hitta hit</a>
+                        @*<div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>*@
+
+                    </div>
+                </div>
+
+                <hr size="1" color="#996633">
+                <div class="row objekt">
+                    <div class="col-md-5 col-sm-12">
+                        <center><img class="img-responsive" src="~/Content/Images/Blaslampan 2 - 1.jpg" alt=""></center>
+                    </div>
+                    <div class="col-md-5 col-sm-10">
+                       
+                        <p>
+                            <b>Område:</b> Örebro Centralt <br />
+                            <b>Adress:</b> Slottsgatan 7 <br />
+                            <b>Antal lägenheter i fastigheten:</b> 40<br />
+                            <br />
+                            0 Lediga lägenheter i fastigheten<br />
+                            <a class="link" href="~/Home/LedigaObjekt">Gå till lediga objekt >></a>
+                        </p>
+                        
+                    </div>
+
+               
+
+                    <div class="col-md-2 col-sm-9">
+                        <br />
+                        <span class="glyphicon glyphicon-map-marker"></span><a href="https://goo.gl/maps/6q7cYjMi3Qy" target="_blank"> Hitta hit</a>
+                        @*<div class="google-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65225.19485646707!2d15.13241503855973!3d59.27805469948709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c017f144aff39%3A0xcfe3b0bad018c93e!2zw5ZyZWJybw!5e0!3m2!1ssv!2sse!4v1492253068164" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>*@
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-3 divfastigheter"  >
+
+                <p class="meromfastigheter">Läs mer om våra fastigheter</p>
+
+                <div class="link1">
+                    <a class="link" href="~/Admin/studentboende" style="text-align:left">Studentboende</a><br />
+                </div>
+                <div class="link2">
+                    <a class="link" href="~/Admin/seriorboende" style="text-align:left">Seniorboende 55+</a><br />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        

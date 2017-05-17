@@ -1,14 +1,22 @@
-﻿
-@{
-    ViewBag.Title = "Intresseanmalan";
+﻿@{
+    ViewBag.Title = "Intresseanmalan2";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2 class="sidrubrik">Intresseanmälan</h2>
+<h2 class="sidrubrik">Intresseanmälan Rynningegatan 27</h2>
 <div class="maincontainer1">
+    <div class="col-xs-12 information mobil-info">
+        <p style="font-size:x-large;"><b>Intresseanmälan gäller endast för:</b></p>
+        <h4>
+            <b>Adress:</b> Rynningegatan 27 <br />
+            <b>Antal rum:</b> 3
+            <br /><b>Hyra:</b> 7000 kr/månad
 
+            <br />
+        </h4>
+    </div>
     <div class="row ontop">
-        <div class="col-md-5 col-sm-5 col-lg-5 leftdiv1">
+        <div class="col-md-5 col-sm-5 leftdiv-intresse2" >
             <div class="form-group">
                 <div class="falt">
                     <label>Namn: *</label>
@@ -98,92 +106,8 @@
                     </div>
                 </div>
 
-                
-                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
-                    <label>Jag söker: *</label>
-                    <br />
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            boende/objekt
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Studentboende" value="Studentboende"><label for="ID"> Studentboende</label>
-                            <li><input type="checkbox" id="ID" name="Seniorboende" value="Seniorboende"><label for="ID"> Seniorboende 55+</label>
-                            <li><input type="checkbox" id="ID" name="Övrigt" value="Övrigt"><label for="ID"> Övrigt</label>
-                        </ul>
-                    </div>
-                </div>
-                
-               
-                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
-                    <label>Område: </label>
-                    <br />
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            område
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Kumla" value="Kumla"><label for="ID"> Kumla</label>
-                            <li><input type="checkbox" id="ID" name="Nora" value="Nora"><label for="ID"> Nora</label>
-                            <li><input type="checkbox" id="ID" name="Studentboende" value="Studentboende"><label for="ID"> Studentboende</label>
-                            <li><input type="checkbox" id="ID" name="Seniorboende 55+" value="Seniorboende 55+"><label for="ID"> Seniorboende 55+</label>
-                            <li><input type="checkbox" id="ID" name="Örebro" value="Örebro"><label for="ID"> Örebro</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Almby" value="Örebro Almby"><label for="ID"> Örebro Almby</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Centralt" value="Örebro Centralt"><label for="ID"> Örebro Centralt</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Väster" value="Örebro Väster"><label for="ID"> Örebro Väster</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Öster" value="Örebro Öster"><label for="ID"> Örebro Öster</label>
-                            <li><input type="checkbox" id="ID" name="Örebro Söder" value="Örebro Söder"><label for="ID"> Örebro Söder</label>
-                        </ul>
-                    </div>
-                </div>
-          
-                <div class="falt">
-                    <label>Antal rum: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="ruminput" placeholder="Antal rum" class="form-control input-md" type="number">
-                    </div>
-                </div>
 
-                <div class="falt">
-                    <label>Våning: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="våninginput" placeholder="Våning" class="form-control input-md" type="number">
-                    </div>
-                </div>
 
-                <div class="falt">
-                    <label>Maxhyra: </label>
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-door"></i></span>
-                        <input name="hyrainput" placeholder="Maxhyra" class="form-control input-md" type="number">
-                    </div>
-                </div>
-
-                
-                <div class="col-md-12 checkbox1" style="margin-bottom:7px;">
-                    <label>Övriga önskemål: </label>
-                    <br />
-                    <div class="btn-group">
-                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" data-placeholder="false">
-                            jag önskar
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu drop">
-                            <li><input type="checkbox" id="ID" name="Altan" value="Altan"><label for="ID"> Altan</label>
-                            <li><input type="checkbox" id="ID" name="Balkong" value="Balkong"><label for="ID"> Balkong</label>
-                            <li><input type="checkbox" id="ID" name="Hiss" value="Hiss"><label for="ID"> Hiss</label>
-                            <li><input type="checkbox" id="ID" name="Kokvrå" value="Kokvrå"><label for="ID"> Kokvrå</label>
-                            <li><input type="checkbox" id="ID" name="Radhus" value="Radhus"><label for="ID"> Radhus</label>
-
-                        </ul>
-                    </div>
-                </div>
-               
-            
                 <div class="falt">
                     <label>Egna ord:</label>
                     <div class="input-group">
@@ -289,68 +213,53 @@
                         </div>
                     </div>
 
+
                 </div>
 
                 <br />
                 <br />
-                <div @*class="col-md-4"*@>
+                <div class="col-xs-5 col-md-4 col-sm-6">
                     <button type="submit" class="btn btn-warning">Skicka <span class="glyphicon glyphicon-send"></span></button>
                 </div>
-
+                <div class="col-xs-5 col-md-4 col-sm-6">
+                    <a href="~/Home/LedigaObjekt" type="submit" class="btn btn-danger">Avbryt</a>
+                </div>
             </div>
         </div>
-        <div >
-            <div class="col-md-5 col-sm-5 col-lg-5 rightdiv information information1" >
-                <div class="btnredigera btn-group-xs">
-                    <br />
-                    <button class="btn" type="button" id="redigerabtn">
-                        Redigera <span><i class="glyphicon glyphicon-pencil"></i></span>
-                    </button>
-                </div>
-                <h3>Personuppgifter</h3>
-                <p>
-                    
-                    De personuppgifter som du lämnar i ansökan/intresseanmälan kommer att behandlas 
-                    i den utsträckning som behövs för att kunna bedömma av om du kan godtas som hyresgäst.
-                    Därför behövs uppgifter från personer som kan uttala sig om dig. Genom att lämna uppgifter
-                    om referenspersoner medger du att uppgifter får inhämtas från dessa personer. Uppgifter kan
-                    också komma att inhämtas från kreditupplysningsinstitut och myndigheter. 
-                    <br />
-                    <br />
-                    Uppgifterna kommer endast att behandlas inom bostadsföretaget. Du har rätt att gratis en gång om året 
-                    få besked om vilka personuppgifter om dig som behandlas och hur de behandlas. Du kan också begära
-                    rättelse av de personuppgifter som behandlas.
-                    <br />
-                    <br />
-                    Personuppgifterna om dig kommer bara att behandlas under den tid som din ansökan/intresseanmälan är aktuell.
-                    Detta innebär att samtliga personuppgifter kommer att gallras när du har meddelat att du inte längre
-                    önskar kvarstå som bostadssökande. Detta gäller också om din ansökan/intresseanmälan om bostad avslås.
-                    Om skälet till att ansökan/intresseanmälan avslagits är att du inte kunnat godtas på grund av misskötsamhet
-                    i ett tidigare boende, bevaras dock uppgifterna under tre månader efter avslagsbeslut.
-                </p>
-                <hr size="1" color="#996633">
+        <div class="col-md-5 col-sm-5 rightdiv information tablet-info">
+            <p style="font-size:x-large;"><b>Intresseanmälan gäller endast för:</b></p>
+            <h4>
+                <b>Adress:</b> Rynningegatan 27 <br />
+                <b>Antal rum:</b> 3
+                <br /><b>Hyra:</b> 7000 kr/månad
 
                 <br />
-                
+            </h4>
+        </div>
+        <div class="col-md-5 col-sm-5 col-lg-5 rightdiv information right-last">
+            <br />
 
-                <h3>På hemsidan kan ni göra intresseanmälan dygnet runt.</h3>
-                <p>
+            <h3>Personuppgifter</h3>
+            <p>
 
-                    När ni gör en intresseanmälan står ni i
-                    bostadskön i tre månader, det är sedan upp
-                    till er att uppdatera er anmälan för
-                    att stå kvar i bostadskön.
-                    <br />
-                    <br />Mer information om intresseanmälan och
-                    bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
-
-                    <br />
-                </p>
-              
+                De personuppgifter som du lämnar i ansökan/intresseanmälan kommer att behandlas
+                i den utsträckning som behövs för att kunna bedömma av om du kan godtas som hyresgäst.
+                Därför behövs uppgifter från personer som kan uttala sig om dig. Genom att lämna uppgifter
+                om referenspersoner medger du att uppgifter får inhämtas från dessa personer. Uppgifter kan
+                också komma att inhämtas från kreditupplysningsinstitut och myndigheter.
                 <br />
-            </div>
-
-            
+                <br />
+                Uppgifterna kommer endast att behandlas inom bostadsföretaget. Du har rätt att gratis en gång om året
+                få besked om vilka personuppgifter om dig som behandlas och hur de behandlas. Du kan också begära
+                rättelse av de personuppgifter som behandlas.
+                <br />
+                <br />
+                Personuppgifterna om dig kommer bara att behandlas under den tid som din ansökan/intresseanmälan är aktuell.
+                Detta innebär att samtliga personuppgifter kommer att gallras när du har meddelat att du inte längre
+                önskar kvarstå som bostadssökande. Detta gäller också om din ansökan/intresseanmälan om bostad avslås.
+                Om skälet till att ansökan/intresseanmälan avslagits är att du inte kunnat godtas på grund av misskötsamhet
+                i ett tidigare boende, bevaras dock uppgifterna under tre månader efter avslagsbeslut.
+            </p>
         </div>
     </div>
 </div>

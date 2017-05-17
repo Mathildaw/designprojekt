@@ -43,22 +43,39 @@
                                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Startsida", "Index", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Nyheter" ? "active" : "")">@Html.ActionLink("Nyheter", "Nyheter", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Felanmalan" ? "active" : "")">@Html.ActionLink("Felanmälan", "Felanmalan", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Intresseanmalan" ? "active" : "")">@Html.ActionLink("Intresseanmälan", "Intresseanmalan", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "LedigaObjekt" ? "active" : "")">@Html.ActionLink("Lediga objekt", "LedigaObjekt", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Varafastigheter" ? "active" : "")">@Html.ActionLink("Våra fastigheter", "Varafastigheter", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "FragorOchSvar" ? "active" : "")">@Html.ActionLink("Frågor och svar", "FragorOchSvar", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Kontakt" ? "active" : "")">@Html.ActionLink("Kontakta oss", "Kontakt", "Home")</li>
-                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "omoss" ? "active" : "")">@Html.ActionLink("Om oss", "omoss", "Home")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Index" ? "active" : "")">@Html.ActionLink("Startsida", "Index", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Nyheter" ? "active" : "")">@Html.ActionLink("Nyheter", "Nyheter", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Felanmalan" ? "active" : "")">@Html.ActionLink("Felanmälan", "Felanmalan", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Intresseanmalan" ? "active" : "")">@Html.ActionLink("Intresseanmälan", "Intresseanmalan", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "LedigaObjekt" ? "active" : "")">@Html.ActionLink("Lediga objekt", "LedigaObjekt", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Varafastigheter" ? "active" : "")">@Html.ActionLink("Våra fastigheter", "Varafastigheter", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "FragorOchSvar" ? "active" : "")">@Html.ActionLink("Frågor och svar", "FragorOchSvar", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "Kontakt" ? "active" : "")">@Html.ActionLink("Kontakta oss", "Kontakt", "Admin")</li>
+                        <li class="@(ViewContext.RouteData.Values["Action"].ToString() == "omoss" ? "active" : "")">@Html.ActionLink("Om oss", "omoss", "Admin")</li>
                     </ul>
                    
                 </div>
             </div>
         </div>
-        <div>
-            hejhej
+        <div style="background-color:white; padding-top:50px; padding-left:25px; padding-right:25px;">
+            <div style="text-align:right;"><a class="btn btn-default btn-lg " href="~/Home/Index" style="background-color:black; color:white;">Logga ut</a></div>
+            <div style="margin-top:20px;">
+                <a class="btn btn-default btn-sm" href="~/Home/NyheterAdmin">Nyheter</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/FelanmalanAdmin">Felanmälan</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/IntresseanmalanAdmin">Intresseanmälan</a>
+
+                <a class="btn btn-default  btn-sm" href="~/Home/LedigaObjektAdmin">Objekt</a>
+                <a class="btn btn-default  btn-sm" href="~/Admin/Stad">Stad</a>
+                <a class="btn btn-default  btn-sm" href="~/Admin/Omrade">Område</a>
+                <a class="btn btn-default  btn-sm" href="~/Admin/Val">Övriga val</a>
+
+                <a class="btn btn-default  btn-sm" href="~/Home/VarafastigheterAdmin">Våra fastigheter</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/studentboendeAdmin">Studentboende</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/seriorboendeAdmin">Seniorboende</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/FragorOchSvarAdmin">Frågor och svar</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/KontaktAdmin">Kontakta oss</a>
+                <a class="btn btn-default  btn-sm" href="~/Home/omossAdmin">Om oss</a>
+            </div> 
         </div>
         <div class="container body-content">
             

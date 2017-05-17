@@ -53,7 +53,8 @@ namespace design.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Invalid username or password.");
+                    return RedirectToAction("NyheterAdmin", "Home");
+                    //ModelState.AddModelError("", "Invalid username or password.");
                 }
             }
 

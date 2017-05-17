@@ -1,0 +1,100 @@
+﻿@using design.Controllers;
+@using design.Models;
+@using System.Collections.Generic;
+@{
+    ViewBag.Title = "Varafastigheter";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    List<String> m = new List<string>();
+    m.Add("123 543, Rynningegatan 7");
+    m.Add("145 432, Rynningegatan 8");
+
+   List<String> bilder = new List<string>();
+    bilder.Add("bild 1");
+    bilder.Add("bild 2");
+    bilder.Add("bild 3");
+
+    List<String> stad = new List<string>();
+    stad.Add("Örebro");
+    stad.Add("Nora");
+    stad.Add("Kumla");
+
+    List<String> omrade = new List<string>();
+    omrade.Add("Örebro, Norr");
+    omrade.Add("Örebro, Centralt");
+    omrade.Add("Örebro, Studentboende");
+
+    List<String> val = new List<string>();
+    val.Add("Hiss");
+    val.Add("Radhus");
+    val.Add("Balkong");
+}
+<center><h2 class="sidrubrik">Stad</h2></center>
+<div class="maincontainer1">
+    <div class="maincontainer ">
+        <legend style="color:#e93523;">Administrera stad</legend>
+        <div class=" row" style=" background-color: #dcdcdc; ">
+
+            <div class=" col-md-5" style="background-color: #dcdcdc; padding-bottom: 10px;">
+                <h1>Ny stad</h1>
+
+                <div class="">
+                    <label>Stad:</label>
+                    <div class=" input-group">
+                        <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>Beskrivning:</label>
+                    <div class="input-group">
+                        <textarea class="form-control" name="comment" placeholder="Beskriv staden" style="height:100px; width:205px;"></textarea>
+                    </div>
+                </div>
+
+                <div class="">
+
+                    <button type="submit" class="btn btn-success btn-sm" style="margin-top:5px;">Spara ny stad <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                </div>
+            </div>
+
+            <div class=" col-md-6" style="border-left:20px solid white; background-color:#dcdcdc; padding-bottom:10px;">
+                <h1>Redigera stad</h1>
+                <label>Städer</label>
+                <div>
+
+                    <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
+                        @foreach (string s in stad)
+                        {
+                            <option id="objekt" class="list-group-item" value="@s">@s</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="">
+                    <label>Stad:</label>
+                    <div class=" input-group">
+                        <input name="state" placeholder="Örebro" class="form-control" style="border-radius:0px;" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>Beskrivning:</label>
+                    <div class="input-group">
+                        <textarea class="form-control" name="comment" placeholder="Örebro" style="height:100px; width:205px;"></textarea>
+                    </div>
+                </div>
+                <div class=" row">
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-success btn-sm">Spara redigering <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                    </div>
+                    <div class=" col-md-3">
+                        <button type="submit" class="btn btn-danger btn-sm">Ta bort stad <span class="glyphicon glyphicon-trash"></span></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr style="border-top: 1px solid #e5e5e5;" />
+
+    </div>
+     </div>   

@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<link href="~/Content/Csskod.css" rel="stylesheet" />
+
+   
+        <div style=" text-align: center;"><h2 class="sidrubrik">Startsida</h2></div>
+
+<div class="maincontainer1">
+
+    <div class="row ontop">
+       
+        <h1 style="text-align:center; color: #e93523; margin-bottom: 30px;">För folk som tycker om att bo!</h1>
+        <div class="col-md-3 col-sm-2 col-lg-3" >
+        </div> <div class="col-md-6 col-sm-8 col-lg-6 indexcarousel">
+
+            <div class="mainbody">
+                <hr /><h2 style="text-align:center; color: black;">Våra fastigheter</h2><hr />
+                <div id="myCarousel1" class="carousel slide" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li class="item1 active"></li>
+                        <li class="item2"></li>
+                        <li class="item3"></li>
+                        <li class="item4"></li>
+                        <li class="item5"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                       
+                        <div class="item active">
+                            <img src="~/Content/Images/Liljan%209%20-%201.jpg" alt="Karlslundsgatan 10 A-D">
+                            <div class=" carousel-caption">Karlslundsgatan 10 A-D</div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/Brandstationen%206%20-%203.jpg" alt="Kyrkogatan 18-20">
+                            <div class=" carousel-caption">Kyrkogatan 18-20</div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/Fetknoppen%202%20-%202.jpg" alt="Adress">
+                            <div class=" carousel-caption">Adress</div>
+                        </div>
+                        <div class="item">
+                            <img src="~/Content/Images/Krakan%209%20-%201.jpg" alt="Adress">
+                            <div class=" carousel-caption">Adress</div>
+                        </div>
+                      
+                        <div class="item ">
+                            <img src="~/Content/Images/Blaslampan%202%20-%203.jpg" alt="Rynningegatan 27-37">
+                        <div class=" carousel-caption">Rynningegatan 27-37</div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control left" href="#myCarousel1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <a class="link" href="~/Home/Varafastigheter">Se fler av våra fastigheter >></a>
+
+
+        </div>
+        @*<div class="col-md-5 col-sm-5 col-lg-5">
+            <div>
+                <h2 style="text-align: left; color: black;">Varför ska man hyra av oss?</h2>
+                <div>
+                    <p style="font-size:16px;">
+                        Vi har ägande, skötsel och drift i egen regi.
+                        <br />
+                        Vi har lång erfarenhet av hyresfastigheter och hyresgäster.
+                    </p>
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <br />
+            <br />
+         
+            <br />
+            <br />
+        </div>*@
+        </div>
+   
+  
+    
+        <div class=" row" style="margin-left:5%; margin-right:5%;">
+            
+            <br />
+            <div class=" col-md-9 col-sm-10 nyhetindex">
+                <hr /><h2 style="text-align:center;">Senaste nytt</h2><hr />
+                <div class="nyhet " style="text-align: center; margin: auto;">
+                    <h3>Glad påsk!</h3>
+                    <p style="text-align:left;">
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+
+                        <br />
+                        <br />Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                    </p>
+                    <p style="text-align:right;">2017-04-12</p>
+                </div>
+                <a class="link" href="~/Home/Nyheter">Se fler nyheter >></a>
+            </div>
+
+
+        </div>
+  
+
+    <hr />
+
+   
+        <div class="col-md-4 col-sm-6 facebook" style="float:none; margin:auto;">
+            <h3 class=" facebook-rubrik">Gilla oss på Facebook</h3>
+            
+            <div class="fb-page" data-height="350" data-href="https://www.facebook.com/John-Ekstr%C3%B6ms-Bygg-AB-1430670663830254/" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/John-Ekstr%C3%B6ms-Bygg-AB-1430670663830254/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/John-Ekstr%C3%B6ms-Bygg-AB-1430670663830254/">John Ekströms Bygg AB</a></blockquote></div>
+       
+    </div>
+    <h3 style="text-align:center; margin-top: 40px;">
+    Att hyra bostad är en grym boendeform som ger dig <span style="color: #e93523">trygghet</span>, <span style="color: #e93523">frihet</span> och <span style="color: #e93523">service</span>!
+</h3>
+    <br />
+    </div>
+
+ 
+@*</div>
+</div>*@
+
+<script>
+    $(document).ready(function () {
+        // Activate Carousel
+        $("#myCarousel1").carousel({ interval: false });
+
+        // Enable Carousel Indicators
+        $(".item1").click(function () {
+            $("#myCarousel1").carousel(0);
+        });
+        $(".item2").click(function () {
+            $("#myCarousel1").carousel(1);
+        });
+        $(".item3").click(function () {
+            $("#myCarousel1").carousel(2);
+        });
+        $(".item4").click(function () {
+            $("#myCarousel1").carousel(3);
+        });
+        $(".item5").click(function () {
+            $("#myCarousel1").carousel(4);
+        });
+
+        // Enable Carousel Controls
+        $(".left").click(function () {
+            $("#myCarousel1").carousel("prev");
+        });
+        $(".right").click(function () {
+            $("#myCarousel1").carousel("next");
+        });
+    });
+</script>

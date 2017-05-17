@@ -160,6 +160,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\omossController.cs" />
     <Compile Include="Global.asax.cs">
@@ -303,6 +304,22 @@
     <Content Include="Views\Home\NyheterAdmin.cshtml" />
     <Content Include="Views\Home\seriorboendeAdmin.cshtml" />
     <Content Include="Views\Home\studentboendeAdmin.cshtml" />
+    <Content Include="Views\Admin\Felanmalan.cshtml" />
+    <Content Include="Views\Admin\FragorOchSvar.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\InfoObjekt.cshtml" />
+    <Content Include="Views\Admin\Intresseanmalan.cshtml" />
+    <Content Include="Views\Admin\Intresseanmalan2.cshtml" />
+    <Content Include="Views\Admin\Kontakt.cshtml" />
+    <Content Include="Views\Admin\LedigaObjekt.cshtml" />
+    <Content Include="Views\Admin\Nyheter.cshtml" />
+    <Content Include="Views\Admin\omoss.cshtml" />
+    <Content Include="Views\Admin\seriorboende.cshtml" />
+    <Content Include="Views\Admin\studentboende.cshtml" />
+    <Content Include="Views\Admin\Varafastigheter.cshtml" />
+    <Content Include="Views\Admin\Stad.cshtml" />
+    <Content Include="Views\Admin\Omrade.cshtml" />
+    <Content Include="Views\Admin\Val.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

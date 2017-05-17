@@ -1,0 +1,163 @@
+﻿@using design.Controllers;
+@using design.Models;
+@using System.Collections.Generic;
+@{
+    ViewBag.Title = "Varafastigheter";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    List<String> m = new List<string>();
+    m.Add("123 543, Rynningegatan 7");
+    m.Add("145 432, Rynningegatan 8");
+
+   List<String> bilder = new List<string>();
+    bilder.Add("bild 1");
+    bilder.Add("bild 2");
+    bilder.Add("bild 3");
+
+    List<String> stad = new List<string>();
+    stad.Add("Örebro");
+    stad.Add("Nora");
+    stad.Add("Kumla");
+
+    List<String> omrade = new List<string>();
+    omrade.Add("Örebro, Norr");
+    omrade.Add("Örebro, Centralt");
+    omrade.Add("Örebro, Studentboende");
+
+    List<String> val = new List<string>();
+    val.Add("Hiss");
+    val.Add("Radhus");
+    val.Add("Balkong");
+}
+<center><h2 class="sidrubrik">Område</h2></center>
+<div class="maincontainer1">
+    <div class="maincontainer ">
+
+        <legend style="color:#e93523;">Administrera område</legend>
+        <div class=" row" style="background-color: #dcdcdc;">
+       
+            <div class=" col-md-4 col-lg-3" style="padding-bottom:10px;">
+                <h1 style="text-align:center;">Nytt område</h1>
+
+                <div class="">
+                    <label>Område:</label>
+                    <div class=" input-group">
+                        <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>Beskrivning:</label>
+                    <div class="input-group">
+                        <textarea class="form-control" name="comment" placeholder="Beskriv området" style="height:100px; width:205px;"></textarea>
+                    </div>
+                </div>
+                <label>Stad området hör till</label>
+                <br />
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        Välj stad
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kumla</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nora</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro</a></li>
+
+                    </ul>
+                </div>
+                <br />
+                <div class="falt">
+                    <br />
+                    <button type="submit" class="btn btn-success btn-sm" style="margin-top:5px;">Spara nytt område <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                </div>
+
+
+            </div>
+
+            <div class=" col-md-6 col-lg-6" style=" border-right: 20px solid white; border-left:20px solid white; padding-bottom:10px;" >
+                <h1 style="text-align:center;">Redigera område</h1>
+                <label>Alla områden</label>
+                <div>
+
+                    <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
+                        @foreach (string o in omrade)
+                        {
+                            <option id="objekt" class="list-group-item" value="@o">@o</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="">
+                    <label>Område:</label>
+                    <div class=" input-group">
+                        <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
+                    </div>
+                </div>
+                <div class="falt">
+                    <label>Beskrivning:</label>
+                    <div class="input-group">
+                        <textarea class="form-control" name="comment" placeholder="Beskriv området" style="height:100px; width:205px;"></textarea>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                        Välj stad
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Kumla</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Nora</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Örebro</a></li>
+
+                    </ul>
+                    
+                </div>
+                <div class=" row"><br />
+                    <div class="col-md-3 col-lg-4">
+                        <button type="submit" class="btn btn-success btn-sm">Spara redigering <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                    </div>
+                    <div class=" col-md-3 col-lg-4">
+                        <button type="submit" class="btn btn-danger btn-sm">Ta bort område <span class="glyphicon glyphicon-trash"></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-md-4 col-lg-3" style="padding-bottom:10px;">
+                <h1 style="text-align:center;">Hantera</h1>
+                <label>Alla områden</label>
+                <div>
+
+                    <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
+                        @foreach (string o in omrade)
+                        {
+                            <option id="objekt" class="list-group-item" value="@o">@o</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-sm">Lägg till <span class="glyphicon glyphicon-arrow-down"></span></button>
+                </div>
+                <label>Områden i intresseanmälan</label>
+                <div>
+
+                    <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
+                        @foreach (string o in omrade)
+                        {
+                            <option id="objekt" class="list-group-item" value="@o">@o</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-danger btn-sm">Ta bort <span class="glyphicon glyphicon-trash"></span></button>
+                </div>
+            </div> 
+
+
+
+
+        </div>
+
+
+    </div>
+     </div>   

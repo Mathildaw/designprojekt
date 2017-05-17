@@ -174,6 +174,16 @@ function showredigeralitenbild() {
         y.style.display = 'none';
     }
 }
+function showbilderStudent() {
+    var y = document.getElementById('bilderStudent');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+    } else {
+        y.style.display = 'none';
+    }
+}
+
 
 function shownyhet() {
     var y = document.getElementById('nyhet1');

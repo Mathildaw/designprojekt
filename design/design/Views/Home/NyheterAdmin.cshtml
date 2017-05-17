@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Nyheter";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
     <div style="text-align:center;"><h2 class="sidrubrik">Nyheter</h2></div>
@@ -9,42 +9,42 @@
         <legend style="color:#e93523">Lägg till en nyhet</legend>
 
     
-            <div class="redigera" id="redigera" style="margin-left:40px;">
-             
-                <div class="falt">
-                    <label>
-                        Datum:
-                    </label>
-                    <div class="input-group">
-                        <input name="state" placeholder="" class="form-control" type="date" style=" width:206px;">
-                    </div>
-                </div>
-                        <div class="falt">
-                            <label>
-                                Rubrik:
-                            </label>
-                            <div class="input-group">
-                                <input name="state" placeholder="Rubrik" class="form-control" type="text">
-                            </div>
-                        </div>
-              
-                <label>Innehåll:</label>
-                        <div class="falt">
-                           
-                            <img src="~/Content/Images/publish-wordpress-page.jpg" style="width: 600px; border: 1px solid grey;"/>
-                        </div>
-           
-                    <label>Publicera:</label><br />
-                    <form>
-                        <input type="radio" name="val" value="Ja"> Ja
-                        <input type="radio" name="val" value="Nej" checked> Nej<br />
+        <div class="redigera" id="redigera" style="padding-left:40px; background-color:#dcdcdc; padding-bottom:10px;">
 
-                    </form>
-               
-                        <div class="falt" style="margin-top:10px;">
-                            <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
-                        </div>
+            <div class="falt">
+                <label>
+                    Datum:
+                </label>
+                <div class="input-group">
+                    <input name="state" placeholder="" class="form-control" type="date" style=" width:206px;">
+                </div>
             </div>
+            <div class="falt">
+                <label>
+                    Rubrik:
+                </label>
+                <div class="input-group">
+                    <input name="state" placeholder="Rubrik" class="form-control" type="text">
+                </div>
+            </div>
+
+            <label>Innehåll:</label>
+            <div class="falt">
+
+                <img src="~/Content/Images/publish-wordpress-page.jpg" style="width: 600px; border: 1px solid grey;" />
+            </div>
+
+            <label>Publicera:</label><br />
+            <form>
+                <input type="radio" name="val" value="Ja"> Ja
+                <input type="radio" name="val" value="Nej" checked> Nej<br />
+
+            </form>
+
+            <div class="falt" style="margin-top:10px;">
+                <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+            </div>
+        </div>
         <hr style="border-top: 1px solid #e5e5e5;" />
         <br />
         <br />
@@ -71,9 +71,9 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="btnredigera btn-group" style="text-align:left;">
-                                <button class="btn btn-default" type="button" id="redigerabtn" onclick="shownyhet()">
-                                    Redigera nyhet
-                                    <span class="caret"></span>
+                                <button class="btn" type="button" id="redigerabtn" onclick="shownyhet()">
+                                    Redigera nyhet 
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
@@ -151,9 +151,9 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="btnredigera btn-group" style="text-align:left;">
-                                <button class="btn btn-default" type="button" id="redigerabtn">
+                                <button class="btn " type="button" id="redigerabtn">
                                     Redigera nyhet
-                                    <span class="caret"></span>
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
                                 </button>
                             </div>
 
