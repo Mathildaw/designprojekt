@@ -11,58 +11,46 @@
     
     <div class="maincontainer ontop">
 
-        <legend style="color:#e93523">Lägg till ny fråga</legend>
+        <legend style="color:#e93523;">Lägg till ny fråga</legend>
+        <div class="row" style="background-color:#dcdcdc;">
 
-
-        <div class="col-lg-2">
-            <div class="btnredigera btn-group-xs">
-                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                    Redigera
-                    <span><i class="glyphicon glyphicon-pencil"></i></span>
-                </button>
-            </div>
-        </div>
-        <br />
-        <br />
-
-        <div class=" row">
-
-            <div class="redigera" id="redigera" style="display:none;">
-                <div class=" row" style="background-color:#dcdcdc;">
-                    <div class=" col-md-6">
-                        <div class="falt">
-                            <label>
-                                Fråga:
-                            </label>
-                            <div class="input-group">
-                                <input name="state" placeholder="Fråga" class="form-control" type="text">
-                            </div>
-                        </div>
-
-                        <div class="falt">
-                            <label>
-                                Svar:
-                            </label>
-                            <img src="~/Content/Images/publish-wordpress-page.jpg" />
-                        </div>
-
-                        <div class="falt">
-                            <label>Kategori:</label><br />
-                            <form>
-                                <input type="radio" name="val" value="Ja"> För våra hyresgäster
-                                <input type="radio" name="val" value="Nej" checked> För kommande hyresgäster<br />
-                            </form>
-                        </div>
-                        <div class="falt">
-                            <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
-
-                        </div>
-
-
-                    </div>
+            <div class=" col-md-6">
+                <div class="falt">
+                    <label>
+                        Fråga:
+                    </label>
+                    <div class="input-group">
+                        <input name="state" placeholder="Fråga" class="form-control" type="text">
                     </div>
                 </div>
+
+                <div class="falt">
+                    <label>
+                        Svar:
+                    </label>
+                    <img src="~/Content/Images/publish-wordpress-page.jpg" />
+                </div>
+
+                <div class="falt">
+                    <label>Kategori:</label><br />
+                    <form>
+                        <input type="radio" name="val" value="Ja"> För våra hyresgäster
+                        <input type="radio" name="val" value="Nej" checked> För kommande hyresgäster<br />
+                    </form>
+                </div>
+                <div class="falt">
+                    <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+
+                </div>
+
+
             </div>
+
+           
+        </div>
+
+        
+
 
                     <div class="col-sx-12 infosvar2">
 
