@@ -124,6 +124,19 @@ function showredigera() {
     }
 }
 
+function show2() {
+    var y = document.getElementById('show2');
+    var x = document.getElementById('infotext');
+
+    if (y.style.display === 'none') {
+        y.style.display = 'block';
+        x.style.display = 'none';
+    } else {
+        y.style.display = 'none';
+        x.style.display = 'block';
+    }
+}
+
 function showredigera2() {
     var y = document.getElementById('redigera2');
 
