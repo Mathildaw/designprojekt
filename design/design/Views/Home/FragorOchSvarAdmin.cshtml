@@ -65,37 +65,47 @@
                             Kontaktuppgifter till oss hittar ni <a class="link" href="~/Home/Kontakt">här</a>.
                             <br />
                         </p>
-                        <div class="btnredigera btn-group-xs">
-                            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                Redigera
-                                <span class="caret"></span>
-                            </button>
-                        </div>
-                        <div class="redigera" id="redigera" style="display:none;">
-                            <div class=" row" style="background-color:#dcdcdc;">
-                                <div class=" col-md-6">
-                                    <div class="falt">
-                                        <label>
-                                            Fråga:
-                                        </label>
-                                        <div class="input-group">
-                                            <input name="state" placeholder="Fråga" class="form-control" type="text">
-                                        </div>
-                                    </div>
 
-                                    <div class="falt">
-                                        <label>
-                                            Svar:
-                                        </label>
-                                        <img src="~/Content/Images/publish-wordpress-page.jpg" />
-                                    </div>
-                                    <div class="falt">
-                                        <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+                        <div class="col-lg-2">
+                            <div class="btnredigera btn-group-xs">
+                                <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                                    Redigera
+                                    <span><i class="glyphicon glyphicon-pencil"></i></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class=" row">
+
+                            <div class="redigera" id="redigera" style="display:none;">
+                                <div class=" row" style="background-color:#dcdcdc;">
+                                    <div class=" col-md-6">
+                                        <div class="falt">
+                                            <label>
+                                                Rubrik:
+                                            </label>
+                                            <div class="input-group">
+                                                <input name="state" placeholder="Rubrik" class="form-control" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="falt">
+                                            <label>
+                                                Text:
+                                            </label>
+                                            <img src="~/Content/Images/publish-wordpress-page.jpg" />
+                                        </div>
+                                        <div class="falt">
+                                            <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+
+                                        </div>
+
 
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
                     <div class="col-sm-4 col-md-3 col-lg-3">
