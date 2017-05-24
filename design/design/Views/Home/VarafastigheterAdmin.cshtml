@@ -386,6 +386,7 @@
                     </div>
                     <div class=" row" style="background-color:#fbfbfb;">
 
+
                         <div class="redigera" id="redigera2" style="display:none; ">
                             <br />
                             <div class=" col-md-4 col-lg-4 ">
@@ -410,6 +411,14 @@
                                     <div class="input-group">
                                         <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
                                     </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12" style="padding-left:0px;">
+                                    <label>Typ av fastighet:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior"> Senior
+                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
+                                    </form>
                                 </div>
                             </div>
                             <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
@@ -443,29 +452,35 @@
                                     </div>
                                 </div>
 
+
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Typ av fastighet:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Student"> Student
-                                        <input type="radio" name="val" value="Senior" checked> Senior
-                                        <input type="radio" name="val" value="Övrigt"> Övrigt<br>
-                                    </form>
+                                    <div class=" falt">
+                                        <label>Visa på startsidan:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja"> Ja
+                                            <input type="radio" name="val" value="Nej" checked> Nej<br />
+                                        </form>
+                                    </div>
                                 </div>
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <div class=" falt">
+                                        <label>Publicera:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja" checked> Ja
+                                            <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
-                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Publicera:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Ja" checked> Ja
-                                        <input type="radio" name="val" value="Nej"> Nej<br />
 
-                                    </form>
-                                </div>
 
                                 <div>
                                     <br />
 
-                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                                    <button type="submit" class="btn btn-success" style="margin-top:170px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
                         </div>
@@ -535,22 +550,30 @@
                                         Område:
                                     </label>
                                     <div class="input-group">
-                                        <input name="state" placeholder="Örebro Centralt" class="form-control" type="text">
+                                        <input name="state" placeholder="Örebro Norr" class="form-control" type="text">
                                     </div>
                                 </div>
 
                                 <div class="falt">
                                     <label>Adress:</label>
                                     <div class="input-group">
-                                        <input name="state" required placeholder="Slottsgatan 7" class="form-control" type="text">
+                                        <input name="state" required placeholder="Rynningegatan 27-37" class="form-control" type="text">
                                     </div>
                                 </div>
 
                                 <div class="falt">
                                     <label>Antal lägenheter i fastigheten:</label>
                                     <div class="input-group">
-                                        <input name="deltagareinput" placeholder="40" class="form-control input-md" type="text">
+                                        <input name="deltagareinput" placeholder="20" class="form-control input-md" type="text">
                                     </div>
+                                </div>
+                                <div class="col-md-12 col-lg-12" style="padding-left:0px;">
+                                    <label>Typ av fastighet:</label><br />
+                                    <form>
+                                        <input type="radio" name="val" value="Student"> Student
+                                        <input type="radio" name="val" value="Senior"> Senior
+                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
+                                    </form>
                                 </div>
                             </div>
                             <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
@@ -559,7 +582,7 @@
 
                                     <div class="col-md-7">
 
-                                        <input name="state" placeholder="~/Content/Images/Blaslampan 2 - 1.jpg" class="form-control" style="border-radius:0px;" type="text">
+                                        <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
                                     </div>
                                     <div class=" col-md-3 col-lg-3" style="padding-left:0px;">
                                         <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
@@ -572,7 +595,7 @@
                                         <div class="falt">
                                             <label>Länk till karta:</label>
                                             <div class="input-group">
-                                                <input name="state" placeholder="https://goo.gl/maps/6q7cYjMi3Qy" class="form-control" type="text">
+                                                <input name="state" placeholder="https://goo.gl/maps/boNdvNsyb1R2" class="form-control" type="text">
                                             </div>
                                         </div>
                                     </div>
@@ -584,29 +607,35 @@
                                     </div>
                                 </div>
 
+
                                 <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Typ av fastighet:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Student"> Student
-                                        <input type="radio" name="val" value="Senior"> Senior
-                                        <input type="radio" name="val" value="Övrigt" checked> Övrigt<br>
-                                    </form>
+                                    <div class=" falt">
+                                        <label>Visa på startsidan:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja"> Ja
+                                            <input type="radio" name="val" value="Nej" checked> Nej<br />
+                                        </form>
+                                    </div>
                                 </div>
+                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
+                                    <div class=" falt">
+                                        <label>Publicera:</label><br />
+                                        <form>
+                                            <input type="radio" name="val" value="Ja" checked> Ja
+                                            <input type="radio" name="val" value="Nej"> Nej<br />
+
+                                        </form>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-md-4 col-lg-2" style=" margin-top: 10px; margin-bottom: 10px;">
-                                <div class="col-md-10 col-lg-7" style="padding-left:0px;">
-                                    <label>Publicera:</label><br />
-                                    <form>
-                                        <input type="radio" name="val" value="Ja" checked> Ja
-                                        <input type="radio" name="val" value="Nej"> Nej<br />
 
-                                    </form>
-                                </div>
 
                                 <div>
                                     <br />
 
-                                    <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
+                                    <button type="submit" class="btn btn-success" style="margin-top:170px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
                                 </div>
                             </div>
                         </div>

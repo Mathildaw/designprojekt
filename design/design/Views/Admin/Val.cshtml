@@ -8,9 +8,22 @@
 @{
 
     List<String> val = new List<string>();
+    val.Add("Altan");
     val.Add("Hiss");
+    val.Add("Kokvrå");
     val.Add("Radhus");
     val.Add("Balkong");
+    val.Add("Ej balkong");
+    val.Add("Ej hiss");
+    val.Add("Kallhyra");
+    
+
+    List<String> val2 = new List<string>();
+    val2.Add("Altan");
+    val2.Add("Hiss");
+    val2.Add("Kokvrå");
+    val2.Add("Radhus");
+    val2.Add("Balkong");
 }
 <center><h2 class="sidrubrik">Övriga val</h2></center>
 <div class="maincontainer1">
@@ -87,7 +100,7 @@
                 <div>
 
                     <select class="list-group" id="objekt" name="objekt" multiple="multiple" style="width:205px; height: 100px; margin-bottom:5px;">
-                        @foreach (string v in val)
+                        @foreach (string v in val2)
                         {
                             <option id="objekt" class="list-group-item" value="@v">@v</option>
                         }
