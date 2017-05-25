@@ -86,55 +86,32 @@
         <legend style="color:#e93523;">Lägg till ny anställd</legend>
         <div class="row" style="background-color:#dcdcdc;">
 
-            <div class="col-md-4 col-lg-4">
 
-                <div class="falt">
-                    <label>
-                        För- och efternamn:
-                    </label>
-                    <div class="input-group">
-                        <input name="state" placeholder="" class="form-control" type="text">
-                    </div>
-                </div>
+                <div >
+                    <br />
+                    <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
+                    <label>Bild:</label>
+                    <div class="row falt">
 
-                <div class="falt">
-                    <label>Roll:</label>
-                    <div class="input-group">
-                        <input name="state" required placeholder="" class="form-control" type="text">
-                    </div>
-                </div>
+                        <div class="col-md-8 col-lg-5" >
 
-                <div class="falt">
-                    <label>Telefon:</label>
-                    <div class="input-group">
-                        <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
-                    </div>
-                </div>
-                <div class="falt">
-                    <label>E-post:</label>
-                    <div class="input-group">
-                        <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
-                    </div>
-                </div>
-                <div class="row falt">
-
-                    <div class="col-md-7 col-lg-6" style="padding-right:0px;">
-
-                        <div class="">
-                            <label>Bild:</label>
-                            <div class=" input-group">
-                                <input name="state" placeholder="" class="form-control" style="border-radius:0px;" type="text">
-                            </div>
+                            <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
+                        </div>
+                        <div class="col-md-3 col-lg-3" style="padding-left:0px;">
+                            <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+                        </div>
+    </div>
+</div>
+                    <div class="col-md-12 col-lg-12">
+                        <div class="falt">
+                            <label>
+                                Text:
+                            </label>
+                            <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre">
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-3" style="padding-left:0px;">
-
-                        <label style="color:transparent">.</label>
-                        <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
-                    </div>
+            
                 </div>
-
-            </div>
             <div class="col-md-5">
                 <p>
                     <br />
@@ -148,25 +125,22 @@
                         <input type="radio" name="val" value="Nej"> Underhåll<br />
 
                     </form>
-                </div>
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <div class="falt">
-                    <label>Rad:</label>
-                    <div class="input-group">
-                        <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
+                    <div class="falt">
+
+                        <div class="input-group">
+                            <label>Rad:</label><br />
+                            <input name="rad" placeholder="" class="form-control input-md" type="number">
+                        </div>
+                    </div>
+                    <div class="falt">
+                        <label>Kolumn:</label>
+                        <div class="input-group">
+                            
+                            <input name="kolumn" placeholder="" class="form-control input-md" type="number">
+                        </div>
                     </div>
                 </div>
-                <div class="falt">
-                    <label>Kolumn:</label>
-                    <div class="input-group">
-                        <input name="deltagareinput" placeholder="" class="form-control input-md" type="text">
-                    </div>
-                </div>
-
                 <div class=" col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
 
                     <button type="submit" class="btn btn-success">Lägg till anställd <span class="glyphicon glyphicon-floppy-saved"></span></button>
@@ -222,49 +196,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" style="background-color:#fbfbfb;">
+                
 
-                    <div class="redigera" id="redigera2" style="display:none; ">
-                        <br />
+                    <div class="redigera row" id="redigera2" style="display:none; background-color:#dcdcdc;">
+                        <br /><div class=" col-md-6 col-lg-6" style="padding-right:0px;">
+    <label>Bild:</label>
+    <div class="row falt">
+
+        <div class="col-md-9">
+
+            <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
+        </div>
+        <div class="col-md-3 col-lg-3" style="padding-left:0px;">
+            <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
+        </div>
+    </div>
+
+
+</div>
                         <div class="col-md-12 col-lg-12">
-                            <div class="falt">
+                           
                                 <label>
                                     Text:
                                 </label>
-                                <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre">
-
-                            </div>
-
-
-                        </div>
-                        <div class=" col-md-6 col-lg-6" style="padding-right:0px;">
-                            <label>Bild:</label>
-                            <div class="row falt">
-
-                                <div class="col-md-9">
-
-                                    <input name="state" placeholder="~/Content/Images/Blaslampan%202%20-%203.jpg" class="form-control" style="border-radius:0px;" type="text">
-                                </div>
-                                <div class="col-md-3 col-lg-3" style="padding-left:0px;">
-                                    <button type="submit" class="btn btn-default">Ladda upp <span class="glyphicon glyphicon-file"></span></button>
-                                </div>
-                            </div>
+                                <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre" style="border:1px solid grey;">
+                                <button type="submit" class="btn btn-success" style="margin-top:10px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
 
 
                         </div>
-
-
-
-                        <div>
-                            <br />
-
-                            <button type="submit" class="btn btn-success" style="margin-top:75px;">Spara <span class="glyphicon glyphicon-floppy-saved"></span></button>
-                        </div>
-
                     </div>
 
 
-                </div>
+               
 
             </div>
 
@@ -324,7 +287,7 @@
 
                     <div class="col-lg-4">
                         <div class="btnredigera btn-group-xs" style="text-align:right;">
-                            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                            <button class="btn" type="button" id="redigerabtn" onclick="">
                                 Redigera
                                 <span><i class="glyphicon glyphicon-pencil"></i></span>
                             </button>
@@ -356,7 +319,7 @@
 
                     <div class="col-lg-4">
                         <div class="btnredigera btn-group-xs" style="text-align:right;">
-                            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                            <button class="btn" type="button" id="redigerabtn" onclick="">
                                 Redigera
                                 <span><i class="glyphicon glyphicon-pencil"></i></span>
                             </button>
@@ -394,6 +357,32 @@
                     <a href="mailto:info@je-bygg.se" target="_blank">info@je-bygg.se</a>
                 </p>
                 <a class="link" href="~/Home/Intresseanmalan">Intresseanmälan >></a>
+                <br />
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/RunellIrene.jpg" alt="Irene Runell"></center>
@@ -403,6 +392,31 @@
                     Leverantörsfakturor<br />
                     019 - 16 43 74
                 </p>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/Ottosson-Carina.jpg" alt="Carina Ottosson"></center>
@@ -413,6 +427,32 @@
                     (Kumla/Nora)<br />
                     070 - 410 40 11
                 </p>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Adis"></center>
@@ -420,6 +460,31 @@
                 <p>
                     Ekonomiassistent
                 </p>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -431,37 +496,246 @@
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/Johansson-Patrik.jpg" alt="Patrik Johansson"></center>
                 <h4>Patrik Johansson</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/StrandbergMikael.jpg" alt="Mikael Strandberg"></center>
                 <h4>Mikael Strandberg</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/BergTony.jpg" alt="Tony Berg"></center>
                 <h4>Tony Berg</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/WibergBenny.jpg" alt="Benny Wiberg"></center>
                 <h4>Benny Wiberg</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
         </div>
 
         <div class="row">
             <div class="col-sm-3 col-xs-7">
+
                 <center><img class="img-responsive" src="~/Content/Images/ErikssonPeder.jpg" alt="Peder Eriksson"></center>
                 <h4>Peder Eriksson</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/Gustafsson-Jan-Ake.jpg" alt="Jan Åke Gustavsson" /></center>
                 <h4>Jan-Åke Gustavsson</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/LarsenPeter.jpg" alt="Peter Larsen"></center>
                 <h4>Peter Larsen</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/RunellHans.jpg" alt="Hans Rünell"></center>
                 <h4>Hans Rünell</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
         </div>
 
@@ -469,18 +743,122 @@
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/Akerstrandorjan.jpg" alt="Örjan Åkerstrand"></center>
                 <h4>Örjan Åkerstrand</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Richard Gustafsosn"></center>
                 <h4>Richard Gustafsson</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/StenArnsheml.png" alt="Sten Arnshelm"></center>
                 <h4>Sten Arnsheml</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
             <div class="col-sm-3 col-xs-7">
                 <center><img class="img-responsive" src="~/Content/Images/anonym-man.jpg" alt="Britt-Marie Jansson"></center>
                 <h4>Britt-Marie Jansson</h4>
+                <div class="row">
+
+
+                    <div class="col-lg-3">
+                        <div class="btnredigera btn-group-xs" style="text-align:left;">
+                            <button class="btn " type="button" id="redigerabtn" onclick="">
+                                Redigera
+                                <span><i class="glyphicon glyphicon-pencil"></i></span>
+                            </button>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-2">
+
+                        <div class="btnredigera btn-group-xs" style="text-align:right;">
+                            <button class="btn btn-danger" type="button" id="redigerabtn">
+                                Ta bort
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br />
             </div>
 
         </div>
