@@ -303,50 +303,66 @@
             <div class="col-md-5 col-sm-5 col-lg-5 rightdiv information information1" >
                 <div class="btnredigera btn-group-xs">
                     <br />
-                    <button class="btn" type="button" id="redigerabtn">
+                    <button class="btn" type="button" id="redigerabtn" onclick="show2()">
                         Redigera <span><i class="glyphicon glyphicon-pencil"></i></span>
                     </button>
                 </div>
-                <h3>Personuppgifter</h3>
-                <p>
-                    
-                    De personuppgifter som du lämnar i ansökan/intresseanmälan kommer att behandlas 
-                    i den utsträckning som behövs för att kunna bedömma av om du kan godtas som hyresgäst.
-                    Därför behövs uppgifter från personer som kan uttala sig om dig. Genom att lämna uppgifter
-                    om referenspersoner medger du att uppgifter får inhämtas från dessa personer. Uppgifter kan
-                    också komma att inhämtas från kreditupplysningsinstitut och myndigheter. 
-                    <br />
-                    <br />
-                    Uppgifterna kommer endast att behandlas inom bostadsföretaget. Du har rätt att gratis en gång om året 
-                    få besked om vilka personuppgifter om dig som behandlas och hur de behandlas. Du kan också begära
-                    rättelse av de personuppgifter som behandlas.
-                    <br />
-                    <br />
-                    Personuppgifterna om dig kommer bara att behandlas under den tid som din ansökan/intresseanmälan är aktuell.
-                    Detta innebär att samtliga personuppgifter kommer att gallras när du har meddelat att du inte längre
-                    önskar kvarstå som bostadssökande. Detta gäller också om din ansökan/intresseanmälan om bostad avslås.
-                    Om skälet till att ansökan/intresseanmälan avslagits är att du inte kunnat godtas på grund av misskötsamhet
-                    i ett tidigare boende, bevaras dock uppgifterna under tre månader efter avslagsbeslut.
-                </p>
-                <hr size="1" color="#996633">
-
-                <br />
                 
 
-                <h3>På hemsidan kan ni göra intresseanmälan dygnet runt.</h3>
-                <p>
-
-                    När ni gör en intresseanmälan står ni i
-                    bostadskön i tre månader, det är sedan upp
-                    till er att uppdatera er anmälan för
-                    att stå kvar i bostadskön.
+                <div class="" id="show2" style="background-color:#dcdcdc; display:none;">
                     <br />
-                    <br />Mer information om intresseanmälan och
-                    bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
 
+                    <div class="falt">
+                        <label>
+                            Text:
+                        </label><br />
+                        <img src="~/Content/Images/publish-wordpress-page.jpg" style="width: 300px;" />
+                    </div>
+                    <div class="falt">
+                        <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+                        <button type="submit" class="btn btn-danger" style="margin-left:10px;">Avbryt</button>
+
+                    </div>
+                </div>
+                <div id="infotext">
+                    <h3>Personuppgifter</h3>
+                    <p>
+
+                        De personuppgifter som du lämnar i ansökan/intresseanmälan kommer att behandlas
+                        i den utsträckning som behövs för att kunna bedömma av om du kan godtas som hyresgäst.
+                        Därför behövs uppgifter från personer som kan uttala sig om dig. Genom att lämna uppgifter
+                        om referenspersoner medger du att uppgifter får inhämtas från dessa personer. Uppgifter kan
+                        också komma att inhämtas från kreditupplysningsinstitut och myndigheter.
+                        <br />
+                        <br />
+                        Uppgifterna kommer endast att behandlas inom bostadsföretaget. Du har rätt att gratis en gång om året
+                        få besked om vilka personuppgifter om dig som behandlas och hur de behandlas. Du kan också begära
+                        rättelse av de personuppgifter som behandlas.
+                        <br />
+                        <br />
+                        Personuppgifterna om dig kommer bara att behandlas under den tid som din ansökan/intresseanmälan är aktuell.
+                        Detta innebär att samtliga personuppgifter kommer att gallras när du har meddelat att du inte längre
+                        önskar kvarstå som bostadssökande. Detta gäller också om din ansökan/intresseanmälan om bostad avslås.
+                        Om skälet till att ansökan/intresseanmälan avslagits är att du inte kunnat godtas på grund av misskötsamhet
+                        i ett tidigare boende, bevaras dock uppgifterna under tre månader efter avslagsbeslut.
+                    </p>
+
+                    <hr size="1" color="#996633">
                     <br />
-                </p>
-              
+
+                    <h3>På hemsidan kan ni göra intresseanmälan dygnet runt.</h3>
+                    <p>
+                        När ni gör en intresseanmälan står ni i
+                        bostadskön i tre månader, det är sedan upp
+                        till er att uppdatera er anmälan för
+                        att stå kvar i bostadskön.
+                        <br />
+                        <br />Mer information om intresseanmälan och
+                        bostadskön hittar ni i <a class="link" href="~/Home/FragorOchSvar">frågor och svar</a>.
+
+                        <br />
+                    </p>
+                </div>
                 <br />
             </div>
 

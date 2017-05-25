@@ -9,7 +9,29 @@
     <div class="maincontainer1">
         <div class="maincontainer ontop">
             <div class="row">
+                <div class="btnredigera btn-group" style="margin-left:180px; ">
+                    <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
+                        Redigera sidan
+                        <span><i class="glyphicon glyphicon-pencil"></i></span>
+                    </button>
+                    <div class="redigera" id="redigera" style="display: none; ">
+                        <div class="col-md-12">
 
+                            <div class="falt">
+                                <label>
+                                    Text:
+                                </label>
+                                <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre" style="border: 1px solid grey;">
+                            </div>
+                            <div class="col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
+                                <button type="submit" class="btn btn-success">Spara<span class="glyphicon glyphicon-floppy-saved"></span></button>
+                            </div>
+                            <div class="col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
+                                <button type="submit" class="btn btn-danger">Avbryt <span class="glyphicon glyphicon-floppy-remove"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-2">
                     </div>
@@ -88,33 +110,7 @@
                         <p><b>Årets Fastighetsägare 2016</b><br />
                            <i> ”Denna fastighetsägare i Örebro hyser en särskild omtanke om samhällets mindre lyckligt lottade. Ett exempel på detta är den nyligen startade byggnationen av Sveriges modernaste kvinnohus som kommer erbjuda boende för våldsutsatta kvinnor och barn i behov av samhällets skydd. Att denna fastighetsägare även erbjuder övergångsbostäder ligger helt i linje med deras filosofi."</i>
                         </p>
-                        <div class="btnredigera btn-group-xs">
-                            <button class="btn" type="button" id="redigerabtn" onclick="showredigera()">
-                                Redigera
-                                <span><i class="glyphicon glyphicon-pencil"></i></span>
-                            </button>
-                            <div class="redigera" id="redigera" style="display:none;">
-                                <div class="col-md-12">
-                                   
-                                    <div class="falt">
-                                        <label>
-                                            Text:
-                                        </label>
-                                        <img src="~/Content/Images/publish-wordpress-page.jpg" class="img-responsive" alt="Cinque Terre">
-
-                                    </div>
-                                    <div class="col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
-
-                                        <button type="submit" class="btn btn-success">Spara<span class="glyphicon glyphicon-floppy-saved"></span></button>
-
-                                    </div>
-                                    <div class="col-md-5 col-lg-6" style="margin-top:25px; padding-left:0px;">
-                                        <button type="submit" class="btn btn-danger">Avbryt <span class="glyphicon glyphicon-floppy-remove"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                     
 
 
                     </div>
@@ -125,7 +121,7 @@
             </div>
         </div>
                 </div>
-        </div>
+        
          
         
 

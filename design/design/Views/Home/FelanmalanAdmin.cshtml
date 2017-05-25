@@ -129,10 +129,28 @@
         <div class="col-md-4 col-sm-4 col-lg-4 rightdiv">
             <p class ="felanmalan-info">
                 <div class="btnredigera btn-group-xs">
-                    <button class="btn" type="button" id="redigerabtn">
+                    <button class="btn" type="button" id="redigerabtn" onclick="show2()">
                         Redigera <span><i class="glyphicon glyphicon-pencil"></i></span>
                     </button>
                 </div>
+
+
+                <div class="" id="show2" style="background-color:#dcdcdc; display:none;">
+                    <br />
+
+                    <div class="falt">
+                        <label>
+                            Text:
+                        </label><br />
+                        <img src="~/Content/Images/publish-wordpress-page.jpg" style="width: 300px;" />
+                    </div>
+                    <div class="falt">
+                        <button type="submit" class="btn btn-success">Spara <span class="glyphicon glyphicon-floppy-saved" style="text-align:right;"></span></button>
+                        <button type="submit" class="btn btn-danger" style="margin-left:10px;">Avbryt</button>
+
+                    </div>
+                </div>
+                <div id="infotext">
                 <br /><b>På hemsidan kan ni göra felanmälan dygnet runt.</b>
             <p class="felanmalan-info">
                 <br /><b>
@@ -155,6 +173,7 @@
                 
                
             </p>
+            </div>
         </div>
     </div>
 </div>
